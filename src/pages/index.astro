@@ -1,0 +1,582 @@
+---
+import PageShell from '../components/PageShell.astro';
+import SectionTag from '../components/SectionTag.astro';
+import H2 from '../components/H2.astro';
+import Tile from '../components/ornaments/Tile.astro';
+import Medallion from '../components/ornaments/Medallion.astro';
+import Portrait from '../components/ornaments/Portrait.astro';
+import PoemCard from '../components/PoemCard.astro';
+import PoemModal from '../components/PoemModal.astro';
+
+const stats = [
+  { n: '10K+', l: 'Misra' },
+  { n: '30+', l: 'Hajviy asar' },
+  { n: '4', l: 'Sayohatnoma' },
+];
+
+const threads = [
+  { n: '01', t: 'Lirika', d: "Muhabbat, do'stlik, sadoqat, vafodorlik. Yuzlab she'rlari xalq qo'shig'iga aylangan." },
+  { n: '02', t: 'Hajviyot', d: "Tanobchilar, Saylov, Maskovchi boy — chor amaldorlari va boylarning kirdikorlarini fosh etgan satira." },
+  { n: '03', t: 'Sayohatnoma', d: "Farg'ona vodiysi bo'ylab sayohatlar. O'ynoqi vaznli, 4 misrali bandlardan iborat asar." },
+];
+
+const heroTilePattern = `url("data:image/svg+xml;utf8,${encodeURIComponent(
+  `<svg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80' fill='none' stroke='%23d68b1f' stroke-width='1'><polygon points='40,4 50,30 76,40 50,50 40,76 30,50 4,40 30,30'/><polygon points='40,4 50,30 76,40 50,50 40,76 30,50 4,40 30,30' transform='rotate(22.5 40 40)'/><circle cx='40' cy='40' r='6'/></svg>`,
+)}")`;
+
+const portraitBgPattern = `url("data:image/svg+xml;utf8,${encodeURIComponent(
+  `<svg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80' fill='none' stroke='%23f4ead4' stroke-width='1'><polygon points='40,4 50,30 76,40 50,50 40,76 30,50 4,40 30,30'/></svg>`,
+)}")`;
+
+const saffronTilePattern = `url("data:image/svg+xml;utf8,${encodeURIComponent(
+  `<svg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60' fill='none' stroke='%23072b30' stroke-width='1'><polygon points='30,3 38,22 57,30 38,38 30,57 22,38 3,30 22,22'/></svg>`,
+)}")`;
+---
+<PageShell title="Muqimiy — Bosh sahifa" current="home">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg" style={`background-image:${heroTilePattern};background-size:80px 80px`}></div>
+    <div class="hero-content">
+      <div class="kicker">
+        <Tile size={18} color="var(--saffron)" />
+        <span>Qo'qon adabiy muhiti</span>
+      </div>
+      <h1 class="hero-title font-disp" data-anim="hero-h1">
+        <span class="hero-m">M</span>uhammad<br />
+        Aminxo'ja<br />
+        <span class="hero-italic" data-anim="drift">Muqimiy.</span>
+      </h1>
+      <p class="hero-lede">
+        XIX asr o'zbek mumtoz adabiyotining yirik namoyandasi. O'tkir hajviyoti bilan
+        amaldorlar zulmini fosh etgan, samimiy lirikasi xalq qo'shig'iga aylanib ketgan shoir.
+      </p>
+      <div class="hero-cta">
+        <a href="/hayoti" class="btn-saffron">Hayoti bilan tanishish →</a>
+        <a href="/asarlari" class="btn-outline">Asarlari</a>
+      </div>
+      <div class="stats">
+        {stats.map((s) => (
+          <div>
+            <div class="stat-n font-disp">{s.n}</div>
+            <div class="stat-l">{s.l}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+    <div class="hero-portrait">
+      <div class="portrait-saffron"></div>
+      <div class="portrait-frame">
+        <div class="portrait-img">
+          <div class="portrait-pattern" style={`background-image:${portraitBgPattern};background-size:60px 60px`}></div>
+          <Portrait
+            size={320}
+            palette={{
+              bg: 'transparent',
+              skin: '#dca06a',
+              beard: '#1a0d05',
+              robe: 'var(--saffron-deep)',
+              turban: 'var(--cream)',
+              accent: 'var(--pomegranate)',
+            }}
+          />
+        </div>
+        <div class="portrait-meta">
+          <div>
+            <div class="meta-name font-disp">Muqimiy</div>
+            <div class="meta-alias">&ldquo;Turg'un&rdquo;</div>
+          </div>
+          <div class="meta-age">
+            <div class="age-n font-disp">53</div>
+            <div class="age-l">yil</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Intro grid -->
+  <section class="intro">
+    <div class="intro-grid" data-reveal>
+      <div>
+        <SectionTag>Kim u Muqimiy?</SectionTag>
+        <H2>
+          Demokratik<br />
+          <span class="italic-accent">adabiyot</span><br />
+          asoschisi.
+        </H2>
+      </div>
+      <div class="intro-text">
+        <p>
+          Muhammad Aminxo'ja Mirzaxo'ja o'g'li 1850-yili Qo'qon shahrining Bekvachcha mahallasida,
+          novvoy oilasida tug'ildi. Onasi Xumorbibi — Xo'jandlik, so'zga usta, adabiyot va san'atni
+          ulug'lovchi ayol — yosh Muhammad Aminxo'jada she'riyatga ixlosni uyg'otdi.
+        </p>
+        <p>
+          Navoiy, Jomiy, Nizomiy va Fuzuliydan o'rgangan, ular g'azallariga muxammaslar bog'lagan.
+          O'zbek adabiyotida <strong>demokratik yo'nalishning vujudga kelishi</strong> Muqimiy nomi bilan bog'liq —
+          u boshchiligida Furqat, Zavqiy, Avaz, Komil kabi ilg'or fikrli shoirlar adabiyot tarixida yangi sahifa ochdilar.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Three threads -->
+  <section class="threads">
+    <div class="threads-medallion"><Medallion size={520} color="var(--saffron)" stroke={1} /></div>
+    <div class="threads-inner">
+      <div class="threads-head" data-reveal>
+        <div>
+          <div class="threads-kicker">Ijodi</div>
+          <h2 class="threads-h2 font-disp">
+            Uch ijodiy<br />
+            <span class="italic-light">tomir.</span>
+          </h2>
+        </div>
+        <a href="/ijodi" class="btn-outline-saffron">Batafsil →</a>
+      </div>
+      <div class="threads-grid">
+        {threads.map((t, i) => (
+          <div class="thread" data-reveal data-reveal-delay={i * 80}>
+            <div class="thread-head">
+              <div class="thread-n font-disp">{t.n}</div>
+              <Tile size={32} color="var(--saffron)" opacity={0.6} />
+            </div>
+            <h3 class="thread-t font-disp">{t.t}</h3>
+            <p class="thread-d">{t.d}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Sample poems -->
+  <section class="poems">
+    <div class="poems-head" data-reveal>
+      <div>
+        <SectionTag>Asarlardan namunalar</SectionTag>
+        <H2>She'rlardan <span class="italic-accent">misol.</span></H2>
+      </div>
+      <a href="/asarlari" class="btn-outline-dark">Devondan barchasi →</a>
+    </div>
+    <div class="poems-grid">
+      <PoemCard
+        n="01"
+        title="Tanobchilar"
+        kind="Hajv · 1877"
+        featured
+        note="Yer o'lchovchi amaldorlarning hiyla-nayranglarini fosh etgan satirik she'riy hikoya — Muqimiyni elga taniqli qilgan asar."
+        lines={[
+          "Bo'ldi taajjub qiziq hangomalar,",
+          "Arz etayin emdi yozib nomalar.",
+          "O'n iki oyda keladur bir tanob,",
+          "O'zgalara rohat-u menga azob.",
+        ]}
+      />
+      <PoemCard
+        n="02"
+        title="Navbahor"
+        kind="G'azal"
+        lines={[
+          'Ochildi gullar, sabza bo’ldi bog’lar!',
+          "Suhbat aylaylik, kelinglar, jo'ralar, o'rtog'lar!",
+          'Xush bu mahfilda tiriklik ulfatu ahbob ila,',
+          "O'ynashib, gohe tabiatni qilaylik chog'lar!",
+        ]}
+      />
+      <PoemCard
+        n="03"
+        title="Sayohatnoma"
+        kind="Sayohat"
+        lines={[
+          'Kelganim ushbu makonga qiladur manga alam,',
+          "Loyiqi tab' yo'q odamki, desam hasratu g'am,",
+          "Gaplashurg'a kishi yo'q ertadin oqshomg'acha ham,",
+          "Kun sovuq, qora chiroq, go'rdek uyu, o'tin kam.",
+        ]}
+      />
+    </div>
+  </section>
+
+  <PoemModal />
+
+  <!-- Pull quote -->
+  <section class="quote">
+    <div class="quote-bg" style={`background-image:${saffronTilePattern};background-size:60px 60px`}></div>
+    <div class="quote-inner" data-reveal>
+      <div class="quote-mark font-disp">&ldquo;</div>
+      <div>
+        <blockquote class="quote-text font-disp">
+          Hayfkim, ahli tamiz ushbu mahalda xor ekan,<br />
+          Oldilar har yerda bulbul oshiyonin zog'lar.
+        </blockquote>
+        <div class="quote-attr">— Navbahor g'azalidan</div>
+      </div>
+    </div>
+  </section>
+</PageShell>
+
+<style>
+  /* ── HERO ─────────────────────────────────────────────── */
+  .hero {
+    background: var(--teal);
+    color: var(--cream);
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 0;
+    position: relative;
+    overflow: hidden;
+    min-height: 700px;
+    padding: 0 0 0 80px;
+  }
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    opacity: 0.07;
+    pointer-events: none;
+  }
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 90px 40px 90px 0;
+    align-self: center;
+  }
+  .kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 32px;
+    background: rgba(214, 139, 31, 0.14);
+    border: 1px solid var(--saffron);
+    padding: 8px 18px;
+  }
+  .kicker span {
+    font-size: 11px;
+    letter-spacing: 0.32em;
+    color: var(--saffron);
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .hero-title {
+    font-size: 112px;
+    line-height: 0.94;
+    margin: 0 0 28px;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+  }
+  .hero-m { color: var(--saffron); }
+  .hero-italic { font-style: italic; font-weight: 400; }
+  .hero-lede {
+    font-size: 17px;
+    line-height: 1.7;
+    max-width: 500px;
+    margin: 0 0 40px;
+    color: rgba(244, 234, 212, 0.78);
+  }
+  .hero-cta {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+  }
+  .btn-saffron {
+    background: var(--saffron);
+    color: var(--teal-deep);
+    padding: 14px 26px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .btn-outline {
+    background: transparent;
+    color: var(--cream);
+    padding: 14px 26px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid var(--cream);
+  }
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 48px;
+  }
+  .stat-n {
+    font-size: 52px;
+    color: var(--saffron);
+    line-height: 1;
+    font-weight: 700;
+  }
+  .stat-l {
+    font-size: 11px;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: rgba(244, 234, 212, 0.6);
+    margin-top: 6px;
+  }
+  .hero-portrait {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+  }
+  .portrait-saffron {
+    position: absolute;
+    right: 80px;
+    top: 70px;
+    bottom: 70px;
+    width: 360px;
+    background: var(--saffron);
+  }
+  .portrait-frame {
+    position: absolute;
+    right: 120px;
+    top: 110px;
+    width: 320px;
+    background: var(--teal-deep);
+    border: 8px solid var(--cream);
+  }
+  .portrait-img {
+    height: 440px;
+    background: var(--teal-mid);
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    place-items: end center;
+  }
+  .portrait-pattern {
+    position: absolute;
+    inset: 0;
+    opacity: 0.18;
+  }
+  .portrait-meta {
+    background: var(--cream);
+    color: #0a2024;
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .meta-name { font-size: 20px; font-weight: 700; }
+  .meta-alias {
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--teal-mid);
+    margin-top: 2px;
+  }
+  .meta-age { text-align: right; }
+  .age-n { font-size: 22px; color: var(--pomegranate); font-weight: 700; }
+  .age-l {
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--teal-mid);
+  }
+
+  /* ── INTRO ────────────────────────────────────────────── */
+  .intro {
+    padding: 90px 80px;
+    background: var(--bg);
+  }
+  .intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 80px;
+    align-items: start;
+  }
+  .intro-text {
+    font-size: 17px;
+    line-height: 1.8;
+    color: var(--muted);
+  }
+  .intro-text p { margin: 0 0 22px; }
+  .intro-text p:last-child { margin: 0; }
+  .intro-text strong { color: var(--text); }
+  .italic-accent {
+    font-style: italic;
+    font-weight: 400;
+    color: var(--pomegranate);
+  }
+
+  /* ── THREADS ──────────────────────────────────────────── */
+  .threads {
+    padding: 70px 80px;
+    background: var(--teal-deep);
+    color: var(--cream);
+    position: relative;
+    overflow: hidden;
+  }
+  .threads-medallion {
+    position: absolute;
+    right: -120px;
+    top: -120px;
+    opacity: 0.08;
+    color: var(--saffron);
+  }
+  .threads-inner {
+    position: relative;
+    z-index: 2;
+  }
+  .threads-head {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    gap: 32px;
+    flex-wrap: wrap;
+  }
+  .threads-kicker {
+    font-size: 11px;
+    letter-spacing: 0.32em;
+    color: var(--saffron);
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+  .threads-h2 {
+    font-size: 64px;
+    margin: 0;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -0.02em;
+  }
+  .italic-light {
+    font-style: italic;
+    font-weight: 400;
+    color: var(--saffron);
+  }
+  .btn-outline-saffron {
+    color: var(--cream);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    border: 1px solid var(--saffron);
+    padding: 14px 26px;
+    text-decoration: none;
+  }
+  .threads-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4px;
+  }
+  .thread {
+    background: #1a4f57;
+    padding: 40px 32px 32px;
+    border-left: 4px solid var(--saffron);
+  }
+  .thread-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 18px;
+  }
+  .thread-n {
+    font-size: 16px;
+    color: var(--saffron);
+    font-weight: 700;
+    letter-spacing: 0.32em;
+  }
+  .thread-t {
+    font-size: 36px;
+    margin: 0 0 14px;
+    font-weight: 700;
+  }
+  .thread-d {
+    font-size: 15px;
+    line-height: 1.65;
+    color: rgba(244, 234, 212, 0.78);
+    margin: 0;
+  }
+
+  /* ── POEMS ────────────────────────────────────────────── */
+  .poems {
+    padding: 90px 80px 50px;
+    background: var(--bg);
+  }
+  .poems-head {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    gap: 32px;
+    flex-wrap: wrap;
+  }
+  .btn-outline-dark {
+    background: transparent;
+    color: var(--text);
+    border: 1.5px solid var(--text);
+    padding: 14px 28px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .poems-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  /* ── PULL QUOTE ───────────────────────────────────────── */
+  .quote {
+    background: var(--saffron);
+    padding: 80px 100px;
+    position: relative;
+    overflow: hidden;
+  }
+  .quote-bg {
+    position: absolute;
+    inset: 0;
+    opacity: 0.1;
+  }
+  .quote-inner {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 50px;
+    align-items: center;
+  }
+  .quote-mark {
+    font-size: 220px;
+    color: var(--teal);
+    line-height: 0.7;
+    font-weight: 900;
+  }
+  .quote-text {
+    font-style: italic;
+    font-size: 42px;
+    line-height: 1.35;
+    color: var(--teal-deep);
+    margin: 0;
+    font-weight: 500;
+  }
+  .quote-attr {
+    margin-top: 24px;
+    font-size: 12px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--teal-deep);
+    font-weight: 700;
+  }
+
+  /* ── RESPONSIVE ───────────────────────────────────────── */
+  @media (max-width: 1100px) {
+    .hero { grid-template-columns: 1fr; padding: 0 32px; min-height: auto; }
+    .hero-title { font-size: 72px; }
+    .hero-portrait { display: none; }
+    .intro, .threads, .poems { padding-left: 32px; padding-right: 32px; }
+    .intro-grid, .threads-grid, .poems-grid { grid-template-columns: 1fr; gap: 32px; }
+    .quote { padding: 60px 32px; }
+    .quote-inner { grid-template-columns: 1fr; gap: 16px; }
+    .quote-mark { font-size: 140px; }
+    .quote-text { font-size: 28px; }
+    .threads-grid { grid-template-columns: 1fr; }
+  }
+</style>

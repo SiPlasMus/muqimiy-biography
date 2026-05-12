@@ -1,0 +1,15 @@
+---
+interface Props {
+  size?: number;
+  color?: string;
+  stroke?: number;
+}
+const { size = 120, color = 'currentColor', stroke = 1.1 } = Astro.props;
+---
+<svg width={size} height={size} viewBox="0 0 100 100" fill="none" stroke={color} stroke-width={stroke}>
+  <path d="M0 30 Q 0 0, 30 0 L 50 0 M 0 50 L 0 30" />
+  <path d="M8 30 Q 8 8, 30 8 L 45 8 M 8 45 L 8 30" opacity="0.6" />
+  <circle cx="14" cy="14" r="3" fill={color} stroke="none" />
+  <path d="M22 22 q 6 0 6 6 q 0 6 -6 6 q -6 0 -6 -6 q 0 -6 6 -6 z" />
+  <path d="M28 8 L 36 8 M 42 8 L 50 8" stroke-dasharray="4 3" opacity="0.4" />
+</svg>

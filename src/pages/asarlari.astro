@@ -1,0 +1,223 @@
+---
+import PageShell from '../components/PageShell.astro';
+import SectionTag from '../components/SectionTag.astro';
+import H2 from '../components/H2.astro';
+import PoemModal from '../components/PoemModal.astro';
+
+const works = [
+  { t: 'Tanobchilar', k: 'Hajv · 1877', lines: ["Bo'ldi taajjub qiziq hangomalar,", 'Arz etayin emdi yozib nomalar.', "O'n iki oyda keladur bir tanob,", "O'zgalara rohat-u menga azob."], note: 'Muqimiyni elga taniqli qilgan satirik she\'riy hikoya.' },
+  { t: 'Navbahor', k: "G'azal", lines: ['Ochildi gullar, sabza bo\'ldi bog\'lar!', 'Suhbat aylaylik, kelinglar, jo\'ralar, o\'rtog\'lar!', 'Xush bu mahfilda tiriklik ulfatu ahbob ila,', 'O\'ynashib, gohe tabiatni qilaylik chog\'lar!'], note: 'Eng sara lirik she\'rlaridan biri.' },
+  { t: 'Sayohatnoma', k: 'Sayohat · 4 qism', lines: ['Kelganim ushbu makonga qiladur manga alam,', "Loyiqi tab' yo'q odamki, desam hasratu g'am,", "Gaplashurg'a kishi yo'q ertadin oqshomg'acha ham,", "Kun sovuq, qora chiroq, go'rdek uyu, o'tin kam."], note: "Farg'ona vodiysi sayohatlari taassuroti." },
+  { t: "Maskovchi boy ta'rifida", k: 'Hajv', lines: ['Tag\'i bular yaxshiyu bizlar yamon,', 'El tamizidin hazar et, al\'amon.'], note: "Mahalliy boylarning kirdikorlari ustidan o'tkir hajv." },
+  { t: 'Saylov', k: 'Hajv', lines: ['Pul sochish musobaqasiga aylangan', 'saylov tartiblari haqida o\'tkir hajv —', 'bugungi kunda ham o\'z ahamiyatini', 'yo\'qotmagan asar.'], note: 'Saylovlardagi poraxo\'rlikni fosh etgan.' },
+  { t: 'Hajvi Viktor', k: 'Hajv', lines: ['Voqeai Viktor — chor amaldori', 'kirdikorlarini ochib tashlovchi', 'satirik portret. Tiplar', 'galereyasining yorqin namunasi.'], note: 'Voqeai Viktor — bir nechta turkum she\'rlardan.' },
+  { t: 'Loy', k: 'Yumor', lines: ['Hayron qildi loy —', 'Qo\'qon ko\'chalarining loy-balchig\'i', 'ustidan o\'tkir kulgi.', 'Turmushning qoloq tomonlarini fosh etgan.'], note: 'Mashhur yumoristik she\'rlardan biri.' },
+  { t: 'Pashshalar', k: 'Yumor', lines: ['Ot, arava, loy, pashsha, bezgak —', 'mavzulardagi 30 ga yaqin', 'yumoristik asarlaridan', 'eng o\'tkirlaridan biri.'], note: 'Yumor janrining yorqin namunasi.' },
+  { t: 'Ayrilmasun', k: "G'azal", lines: ['Muhabbat va sadoqat haqida', 'samimiy g\'azal.', 'Xalq qo\'shig\'iga aylangan', 'mashhur asarlardan.'], note: 'Hofizlar tomonidan kuylangan g\'azal.' },
+  { t: "Oshiq bo'libman", k: "G'azal", lines: ['Aqlu hush uchdi boshimdin,', 'ko\'rgali ul oy yuzin —', 'Muqimiyning eng nozik', 'muhabbat she\'rlaridan.'], note: 'Muhabbat lirikasining cho\'qqilaridan.' },
+  { t: "Ko'zlaring", k: "G'azal", lines: ['Yakka bu Farg\'onada,', 'Muncha ham, Ko\'zlaring —', 'barchasi xalq qo\'shig\'iga', 'aylanib ketgan asarlardan.'], note: 'Ashulachilar tomonidan kuylangan.' },
+  { t: 'Dar mazammati zamona', k: 'Hajv', lines: ['O\'lkaga kirib kelayotgan', 'kapitalistik munosabatlar va', 'ularning g\'ayriaxloqiy oqibatlari —', 'shoir tanqid uchini shu yerga qaratgan.'], note: 'Davr ziddiyatlari ko\'zguda.' },
+];
+---
+<PageShell title="Muqimiy — Asarlari" current="asarlari">
+  <section class="header">
+    <div>
+      <SectionTag>III — Asarlari</SectionTag>
+      <H2 size={88} data-anim="hero-h1">
+        Devondan<br />
+        <span class="italic-accent" data-anim="drift">namunalar.</span>
+      </H2>
+    </div>
+    <div class="intro">
+      <p>
+        Quyida Muqimiy ijodidan tanlangan asarlar. Har bir asarni PDF tarzida yuklab olishingiz
+        yoki <strong>“O'zingizni sinab ko'ring”</strong> tugmasi orqali
+        asar yuzasidan mini test ishlashingiz mumkin.
+      </p>
+    </div>
+  </section>
+
+  <section class="grid-wrap">
+    <div class="grid">
+      {works.map((w, i) => (
+        <article
+          class:list={['card', { featured: i === 0 }]}
+          data-reveal
+          data-reveal-delay={Math.min(i * 40, 320)}
+          data-open="poem-modal"
+          data-poem-title={w.t}
+          data-poem-kind={w.k}
+          data-poem-lines={w.lines.join('\n')}
+          data-poem-note={w.note}
+          tabindex="0"
+          role="button"
+          aria-label={`${w.t} — to'liq matnni ochish`}
+        >
+          <div class="card-head">
+            <div class="card-n font-disp">{String(i + 1).padStart(2, '0')}</div>
+            <div class="card-k">{w.k}</div>
+          </div>
+          <h3 class="card-t font-disp">{w.t}</h3>
+          <div class="card-lines">
+            {w.lines.map((l) => <div class="line">{l}</div>)}
+          </div>
+          <p class="card-note">{w.note}</p>
+          <div class="card-actions">
+            <button class="btn-ghost" type="button" onclick="event.stopPropagation()">PDF</button>
+            <button class="btn-primary" type="button">Sinab ko'ring →</button>
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <PoemModal />
+</PageShell>
+
+<style>
+  .italic-accent { font-style: italic; font-weight: 400; color: var(--pomegranate); }
+
+  .header {
+    padding: 90px 80px 50px;
+    background: var(--bg);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+  .intro {
+    font-size: 17px;
+    line-height: 1.8;
+    color: var(--muted);
+    align-self: end;
+  }
+  .intro p { margin: 0; }
+  .intro strong { color: var(--text); }
+
+  .grid-wrap {
+    padding: 20px 80px 80px;
+    background: var(--bg);
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+  }
+  .card {
+    background: var(--card-bg);
+    color: var(--text);
+    padding: 28px 26px 22px;
+    border: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.35s cubic-bezier(0.2, 0.7, 0.2, 1),
+                box-shadow 0.35s cubic-bezier(0.2, 0.7, 0.2, 1),
+                border-color 0.2s;
+    cursor: pointer;
+  }
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 40px -20px rgba(10, 32, 36, 0.22);
+    border-color: var(--saffron);
+  }
+  .card:focus-visible {
+    outline: 2px solid var(--saffron);
+    outline-offset: 4px;
+  }
+  .card.featured {
+    background: var(--teal);
+    color: var(--cream);
+    border-color: var(--teal);
+  }
+  .card.featured:hover { border-color: var(--saffron); }
+  .card-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+  }
+  .card-n {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--saffron-deep);
+  }
+  .featured .card-n { color: var(--saffron); }
+  .card-k {
+    font-size: 10px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 700;
+  }
+  .featured .card-k { color: rgba(244, 234, 212, 0.7); }
+  .card-t {
+    font-size: 30px;
+    margin: 0 0 16px;
+    font-weight: 700;
+    color: var(--teal);
+    line-height: 1.05;
+  }
+  .featured .card-t { color: var(--cream); }
+  .card-lines {
+    border-top: 2px solid var(--rule);
+    padding-top: 16px;
+    margin-bottom: 16px;
+  }
+  .featured .card-lines { border-top-color: var(--saffron); }
+  .line {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-style: italic;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  .card-note {
+    margin: 0 0 18px;
+    font-size: 12px;
+    line-height: 1.65;
+    color: var(--muted);
+  }
+  .featured .card-note { color: rgba(244, 234, 212, 0.65); }
+  .card-actions {
+    margin-top: auto;
+    display: flex;
+    gap: 6px;
+  }
+  .btn-ghost,
+  .btn-primary {
+    padding: 10px 8px;
+    font-size: 9px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .btn-ghost {
+    flex: 1;
+    background: transparent;
+    color: var(--teal);
+    border: 1px solid var(--teal);
+  }
+  .featured .btn-ghost {
+    color: var(--cream);
+    border-color: rgba(244, 234, 212, 0.4);
+  }
+  .btn-primary {
+    flex: 2;
+    background: var(--teal);
+    color: var(--cream);
+    border: none;
+    letter-spacing: 0.16em;
+  }
+  .featured .btn-primary {
+    background: var(--saffron);
+    color: var(--teal-deep);
+  }
+
+  @media (max-width: 1000px) {
+    .header, .grid-wrap { padding-left: 24px; padding-right: 24px; }
+    .header { grid-template-columns: 1fr; gap: 32px; padding-top: 56px; padding-bottom: 32px; }
+    .grid { grid-template-columns: 1fr; }
+  }
+  @media (min-width: 1001px) and (max-width: 1280px) {
+    .grid { grid-template-columns: repeat(2, 1fr); }
+  }
+</style>

@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir *)",
+      "WebFetch(domain:claude.ai)",
+      "Bash(rm -f .DS_Store src/index.ts tsconfig.json package.json .gitignore)",
+      "Bash(rmdir src *)",
+      "Bash(npm install *)",
+      "Bash(npx astro *)",
+      "Bash(curl -s -o /dev/null -w \"/: %{http_code}\\\\n\" http://localhost:4321/)",
+      "Bash(curl -s -o /dev/null -w \"/hayoti: %{http_code}\\\\n\" http://localhost:4321/hayoti)",
+      "Bash(curl -s -o /dev/null -w \"/ijodi: %{http_code}\\\\n\" http://localhost:4321/ijodi)",
+      "Bash(curl -s -o /dev/null -w \"/asarlari: %{http_code}\\\\n\" http://localhost:4321/asarlari)",
+      "Bash(curl -s -o /dev/null -w \"/galereya: %{http_code}\\\\n\" http://localhost:4321/galereya)",
+      "Bash(taskkill /IM node.exe /F)",
+      "PowerShell(Get-Process *)",
+      "Bash(npm run *)"
+    ]
+  }
+}

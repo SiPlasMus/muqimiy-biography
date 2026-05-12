@@ -1,0 +1,54 @@
+---
+// Vanilla theme toggle. No framework runtime.
+---
+<button
+  id="theme-toggle"
+  class="theme-toggle"
+  type="button"
+  aria-label="Toggle theme"
+  title="Tungi rejim"
+>
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <circle cx="12" cy="12" r="4" />
+    <path
+      d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"
+      stroke-linecap="round"
+    />
+  </svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+  </svg>
+</button>
+
+<style>
+  .theme-toggle {
+    background: var(--teal);
+    color: var(--cream);
+    border: none;
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    transition: background-color 0.2s, color 0.2s;
+  }
+  :root[data-theme='dark'] .theme-toggle {
+    background: var(--saffron);
+    color: var(--teal-deep);
+  }
+  .theme-toggle .icon-sun { display: none; }
+  .theme-toggle .icon-moon { display: block; }
+  :root[data-theme='dark'] .theme-toggle .icon-sun { display: block; }
+  :root[data-theme='dark'] .theme-toggle .icon-moon { display: none; }
+</style>
+
+<script is:inline>
+  document.getElementById('theme-toggle')?.addEventListener('click', () => {
+    const root = document.documentElement;
+    const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try {
+      localStorage.setItem('muqimiy-theme', next);
+    } catch (e) {}
+  });
+</script>

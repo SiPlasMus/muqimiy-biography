@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.astro/
+
+# env
+.env
+.env.production
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+
+# editors
+.vscode/
+.DS_Store

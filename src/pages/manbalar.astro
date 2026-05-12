@@ -1,0 +1,222 @@
+---
+import PageShell from '../components/PageShell.astro';
+import SectionTag from '../components/SectionTag.astro';
+import H2 from '../components/H2.astro';
+
+const sources = [
+  { t: 'tafakkur.net', url: 'https://tafakkur.net/muhammad-aminxoja-muqimiy.haqida', k: 'Tarjimai hol', d: "Muhammad Aminxo'ja Muqimiy hayoti va ijodi haqida batafsil maqola." },
+  { t: 'n.ziyouz.com — Tanlangan asarlar (1953)', url: 'https://n.ziyouz.com/books/uzbek_mumtoz_adabiyoti/Muqimiy.%20Tanlangan%20asarlar%20(1953).pdf', k: 'Devon · PDF', d: "Muqimiyning tanlangan asarlari to'plami. 1953 yilgi nashr." },
+  { t: 'arboblar.uz', url: 'https://arboblar.uz/uz/people/mukimi', k: 'Biografiya', d: "Shoir hayoti, ijodi va merosiga oid umumiy ma'lumot." },
+  { t: 'uz.wikipedia.org', url: 'https://uz.wikipedia.org/wiki/Muqimiy', k: 'Ensiklopediya', d: "Vikipediya — to'liq tarjimai hol va asarlar ro'yxati." },
+  { t: 'researchgate.net', url: 'https://www.researchgate.net/publication/377815609_MUQIMIY_HAYOTI_VA_IJODI', k: 'Tadqiqot', d: 'Muqimiy hayoti va ijodi bo\'yicha ilmiy maqola.' },
+  { t: 'cyberleninka.ru — Sayohatnoma tahlili', url: 'https://cyberleninka.ru/article/n/muqimiyning-sayohatnoma-sida-davr-muhit-voqelik-tasviri', k: 'Tadqiqot', d: "“Sayohatnoma”da davr, muhit va voqelik tasviri haqida ilmiy maqola." },
+  { t: 'Lirik asarlarining matniy-qiyosiy tahlili', url: '#', k: 'Dissertatsiya · PDF', d: 'Muqimiyning lirik asarlari matniy-qiyosiy tahlili bo\'yicha tadqiqot.' },
+  { t: "Sputnik O'zbekiston — biografiya", url: 'https://oz.sputniknews.uz/20231025/muqimiy-biografiya-40336201.html', k: 'Maqola', d: "Sputnik O'zbekiston'dagi tarjimai hol maqolasi." },
+];
+
+const books = [
+  { t: 'Devoni Muqimiy', y: '1907', d: 'Vafotidan keyin chop etilgan birinchi devon.' },
+  { t: 'Muqimiy maa hajviyot', y: '1910', d: "Hajviy she'rlarining alohida nashri." },
+  { t: 'Muqimiy bayozi', y: '1930-yillar', d: "G'afur G'ulom tomonidan tuzilgan to'plam." },
+  { t: 'Muqimiy ijodiy merosi (2 jild)', y: '1960', d: "G'.Karimov tuzgan ikki jildlik akademik nashr." },
+];
+---
+<PageShell title="Muqimiy — Manbalar" current="manbalar">
+  <section class="header">
+    <div>
+      <SectionTag>V — Manbalar</SectionTag>
+      <H2 size={88} data-anim="hero-h1">
+        O'qish<br />
+        <span class="italic-accent" data-anim="drift">uchun.</span>
+      </H2>
+    </div>
+    <div class="intro">
+      <p>
+        Muqimiy hayoti va ijodini chuqurroq o'rganmoqchi bo'lganlar uchun veb-manbalar,
+        ilmiy tadqiqotlar va bosma nashrlar.
+      </p>
+    </div>
+  </section>
+
+  <section class="sources-wrap">
+    <div class="sub-label">Veb-manbalar va tadqiqotlar</div>
+    <div class="sources-grid">
+      {sources.map((s, i) => (
+        <a
+          href={s.url}
+          target="_blank"
+          rel="noopener"
+          class="source"
+          data-reveal
+          data-reveal-delay={i * 50}
+        >
+          <div class="source-head">
+            <h3 class="source-t font-disp">{s.t}</h3>
+            <svg width="20" height="20" viewBox="0 0 16 16" fill="none" stroke="var(--saffron-deep)" stroke-width="1.5">
+              <path d="M3 13L13 3M13 3H6M13 3V10" stroke-linecap="round" />
+            </svg>
+          </div>
+          <div class="source-k">{s.k}</div>
+          <p class="source-d">{s.d}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section class="books">
+    <div class="books-label">Bosma nashrlar</div>
+    <h2 class="books-h2 font-disp">
+      Asosiy <span class="italic-light">kitoblar.</span>
+    </h2>
+    <div class="books-grid">
+      {books.map((b, i) => (
+        <div class="book" data-reveal data-reveal-delay={i * 80}>
+          <div class="book-y font-disp">{b.y}</div>
+          <h3 class="book-t font-disp">{b.t}</h3>
+          <p class="book-d">{b.d}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+</PageShell>
+
+<style>
+  .italic-accent { font-style: italic; font-weight: 400; color: var(--pomegranate); }
+  .italic-light { font-style: italic; font-weight: 400; color: var(--saffron); }
+
+  .header {
+    padding: 90px 80px 50px;
+    background: var(--bg);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+  .intro {
+    font-size: 17px;
+    line-height: 1.8;
+    color: var(--muted);
+    align-self: end;
+  }
+  .intro p { margin: 0; }
+
+  .sources-wrap {
+    padding: 20px 80px 30px;
+    background: var(--bg);
+  }
+  .sub-label {
+    font-size: 11px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--saffron-deep);
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  .sources-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  .source {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    padding: 24px 28px;
+    display: block;
+    text-decoration: none;
+    color: var(--text);
+    transition: border-color 0.2s, transform 0.3s cubic-bezier(0.2, 0.7, 0.2, 1),
+                box-shadow 0.3s cubic-bezier(0.2, 0.7, 0.2, 1);
+  }
+  .source:hover {
+    border-color: var(--saffron);
+    transform: translateY(-3px);
+    box-shadow: 0 14px 32px -18px rgba(10, 32, 36, 0.22);
+  }
+  .source :global(svg) {
+    transition: transform 0.3s cubic-bezier(0.2, 0.7, 0.2, 1);
+  }
+  .source:hover :global(svg) {
+    transform: translate(4px, -4px);
+  }
+  .source-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    gap: 16px;
+  }
+  .source-t {
+    font-size: 24px;
+    margin: 0;
+    font-weight: 700;
+    color: var(--teal);
+    line-height: 1.2;
+  }
+  .source-k {
+    font-size: 10px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--saffron-deep);
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .source-d {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--muted);
+  }
+
+  .books {
+    padding: 60px 80px;
+    background: var(--teal-deep);
+    color: var(--cream);
+  }
+  .books-label {
+    font-size: 11px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--saffron);
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  .books-h2 {
+    font-size: 56px;
+    margin: 0 0 40px;
+    font-weight: 900;
+    line-height: 1;
+  }
+  .books-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+  }
+  .book {
+    border-top: 2px solid var(--saffron);
+    padding-top: 20px;
+  }
+  .book-y {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--saffron);
+    margin-bottom: 6px;
+  }
+  .book-t {
+    font-size: 22px;
+    margin: 0 0 10px;
+    font-weight: 700;
+  }
+  .book-d {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.65;
+    color: rgba(244, 234, 212, 0.7);
+  }
+
+  @media (max-width: 1000px) {
+    .header, .sources-wrap, .books { padding-left: 24px; padding-right: 24px; }
+    .header { grid-template-columns: 1fr; gap: 32px; padding-top: 56px; padding-bottom: 32px; }
+    .sources-grid { grid-template-columns: 1fr; }
+    .books-grid { grid-template-columns: repeat(2, 1fr); }
+    .books-h2 { font-size: 36px; }
+  }
+</style>

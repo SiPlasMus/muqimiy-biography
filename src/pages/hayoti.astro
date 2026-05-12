@@ -1,0 +1,231 @@
+---
+import PageShell from '../components/PageShell.astro';
+import SectionTag from '../components/SectionTag.astro';
+import H2 from '../components/H2.astro';
+
+const events = [
+  { y: '1850', t: "Qo'qonda tug'ilish", d: "Bekvachcha mahallasida novvoy Mirzaxo'janing oilasida tug'ildi. Onasi Xumorbibi — xo'jandlik, so'zga usta ayol." },
+  { y: '1864', t: 'Mohlaroyim madrasasi', d: "Nodira tomonidan qurdirilgan Qo'qon madrasasida dastlabki ta'lim. Onasi she'riyatga ixlosini uyg'otdi." },
+  { y: '1875', t: 'Buxoroga safar', d: 'Buxoro madrasalaridan birida o\'qishni davom ettiradi. Sharq mumtoz adabiyotini chuqur o\'rganadi.' },
+  { y: '1876', t: "Qo'qonga qaytish", d: 'Yer qurilishi mahkamasiga mirzalik vazifasiga ishga kiradi.' },
+  { y: '1877', t: "“Tanobchilar” satirasi", d: "Yer o'lchovchi amaldorlarning hiyla-nayranglarini ko'rib, mashhur hajviyasini yozadi. Bu uni elga taniqli hajvgo'y qiladi.", highlight: true },
+  { y: '1885', t: 'Otasining vafoti', d: "Moddiy ahvol og'irlashadi. Hazrat madrasasining kichik hujrasiga ko'chib o'tadi — umrining oxirigacha shu yerda yashadi." },
+  { y: '1887', t: 'Toshkent safari', d: "Almaiy, Nodim Namangoniy, Karimbek Kamiy bilan tanishadi. Toshkent madaniy hayoti bilan yaqindan tanishadi." },
+  { y: '1892', t: 'Yana Toshkent', d: "Toshkent bilan adabiy aloqani umrining oxirigacha davom ettiradi. Sayohatlari taassurotlari “Sayohatnoma”ga aylanadi." },
+  { y: '1903', t: 'Vafoti — 25-may', d: 'Qashshoqlik va kasallikdan vafot etadi. 53 yoshida. Qo\'qonda dafn etildi.', highlight: true },
+];
+---
+<PageShell title="Muqimiy — Hayoti" current="hayoti">
+  <section class="header">
+    <div>
+      <SectionTag>I — Hayoti</SectionTag>
+      <H2 size={88} data-anim="hero-h1">
+        Bekvachchadan<br />
+        <span class="italic-accent" data-anim="drift">Hazratgacha.</span>
+      </H2>
+    </div>
+    <div class="intro">
+      <p>
+        Qo'qonda tug'ilgan, butun umri shu shaharda kechgan, qashshoqlikda yashab,
+        ammo so'zga benihoya boy meros qoldirgan shoirning hayot yo'li.
+      </p>
+      <div class="stats">
+        <div>
+          <div class="stat-n font-disp">53</div>
+          <div class="stat-l">yil umr</div>
+        </div>
+        <div>
+          <div class="stat-n font-disp">3</div>
+          <div class="stat-l">Toshkent safari</div>
+        </div>
+        <div>
+          <div class="stat-n font-disp">10K+</div>
+          <div class="stat-l">misra meros</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="timeline">
+    <div class="line"></div>
+    {events.map((e, i) => (
+      <div class="row" data-reveal data-reveal-delay={i * 60}>
+        <div class="year font-disp">{e.y}</div>
+        <div class="content">
+          <div class:list={['marker', { highlight: e.highlight }]}></div>
+          <h3 class="event-title font-disp">{e.t}</h3>
+          <p class="event-desc">{e.d}</p>
+        </div>
+      </div>
+    ))}
+  </section>
+
+  <section class="pull-quote">
+    <div class="pq-grid" data-reveal>
+      <div>
+        <SectionTag>So'zboshi</SectionTag>
+        <h3 class="pq-title font-disp">Qashshoqlik, lekin so'zda boylik.</h3>
+        <p class="pq-text">
+          Otasining vafotidan keyin Hazrat madrasasining kichik hujrasiga ko'chgan Muqimiy
+          umrining oxirigacha shu yerda yashadi. Moddiy qiyinchilik, muhtojlik, ruhiy azoblar
+          sog'lig'iga salbiy ta'sir qildi. Ammo aynan shu davrda yaratilgan asarlari adabiyotning oltin merosiga aylandi.
+        </p>
+      </div>
+      <blockquote class="pq-quote font-disp">
+        “Kun sovuq, qora chiroq,<br />go'rdek uyu, o'tin kam.<br />Chiqsam eshikka qilur<br />to'rg'ayi chuldir-chuldir.”
+        <div class="pq-attr">— Sayohatnoma'dan</div>
+      </blockquote>
+    </div>
+  </section>
+</PageShell>
+
+<style>
+  .italic-accent {
+    font-style: italic;
+    font-weight: 400;
+    color: var(--pomegranate);
+  }
+  .header {
+    padding: 90px 80px 70px;
+    background: var(--bg);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+  .intro {
+    font-size: 17px;
+    line-height: 1.8;
+    color: var(--muted);
+    align-self: end;
+  }
+  .intro p { margin: 0 0 18px; }
+  .stats {
+    display: flex;
+    gap: 36px;
+    margin-top: 24px;
+    flex-wrap: wrap;
+  }
+  .stat-n {
+    font-size: 44px;
+    color: var(--saffron);
+    font-weight: 700;
+    line-height: 1;
+  }
+  .stat-l {
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    margin-top: 6px;
+    color: var(--muted);
+  }
+
+  .timeline {
+    padding: 40px 80px 80px;
+    background: var(--bg);
+    position: relative;
+  }
+  .line {
+    position: absolute;
+    left: 180px;
+    top: 40px;
+    bottom: 80px;
+    width: 2px;
+    background: var(--rule);
+  }
+  .row {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 60px;
+    padding-bottom: 50px;
+    position: relative;
+  }
+  .year {
+    text-align: right;
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--saffron);
+    line-height: 1;
+  }
+  .content {
+    position: relative;
+  }
+  .marker {
+    position: absolute;
+    left: -38px;
+    top: 14px;
+    width: 18px;
+    height: 18px;
+    background: var(--saffron);
+    transform: rotate(45deg);
+    border: 3px solid var(--bg);
+  }
+  .marker.highlight { background: var(--pomegranate); }
+  .event-title {
+    font-size: 32px;
+    margin: 0 0 10px;
+    font-weight: 700;
+    color: var(--text);
+  }
+  .event-desc {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--muted);
+    max-width: 640px;
+  }
+
+  .pull-quote {
+    background: var(--teal-deep);
+    color: var(--cream);
+    padding: 70px 100px;
+  }
+  .pq-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+  }
+  .pq-title {
+    font-size: 48px;
+    margin: 0 0 18px;
+    font-weight: 700;
+    color: var(--cream);
+    line-height: 1.15;
+  }
+  .pq-text {
+    font-size: 16px;
+    line-height: 1.8;
+    color: rgba(244, 234, 212, 0.78);
+    margin: 0;
+  }
+  .pq-quote {
+    font-style: italic;
+    font-size: 28px;
+    line-height: 1.5;
+    color: var(--saffron);
+    margin: 0;
+    padding-left: 40px;
+    border-left: 3px solid var(--saffron);
+  }
+  .pq-attr {
+    margin-top: 18px;
+    font-style: normal;
+    font-size: 11px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: rgba(244, 234, 212, 0.6);
+    font-weight: 700;
+  }
+
+  @media (max-width: 1000px) {
+    .header { grid-template-columns: 1fr; padding: 60px 24px; gap: 32px; }
+    .timeline { padding: 20px 24px 40px; }
+    .line { left: 100px; }
+    .row { grid-template-columns: 80px 1fr; gap: 28px; }
+    .year { font-size: 28px; }
+    .pull-quote { padding: 48px 24px; }
+    .pq-grid { grid-template-columns: 1fr; gap: 32px; }
+    .pq-title { font-size: 32px; }
+    .pq-quote { font-size: 22px; padding-left: 24px; }
+  }
+</style>

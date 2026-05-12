@@ -1,0 +1,56 @@
+---
+import '../styles/global.css';
+import { ViewTransitions } from 'astro:transitions';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "XIX asr o'zbek mumtoz adabiyotining yirik namoyandasi" } = Astro.props;
+---
+
+<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script is:inline>
+      // Set theme + js class before paint to avoid flash, and keep
+      // them in sync across Astro View Transitions (which otherwise
+      // wipe <html> attributes from the incoming page).
+      (function () {
+        function readTheme() {
+          try {
+            return localStorage.getItem('muqimiy-theme') === 'dark' ? 'dark' : 'light';
+          } catch (e) {
+            return 'light';
+          }
+        }
+        function apply(root) {
+          root.setAttribute('data-theme', readTheme());
+          root.classList.add('js');
+        }
+        apply(document.documentElement);
+        document.addEventListener('astro:before-swap', function (e) {
+          apply(e.newDocument.documentElement);
+        });
+      })();
+    </script>
+    <ViewTransitions />
+  </head>
+  <body>
+    <slot />
+    <script>
+      import '../scripts/animations';
+    </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+---
+interface Props {
+  size?: number;
+  color?: string;
+  stroke?: number;
+}
+const { size = 200, color = 'currentColor', stroke = 1 } = Astro.props;
+
+const radial = Array.from({ length: 12 }, (_, i) => i * 30);
+const stars = Array.from({ length: 8 }, (_, i) => i * 45);
+---
+<svg width={size} height={size} viewBox="-100 -100 200 200" fill="none" stroke={color} stroke-width={stroke}>
+  <circle r="92" />
+  <circle r="78" />
+  <circle r="58" />
+  <g>
+    {radial.map((deg) => (
+      <line x1="0" y1="58" x2="0" y2="92" transform={`rotate(${deg})`} />
+    ))}
+  </g>
+  <g>
+    {stars.map((deg) => (
+      <polygon
+        points="0,-44 8,-8 44,0 8,8 0,44 -8,8 -44,0 -8,-8"
+        transform={`rotate(${deg})`}
+        opacity="0.5"
+      />
+    ))}
+  </g>
+  <polygon points="0,-32 9,-9 32,0 9,9 0,32 -9,9 -32,0 -9,-9" />
+  <circle r="10" />
+</svg>

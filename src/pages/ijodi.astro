@@ -1,0 +1,309 @@
+---
+import PageShell from '../components/PageShell.astro';
+import SectionTag from '../components/SectionTag.astro';
+import H2 from '../components/H2.astro';
+import Tile from '../components/ornaments/Tile.astro';
+
+const threads = [
+  {
+    n: '01',
+    t: 'Lirika',
+    d: "Muhabbat, do'stlik, sadoqat, samimiyat, vafodorlik, sabot va matonat ulug'langan. Yuzlab she'rlari xalq qo'shig'iga aylangan.",
+    works: ['Navbahor', "Oshiq bo'libman", 'Ayrilmasun', "Ko'zlaring", "Yolg'uz", 'Aqlu hush…'],
+  },
+  {
+    n: '02',
+    t: 'Hajviyot — satira',
+    d: "Chor amaldorlari va boylarning kirdikorlari ochib tashlangan. Mustamlakachilik azobi, jamiyatdagi illatlar tanqid qilingan.",
+    works: ['Tanobchilar', 'Saylov', 'Dar mazammati zamona', 'Maskovchi boy', 'Hajvi Viktor', "To'y"],
+  },
+  {
+    n: '03',
+    t: 'Hajviyot — yumor',
+    d: "Turmushning qoloq va chirkin tomonlari, ijtimoiy ongdagi nuqsonlar ustidan kulgan. 30 ga yaqin yumoristik asar.",
+    works: ['Loy', 'Pashshalar', 'Bezgak', 'Ot', "Ko'samen", 'Devonamen', 'Burun'],
+  },
+  {
+    n: '04',
+    t: 'Sayohatnoma',
+    d: "Farg'ona vodiysi bo'ylab sayohatlar taassurotlari. 4 qismli, o'ynoqi vaznli, 4 misrali bandlardan iborat asar.",
+    works: ['I qism — Sayohatnoma', 'II qism', 'III qism', 'IV qism'],
+  },
+];
+
+const masters = [
+  { n: 'Navoiy', d: "G'azal an'analari, til boyligi va san'atining cho'qqisi." },
+  { n: 'Jomiy', d: "Muqimiy o'ziga ustoz bildi. Forsiy nazm mahorati." },
+  { n: 'Nizomiy', d: 'Doston yozish, hikoyat tuzilishi.' },
+  { n: 'Fuzuliy', d: 'Muhabbat lirikasining hassosligi, ohorli misralar.' },
+];
+---
+<PageShell title="Muqimiy — Ijodi" current="ijodi">
+  <section class="header">
+    <div>
+      <SectionTag>II — Ijodi</SectionTag>
+      <H2 size={88} data-anim="hero-h1">
+        To'rt<br />
+        <span class="italic-accent" data-anim="drift">ijodiy</span><br />
+        yo'nalish.
+      </H2>
+    </div>
+    <div class="intro">
+      <p>
+        Muqimiy adabiy merosi <strong>10 ming misradan</strong> iborat — lirika,
+        hajviyot, sayohatnoma va maktublardan tashkil topgan. Ijodining ilk davrida shaklbozlik
+        unsurlari uchrasa-da, tez orada bu an'anadan voz kechib, jamiyat illatlariga tanqidiy nazar bilan qaragan.
+      </p>
+    </div>
+  </section>
+
+  <section class="threads">
+    {threads.map((t, i) => (
+      <div class="thread" data-reveal data-reveal-delay={i * 80}>
+        <div class="thread-head">
+          <div class="thread-n font-disp">{t.n}</div>
+          <Tile size={28} color="var(--saffron)" opacity={0.7} />
+        </div>
+        <h3 class="thread-t font-disp">{t.t}</h3>
+        <p class="thread-d">{t.d}</p>
+        <div class="works">
+          <div class="works-label">Mashhur asarlari</div>
+          <div class="works-tags">
+            {t.works.map((w) => <span class="tag font-disp">{w}</span>)}
+          </div>
+        </div>
+      </div>
+    ))}
+  </section>
+
+  <section class="masters">
+    <div class="masters-head">
+      <div>
+        <div class="masters-kicker">Ustozlar</div>
+        <h2 class="masters-h2 font-disp">
+          Sharq mumtoz<br />
+          <span class="italic-light">shoirlaridan</span> o'rgangan.
+        </h2>
+      </div>
+      <p class="masters-intro">
+        Ularning g'azallariga muxammaslar bog'lagan. O'zbek va fors mumtoz shoirlari an'analarini davom ettirgan.
+      </p>
+    </div>
+    <div class="masters-grid">
+      {masters.map((m, i) => (
+        <div data-reveal data-reveal-delay={i * 80}>
+          <div class="master-n font-disp">{String(i + 1).padStart(2, '0')}</div>
+          <h3 class="master-name font-disp">{m.n}</h3>
+          <p class="master-d">{m.d}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="movement">
+    <div>
+      <SectionTag>Adabiy harakat</SectionTag>
+      <H2 size={56}>
+        Demokratik<br />
+        <span class="italic-accent">yo'nalish</span> asoschisi.
+      </H2>
+    </div>
+    <div class="movement-text">
+      <p>
+        O'zbek adabiyotida demokratik yo'nalishning vujudga kelishi Muqimiy nomi bilan bog'liq.
+        U boshchiligida <strong>Furqat, Zavqiy, Avaz, Komil</strong> kabi ilg'or
+        fikrli shoirlar adabiyot tarixida yangi sahifa ochdilar.
+      </p>
+      <p>
+        Toshkentda Almaiy, Nodim Namangoniy, Karimbek Kamiy bilan yaqin ijodiy aloqada bo'ldi.
+        Muqimiy o'zbek adabiyotiga <strong>ishchilar mavzusini</strong> olib kirdi,
+        tiplar galereyasini yaratdi.
+      </p>
+    </div>
+  </section>
+</PageShell>
+
+<style>
+  .italic-accent { font-style: italic; font-weight: 400; color: var(--pomegranate); }
+  .italic-light { font-style: italic; font-weight: 400; color: var(--saffron); }
+
+  .header {
+    padding: 90px 80px 50px;
+    background: var(--bg);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+  .intro {
+    font-size: 17px;
+    line-height: 1.8;
+    color: var(--muted);
+    align-self: end;
+  }
+  .intro p { margin: 0; }
+  .intro strong { color: var(--text); }
+
+  .threads {
+    padding: 40px 80px 80px;
+    background: var(--bg);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4px;
+  }
+  .thread {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    padding: 40px 36px;
+    transition: transform 0.35s cubic-bezier(0.2, 0.7, 0.2, 1),
+                box-shadow 0.35s cubic-bezier(0.2, 0.7, 0.2, 1),
+                border-color 0.2s;
+  }
+  .thread:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 40px -20px rgba(10, 32, 36, 0.22);
+    border-color: var(--saffron);
+  }
+  .tag {
+    transition: background-color 0.2s, color 0.2s;
+  }
+  .tag:hover {
+    background: var(--teal);
+    color: var(--cream);
+  }
+  .thread-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 18px;
+  }
+  .thread-n {
+    font-size: 14px;
+    color: var(--saffron-deep);
+    font-weight: 700;
+    letter-spacing: 0.32em;
+  }
+  .thread-t {
+    font-size: 44px;
+    margin: 0 0 16px;
+    font-weight: 700;
+    color: var(--teal);
+    line-height: 1.05;
+  }
+  .thread-d {
+    margin: 0 0 22px;
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--muted);
+  }
+  .works {
+    border-top: 1px solid var(--border);
+    padding-top: 18px;
+  }
+  .works-label {
+    font-size: 10px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--saffron-deep);
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+  .works-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .tag {
+    font-size: 14px;
+    font-style: italic;
+    padding: 5px 12px;
+    border: 1px solid var(--teal);
+    color: var(--teal);
+  }
+
+  .masters {
+    background: var(--teal-deep);
+    color: var(--cream);
+    padding: 80px;
+  }
+  .masters-head {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    gap: 32px;
+    flex-wrap: wrap;
+  }
+  .masters-kicker {
+    font-size: 11px;
+    letter-spacing: 0.32em;
+    color: var(--saffron);
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+  .masters-h2 {
+    font-size: 56px;
+    margin: 0;
+    font-weight: 900;
+    line-height: 1;
+  }
+  .masters-intro {
+    max-width: 380px;
+    font-size: 15px;
+    line-height: 1.7;
+    color: rgba(244, 234, 212, 0.7);
+    margin: 0;
+  }
+  .masters-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+  }
+  .master-n {
+    width: 60px;
+    height: 60px;
+    background: var(--saffron);
+    color: var(--teal-deep);
+    display: grid;
+    place-items: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  .master-name {
+    font-size: 34px;
+    margin: 0 0 12px;
+    font-weight: 700;
+  }
+  .master-d {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.7;
+    color: rgba(244, 234, 212, 0.7);
+  }
+
+  .movement {
+    padding: 80px;
+    background: var(--bg);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+  }
+  .movement-text {
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--muted);
+  }
+  .movement-text p { margin: 0 0 16px; }
+  .movement-text p:last-child { margin: 0; }
+  .movement-text strong { color: var(--text); }
+
+  @media (max-width: 1000px) {
+    .header, .threads, .masters, .movement { padding-left: 24px; padding-right: 24px; }
+    .header, .movement { grid-template-columns: 1fr; gap: 32px; }
+    .threads { grid-template-columns: 1fr; }
+    .masters-grid { grid-template-columns: repeat(2, 1fr); }
+    .masters-h2 { font-size: 36px; }
+  }
+</style>

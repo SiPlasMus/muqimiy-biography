@@ -1,0 +1,80 @@
+---
+interface Palette {
+  bg?: string;
+  skin?: string;
+  beard?: string;
+  robe?: string;
+  turban?: string;
+  accent?: string;
+}
+interface Props {
+  size?: number;
+  palette?: Palette;
+}
+const { size = 340, palette = {} } = Astro.props;
+const p: Required<Palette> = {
+  bg: palette.bg ?? '#1a4f57',
+  skin: palette.skin ?? '#dca06a',
+  beard: palette.beard ?? '#1a0d05',
+  robe: palette.robe ?? '#a86811',
+  turban: palette.turban ?? '#f4ead4',
+  accent: palette.accent ?? '#a43a2c',
+};
+const height = size * 1.15;
+---
+<svg width={size} height={height} viewBox="0 0 240 280" style="display:block">
+  <rect width="240" height="280" fill={p.bg} />
+  <circle cx="120" cy="100" r="78" fill="none" stroke={p.accent} stroke-width="0.6" opacity="0.6" />
+  <circle cx="120" cy="100" r="72" fill="none" stroke={p.turban} stroke-width="0.4" opacity="0.4" />
+  <path d="M 30 280 Q 30 200, 80 180 L 160 180 Q 210 200, 210 280 Z" fill={p.robe} />
+  <path d="M 80 180 L 120 230 L 160 180 Z" fill={p.turban} opacity="0.95" />
+  <path d="M 110 230 L 120 280 L 130 230 Z" fill={p.accent} />
+  <rect x="105" y="160" width="30" height="30" fill={p.skin} />
+  <ellipse cx="120" cy="118" rx="40" ry="48" fill={p.skin} />
+  <path
+    d="M 88 130 Q 88 175, 120 188 Q 152 175, 152 130 Q 152 158, 120 168 Q 88 158, 88 130 Z"
+    fill={p.beard}
+  />
+  <path d="M 92 138 Q 100 175, 120 182 Q 140 175, 148 138" fill={p.beard} opacity="0.95" />
+  <path
+    d="M 100 130 Q 110 138, 120 132 Q 130 138, 140 130"
+    stroke={p.beard}
+    stroke-width="3"
+    fill="none"
+    stroke-linecap="round"
+  />
+  <ellipse cx="106" cy="112" rx="5" ry="3" fill={p.beard} />
+  <ellipse cx="134" cy="112" rx="5" ry="3" fill={p.beard} />
+  <path d="M 96 105 Q 106 100, 116 105" stroke={p.beard} stroke-width="1.4" fill="none" />
+  <path d="M 124 105 Q 134 100, 144 105" stroke={p.beard} stroke-width="1.4" fill="none" />
+  <path
+    d="M 120 114 Q 116 124, 118 128 Q 120 130, 122 128 Q 124 124, 120 114"
+    stroke={p.beard}
+    stroke-width="1"
+    fill="none"
+    opacity="0.5"
+  />
+  <path
+    d="M 65 90 Q 65 50, 120 48 Q 175 50, 175 90 Q 175 100, 168 102 L 72 102 Q 65 100, 65 90 Z"
+    fill={p.turban}
+  />
+  <path
+    d="M 72 85 Q 80 70, 120 68 Q 160 70, 168 85"
+    stroke={p.accent}
+    stroke-width="1"
+    fill="none"
+    opacity="0.5"
+  />
+  <path
+    d="M 72 92 Q 90 78, 120 76 Q 150 78, 168 92"
+    stroke={p.accent}
+    stroke-width="1"
+    fill="none"
+    opacity="0.3"
+  />
+  <circle cx="120" cy="78" r="5" fill={p.accent} />
+  <circle cx="120" cy="78" r="2" fill={p.turban} />
+  <path d="M 80 200 L 120 230 L 160 200" stroke={p.accent} stroke-width="1" fill="none" />
+  <circle cx="100" cy="210" r="2" fill={p.accent} />
+  <circle cx="140" cy="210" r="2" fill={p.accent} />
+</svg>

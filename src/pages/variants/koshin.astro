@@ -1,0 +1,616 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Tile from '../../components/ornaments/Tile.astro';
+import Medallion from '../../components/ornaments/Medallion.astro';
+import Portrait from '../../components/ornaments/Portrait.astro';
+
+const c = {
+  teal: '#0e3f44',
+  tealDeep: '#072b30',
+  tealMid: '#155057',
+  saffron: '#d68b1f',
+  saffronDeep: '#a86811',
+  cream: '#f4ead4',
+  creamDark: '#e6d8b4',
+  pomegranate: '#a43a2c',
+  text: '#0a2024',
+  textLight: '#f4ead4',
+};
+
+const heroPattern = `url("data:image/svg+xml;utf8,${encodeURIComponent(
+  `<svg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80' fill='none' stroke='%23d68b1f' stroke-width='1'><polygon points='40,4 50,30 76,40 50,50 40,76 30,50 4,40 30,30'/><polygon points='40,4 50,30 76,40 50,50 40,76 30,50 4,40 30,30' transform='rotate(22.5 40 40)'/><circle cx='40' cy='40' r='6'/></svg>`,
+)}")`;
+
+const portraitPattern = `url("data:image/svg+xml;utf8,${encodeURIComponent(
+  `<svg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80' fill='none' stroke='%23f4ead4' stroke-width='1'><polygon points='40,4 50,30 76,40 50,50 40,76 30,50 4,40 30,30'/></svg>`,
+)}")`;
+
+const quotePattern = `url("data:image/svg+xml;utf8,${encodeURIComponent(
+  `<svg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60' fill='none' stroke='%23072b30' stroke-width='1'><polygon points='30,3 38,22 57,30 38,38 30,57 22,38 3,30 22,22'/></svg>`,
+)}")`;
+
+const timeline = [
+  { y: '1850', t: "Qo'qonda tug'ildi" },
+  { y: '1864', t: 'Madrasada tahsil' },
+  { y: '1875', t: 'Buxoroga safar' },
+  { y: '1877', t: '"Tanobchilar"', highlight: true },
+  { y: '1885', t: 'Hazrat hujrasi' },
+  { y: '1887', t: 'Toshkent safari' },
+  { y: '1903', t: 'Vafoti', highlight: true },
+];
+
+const threads = [
+  { n: '01', t: 'Lirika', d: "Muhabbat, do'stlik, sadoqat va vafodorlik. Yuzlab she'rlar xalq qo'shig'iga aylangan." },
+  { n: '02', t: 'Hajviyot', d: 'Tanobchilar, Saylov, Maskovchi boy — chor amaldorlari va boylar kirdikorlarini fosh etgan satira.' },
+  { n: '03', t: 'Sayohatnoma', d: "Farg'ona vodiysi bo'ylab sayohatlar. O'ynoqi vaznli, 4 misrali bandlardan iborat asar." },
+];
+
+const poems = [
+  {
+    n: '01', title: 'Tanobchilar', kind: 'Hajv · 1877', featured: true,
+    lines: ["Bo'ldi taajjub qiziq hangomalar,", 'Arz etayin emdi yozib nomalar.', "O'n iki oyda keladur bir tanob,", "O'zgalara rohat-u menga azob."],
+  },
+  {
+    n: '02', title: 'Navbahor', kind: "G'azal",
+    lines: ["Ochildi gullar, sabza bo'ldi bog'lar!", "Suhbat aylaylik, kelinglar, jo'ralar, o'rtog'lar!", 'Xush bu mahfilda tiriklik ulfatu ahbob ila,', "O'ynashib, gohe tabiatni qilaylik chog'lar!"],
+  },
+  {
+    n: '03', title: 'Sayohatnoma', kind: 'Sayohat',
+    lines: ['Kelganim ushbu makonga qiladur manga alam,', "Loyiqi tab' yo'q odamki, desam hasratu g'am,", "Gaplashurg'a kishi yo'q ertadin oqshomg'acha ham,", "Kun sovuq, qora chiroq, go'rdek uyu, o'tin kam."],
+  },
+];
+---
+<Layout title="Variant B · Koshin — Buxoro">
+  <div class="koshin" style={`background:${c.cream};color:${c.text}`}>
+    <nav class="nav" style={`border-color:${c.creamDark};background:${c.cream}`}>
+      <div class="brand">
+        <div class="brand-mark" style={`background:${c.teal}`}><Tile size={28} color={c.saffron} /></div>
+        <div class="brand-name" style={`color:${c.teal}`}>Muqimiy</div>
+        <div class="brand-dates" style={`color:${c.saffronDeep}`}>1850 — 1903</div>
+      </div>
+      <div class="links">
+        {['Hayoti', 'Ijodi', 'Asarlari', 'Iqtibos', 'Manbalar'].map((s, i) => (
+          <a class:list={[{ active: i === 0 }]} style={i === 0 ? `color:${c.pomegranate};border-color:${c.pomegranate}` : `color:${c.text}`}>{s}</a>
+        ))}
+      </div>
+      <button class="nav-cta" style={`background:${c.teal};color:${c.cream}`}>Devon ↗</button>
+    </nav>
+
+    <section class="hero" style={`background:${c.teal};color:${c.cream}`}>
+      <div class="hero-bg" style={`background-image:${heroPattern};background-size:80px 80px`}></div>
+      <div class="hero-content">
+        <div class="kicker" style={`border-color:${c.saffron};color:${c.saffron}`}>
+          <Tile size={18} color={c.saffron} />
+          <span>Qo'qon adabiy muhiti</span>
+        </div>
+        <h1 class="hero-title">
+          <span style={`color:${c.saffron}`}>M</span>uhammad<br />
+          Aminxo'ja<br />
+          <span class="italic">Muqimiy.</span>
+        </h1>
+        <p class="hero-lede">
+          XIX asr o'zbek mumtoz adabiyotining yirik namoyandasi. O'tkir
+          hajviy bilan amaldorlar zulmini fosh etgan, samimiy lirikasi
+          xalq qo'shig'iga aylanib ketgan shoir.
+        </p>
+        <div class="stats">
+          {[{ n: '10K+', l: 'Misra' }, { n: '30+', l: 'Hajviy asar' }, { n: '4', l: 'Sayohatnoma' }].map((s) => (
+            <div>
+              <div class="stat-n" style={`color:${c.saffron}`}>{s.n}</div>
+              <div class="stat-l">{s.l}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div class="hero-portrait">
+        <div class="portrait-saffron" style={`background:${c.saffron}`}></div>
+        <div class="portrait-frame" style={`background:${c.tealDeep};border-color:${c.cream}`}>
+          <div class="portrait-img" style={`background:${c.tealMid}`}>
+            <div class="portrait-pattern" style={`background-image:${portraitPattern};background-size:60px 60px`}></div>
+            <Portrait size={340} palette={{ bg: 'transparent', skin: '#dca06a', beard: '#1a0d05', robe: c.saffronDeep, turban: c.cream, accent: c.pomegranate }} />
+          </div>
+          <div class="portrait-meta" style={`background:${c.cream};color:${c.text}`}>
+            <div>
+              <div class="meta-name">Muqimiy</div>
+              <div class="meta-alias" style={`color:${c.tealMid}`}>"Turg'un"</div>
+            </div>
+            <div class="meta-age">
+              <div class="age-n" style={`color:${c.pomegranate}`}>53</div>
+              <div class="age-l" style={`color:${c.tealMid}`}>yil</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="timeline-wrap">
+      <div class="timeline-head">
+        <div>
+          <div class="chapter" style={`color:${c.saffronDeep}`}>I — Hayoti</div>
+          <h2 class="display" style={`color:${c.teal}`}>
+            Bekvachchadan<br />
+            <span class="italic" style={`color:${c.pomegranate}`}>Hazratgacha.</span>
+          </h2>
+        </div>
+        <p class="head-intro" style={`color:${c.tealMid}`}>
+          1850-yili novvoy Mirzaxo'janing oilasida tug'ildi. Onasi Xumorbibi
+          — yosh shoirning she'riyatga muhabbatini uyg'otgan ustozi.
+        </p>
+      </div>
+      <div class="timeline">
+        <div class="tl-line" style={`background:${c.teal}`}></div>
+        {timeline.map((s) => (
+          <div class="tl-cell">
+            <div class="tl-marker" style={`background:${s.highlight ? c.pomegranate : c.saffron};border-color:${c.cream}`}></div>
+            <div class="tl-y" style={`color:${c.teal}`}>{s.y}</div>
+            <div class="tl-t" style={`color:${c.tealMid}`}>{s.t}</div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <section class="ijodi" style={`background:${c.tealDeep};color:${c.cream}`}>
+      <div class="ijodi-medallion" style={`color:${c.saffron}`}><Medallion size={500} color={c.saffron} stroke={1} /></div>
+      <div class="ijodi-inner">
+        <div class="ijodi-head">
+          <div>
+            <div class="chapter" style={`color:${c.saffron}`}>II — Ijodi</div>
+            <h2 class="display" style={`color:${c.cream}`}>
+              Uch ijodiy<br />
+              <span class="italic" style={`color:${c.saffron}`}>tomir.</span>
+            </h2>
+          </div>
+          <p class="head-intro" style={`color:rgba(244,234,212,0.7)`}>
+            Navoiy, Jomiy, Nizomiy va Fuzuliydan o'rgangan. Jomiyni o'ziga ustoz bildi.
+          </p>
+        </div>
+        <div class="threads">
+          {threads.map((t) => (
+            <div class="thread" style={`background:${c.tealMid};border-color:${c.saffron}`}>
+              <div class="thread-head">
+                <div class="thread-n" style={`color:${c.saffron}`}>{t.n}</div>
+                <Tile size={32} color={c.saffron} opacity={0.6} />
+              </div>
+              <h3 class="thread-t">{t.t}</h3>
+              <p class="thread-d">{t.d}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="poems-wrap">
+      <div class="poems-head">
+        <div>
+          <div class="chapter" style={`color:${c.saffronDeep}`}>III — Asarlardan namunalar</div>
+          <h2 class="display" style={`color:${c.teal}`}>
+            She'rlardan <span class="italic" style={`color:${c.pomegranate}`}>misol.</span>
+          </h2>
+        </div>
+        <button class="see-all" style={`color:${c.teal};border-color:${c.teal}`}>Devondan barchasi →</button>
+      </div>
+      <div class="poems-grid">
+        {poems.map((p) => (
+          <article
+            class:list={['poem', { featured: p.featured }]}
+            style={p.featured ? `background:${c.teal};color:${c.cream};border-color:${c.teal}` : `background:#fff;color:${c.text};border-color:${c.creamDark}`}
+          >
+            <div class="poem-head">
+              <div class="poem-n" style={`color:${p.featured ? c.saffron : c.saffronDeep}`}>{p.n}</div>
+              <div class="poem-kind" style={`color:${p.featured ? 'rgba(244,234,212,0.7)' : c.tealMid}`}>{p.kind}</div>
+            </div>
+            <h3 class="poem-t" style={`color:${p.featured ? c.cream : c.teal}`}>{p.title}</h3>
+            <div class="poem-lines" style={`border-color:${p.featured ? c.saffron : c.creamDark}`}>
+              {p.lines.map((l) => <div class="poem-line" style={`color:${p.featured ? c.cream : c.text}`}>{l}</div>)}
+            </div>
+            <div class="poem-actions">
+              <button class="ghost" style={p.featured ? `color:${c.cream};border-color:rgba(244,234,212,0.4)` : `color:${c.teal};border-color:${c.teal}`}>PDF</button>
+              <button class="primary" style={p.featured ? `background:${c.saffron};color:${c.tealDeep}` : `background:${c.teal};color:${c.cream}`}>O'zingizni sinab ko'ring →</button>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <section class="quote-band" style={`background:${c.saffron}`}>
+      <div class="quote-bg" style={`background-image:${quotePattern};background-size:60px 60px`}></div>
+      <div class="quote-inner">
+        <div class="quote-mark" style={`color:${c.teal}`}>“</div>
+        <div>
+          <blockquote class="quote-text" style={`color:${c.tealDeep}`}>
+            Hayfkim, ahli tamiz ushbu mahalda xor ekan,<br />
+            Oldilar har yerda bulbul oshiyonin zog'lar.
+          </blockquote>
+          <div class="quote-attr" style={`color:${c.tealDeep}`}>— Navbahor g'azalidan</div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" style={`background:${c.tealDeep};color:${c.cream}`}>
+      <div class="footer-row">
+        <div>
+          <div class="footer-brand">Muqimiy</div>
+          <div class="footer-meta" style={`color:${c.saffron}`}>1850 — 1903 · Qo'qon</div>
+        </div>
+        <div class="footer-cols">
+          <div>
+            <div class="footer-h" style={`color:${c.saffron}`}>Manbalar</div>
+            <div class="footer-items">tafakkur.net<br />n.ziyouz.com</div>
+          </div>
+          <div>
+            <div class="footer-h" style={`color:${c.saffron}`}>Tadqiqotlar</div>
+            <div class="footer-items">researchgate.net<br />cyberleninka.ru</div>
+          </div>
+          <div>
+            <div class="footer-h" style={`color:${c.saffron}`}>Tarjimai hol</div>
+            <div class="footer-items">arboblar.uz</div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">© 2026 Muqimiy sayti. Mehnat va hurmat ila tuzilgan.</div>
+    </footer>
+  </div>
+</Layout>
+
+<style>
+  .koshin {
+    width: 1280px;
+    max-width: 100%;
+    min-height: 3200px;
+    margin: 0 auto;
+    font-family: 'Manrope', system-ui, sans-serif;
+    position: relative;
+    overflow: hidden;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 60px;
+    border-bottom: 1px solid;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+  }
+  .brand { display: flex; align-items: center; gap: 14px; }
+  .brand-mark { width: 36px; height: 36px; display: grid; place-items: center; }
+  .brand-name {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 22px;
+    font-weight: 700;
+  }
+  .brand-dates {
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    margin-left: 4px;
+  }
+  .links { display: flex; gap: 32px; font-size: 13px; font-weight: 600; }
+  .links a { text-decoration: none; cursor: pointer; padding-bottom: 4px; }
+  .links a.active { border-bottom: 2px solid; }
+  .nav-cta {
+    border: none;
+    padding: 12px 22px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: inherit;
+  }
+
+  .hero {
+    padding: 0 0 0 60px;
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    position: relative;
+    overflow: hidden;
+    min-height: 720px;
+  }
+  .hero-bg { position: absolute; inset: 0; opacity: 0.07; pointer-events: none; }
+  .hero-content { position: relative; z-index: 2; padding: 90px 40px 90px 0; align-self: center; }
+  .kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 32px;
+    background: rgba(214, 139, 31, 0.14);
+    border: 1px solid;
+    padding: 8px 18px;
+  }
+  .kicker span {
+    font-size: 11px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .hero-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 124px;
+    line-height: 0.92;
+    margin: 0 0 28px;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+  }
+  .italic { font-style: italic; font-weight: 400; }
+  .hero-lede {
+    font-size: 17px;
+    line-height: 1.7;
+    max-width: 480px;
+    margin: 0 0 40px;
+    color: rgba(244, 234, 212, 0.78);
+  }
+  .stats { display: grid; grid-template-columns: repeat(3, auto); gap: 48px; margin-top: 8px; }
+  .stat-n {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 52px;
+    line-height: 1;
+    font-weight: 700;
+  }
+  .stat-l {
+    font-size: 11px;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: rgba(244, 234, 212, 0.6);
+    margin-top: 6px;
+  }
+
+  .hero-portrait { position: relative; z-index: 2; display: flex; justify-content: center; }
+  .portrait-saffron {
+    position: absolute;
+    right: 60px;
+    top: 70px;
+    bottom: 70px;
+    width: 380px;
+  }
+  .portrait-frame {
+    position: absolute;
+    right: 100px;
+    top: 110px;
+    width: 340px;
+    border: 8px solid;
+  }
+  .portrait-img {
+    height: 460px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .portrait-pattern { position: absolute; inset: 0; opacity: 0.18; }
+  .portrait-meta {
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .meta-name { font-family: 'Playfair Display', Georgia, serif; font-size: 20px; font-weight: 700; }
+  .meta-alias {
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    margin-top: 2px;
+  }
+  .age-n { font-family: 'Playfair Display', Georgia, serif; font-size: 22px; font-weight: 700; }
+  .age-l { font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; }
+  .meta-age { text-align: right; }
+
+  .timeline-wrap { padding: 90px 60px 70px; }
+  .timeline-head {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  .chapter {
+    font-size: 11px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+  .display {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 64px;
+    margin: 0;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -0.02em;
+  }
+  .head-intro { max-width: 380px; font-size: 15px; line-height: 1.7; margin: 0; }
+
+  .timeline {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+  }
+  .tl-line { position: absolute; top: 38px; left: 0; right: 0; height: 2px; }
+  .tl-cell { position: relative; text-align: center; padding-top: 70px; }
+  .tl-marker {
+    position: absolute;
+    top: 28px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    width: 22px;
+    height: 22px;
+    border: 3px solid;
+    z-index: 2;
+  }
+  .tl-y { font-family: 'Playfair Display', Georgia, serif; font-size: 28px; font-weight: 700; }
+  .tl-t { font-size: 13px; margin-top: 4px; }
+
+  .ijodi { padding: 70px 60px; position: relative; overflow: hidden; }
+  .ijodi-medallion {
+    position: absolute;
+    right: -100px;
+    top: -100px;
+    opacity: 0.08;
+  }
+  .ijodi-inner { position: relative; z-index: 2; }
+  .ijodi-head {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  .threads { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; }
+  .thread {
+    padding: 40px 32px 32px;
+    border-left: 4px solid;
+    position: relative;
+  }
+  .thread-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 18px;
+  }
+  .thread-n {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.32em;
+  }
+  .thread-t {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 36px;
+    margin: 0 0 14px;
+    font-weight: 700;
+  }
+  .thread-d {
+    font-size: 15px;
+    line-height: 1.65;
+    color: rgba(244, 234, 212, 0.78);
+    margin: 0;
+  }
+
+  .poems-wrap { padding: 90px 60px 50px; }
+  .poems-head {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  .see-all {
+    background: transparent;
+    border: 1.5px solid;
+    padding: 14px 28px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  .poems-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .poem {
+    padding: 32px 28px 24px;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .poem-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+  }
+  .poem-n { font-family: 'Playfair Display', Georgia, serif; font-size: 32px; font-weight: 700; }
+  .poem-kind {
+    font-size: 10px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .poem-t {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 36px;
+    margin: 0 0 22px;
+    font-weight: 700;
+    line-height: 1.05;
+  }
+  .poem-lines { border-top: 2px solid; padding-top: 18px; margin-bottom: 26px; }
+  .poem-line {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  .poem-actions { margin-top: auto; display: flex; gap: 8px; }
+  .ghost, .primary {
+    padding: 11px 12px;
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  .ghost { flex: 1; background: transparent; border: 1px solid; }
+  .primary { flex: 2; border: none; letter-spacing: 0.18em; }
+
+  .quote-band { padding: 80px 100px; position: relative; overflow: hidden; }
+  .quote-bg { position: absolute; inset: 0; opacity: 0.1; }
+  .quote-inner {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 50px;
+    align-items: center;
+  }
+  .quote-mark {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 220px;
+    line-height: 0.7;
+    font-weight: 900;
+  }
+  .quote-text {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-style: italic;
+    font-size: 42px;
+    line-height: 1.35;
+    margin: 0;
+    font-weight: 500;
+  }
+  .quote-attr {
+    margin-top: 24px;
+    font-size: 12px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  .footer { padding: 50px 60px 36px; }
+  .footer-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid rgba(244, 234, 212, 0.18);
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+  }
+  .footer-brand {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 36px;
+    font-weight: 900;
+  }
+  .footer-meta {
+    font-size: 12px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    margin-top: 4px;
+  }
+  .footer-cols { display: flex; gap: 60px; }
+  .footer-h {
+    font-size: 10px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  .footer-items { font-size: 14px; line-height: 2; }
+  .copyright { font-size: 12px; color: rgba(244, 234, 212, 0.5); }
+</style>

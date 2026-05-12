@@ -1,0 +1,19 @@
+---
+interface Props {
+  size?: number;
+  [key: string]: any;
+}
+const { size = 64, class: className, ...rest } = Astro.props;
+---
+<h2 class:list={['display-h2', className]} style={`font-size:${size}px`} {...rest}><slot /></h2>
+
+<style>
+  .display-h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    margin: 0;
+    font-weight: 900;
+    line-height: 1;
+    color: var(--teal);
+    letter-spacing: -0.02em;
+  }
+</style>

@@ -1,0 +1,736 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Portrait from '../../components/ornaments/Portrait.astro';
+import Medallion from '../../components/ornaments/Medallion.astro';
+import Star8 from '../../components/ornaments/Star8.astro';
+import Divider from '../../components/ornaments/Divider.astro';
+
+const c = {
+  bg: '#f6efe2',
+  bgDeep: '#ece2cd',
+  ink: '#1a1410',
+  ink2: '#4a3d30',
+  rose: '#b35642',
+  roseDeep: '#7a3225',
+  copper: '#a87642',
+  copperLight: '#c9a26b',
+  jade: '#4a6850',
+};
+
+const chrono = [
+  { y: '1850', t: "Tug'ilishi", p: "Qo'qon · Bekvachcha" },
+  { y: '1877', t: '"Tanobchilar"', p: 'Mirzalik davri' },
+  { y: '1887', t: 'Toshkent safari', p: 'Almaiy, Nodim bilan' },
+  { y: '1903', t: 'Vafoti', p: "25-may · Qo'qon" },
+];
+
+const ijodiBlocks = [
+  { t: 'Lirika', d: "Muhabbat, sadoqat, vafodorlik. Yuzlab she'rlar xalq qo'shig'iga aylangan.", w: "Oshiq bo'libman · Ayrilmasun · Navbahor" },
+  { t: 'Hajviyot', d: 'Chor amaldorlari va boylar kirdikorlarini fosh etgan satira va yumor.', w: 'Tanobchilar · Saylov · Maskovchi boy' },
+  { t: 'Sayohatnoma', d: "Farg'ona vodiysi taassurotidan. 4 qismli, o'ynoqi vaznli asar.", w: '4 qism · 4 misrali bandlar' },
+];
+
+const poems = [
+  { n: 'i.', title: 'Tanobchilar', kind: 'Hajv · 1877', lines: ["Bo'ldi taajjub qiziq hangomalar,", 'Arz etayin emdi yozib nomalar.', "O'n iki oyda keladur bir tanob,", "O'zgalara rohat-u menga azob."] },
+  { n: 'ii.', title: 'Navbahor', kind: "G'azal · Lirika", accent: true, lines: ["Ochildi gullar, sabza bo'ldi bog'lar!", "Suhbat aylaylik, kelinglar, jo'ralar, o'rtog'lar!", 'Xush bu mahfilda tiriklik ulfatu ahbob ila,', "O'ynashib, gohe tabiatni qilaylik chog'lar!"] },
+  { n: 'iii.', title: 'Sayohatnoma', kind: 'Sayohat · 1888', lines: ['Kelganim ushbu makonga qiladur manga alam,', "Loyiqi tab' yo'q odamki, desam hasratu g'am,", "Gaplashurg'a kishi yo'q ertadin oqshomg'acha ham,", "Kun sovuq, qora chiroq, go'rdek uyu, o'tin kam."] },
+];
+---
+<Layout title="Variant C · Miniatyura — zamonaviy">
+  <div class="mini" style={`background:${c.bg};color:${c.ink}`}>
+    <nav class="nav" style={`border-color:${c.copper}`}>
+      <div class="brand">Muqimiy<span style={`color:${c.rose}`}>.</span></div>
+      <div class="links" style={`color:${c.ink2}`}>
+        {[
+          { s: 'Hayoti', active: true },
+          { s: 'Ijodi' },
+          { s: 'Asarlari' },
+          { s: 'Iqtibos' },
+          { s: 'Manbalar' },
+        ].map((l) => (
+          <a class:list={[{ active: l.active }]} style={l.active ? `color:${c.rose}` : ''}>
+            {l.active && <span class="dot" style={`background:${c.rose}`}></span>}
+            {l.s}
+          </a>
+        ))}
+      </div>
+      <div class="lang" style={`color:${c.ink2}`}>
+        UZ <span style={`color:${c.copper};margin:0 8px`}>/</span> <span style="opacity:0.5">EN</span>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-big" style={`color:${c.copperLight}`}>53</div>
+      <div class="hero-content">
+        <div class="kicker">
+          <span class="rule" style={`background:${c.copper}`}></span>
+          <span style={`color:${c.rose}`}>Shoir · Mutafakkir · Hajvgo'y</span>
+        </div>
+        <h1 class="hero-title">
+          Muhammad<br />
+          Aminxo'ja<br />
+          <em style={`color:${c.rose}`}>Muqimiy</em>
+        </h1>
+        <div class="dates" style={`color:${c.ink2}`}>
+          <span>1850</span>
+          <span class="dash" style={`background:${c.copper}`}></span>
+          <span>1903</span>
+          <span class="place">Qo'qon · 53 yil</span>
+        </div>
+        <p class="hero-lede" style={`color:${c.ink2}`}>
+          "Shoir va mutafakkir, o'zbek demokratik adabiyoti
+          asoschilaridan biri. O'tkir hajv va samimiy lirikasi bilan
+          xalq qalbida muhrlangan ijodkor."
+        </p>
+        <div class="hero-cta">
+          <button class="primary" style={`background:${c.ink};color:${c.bg}`}>Hayotini o'qish →</button>
+          <button class="ghost" style={`color:${c.ink};border-color:${c.ink}`}>Asarlardan namunalar</button>
+        </div>
+      </div>
+
+      <div class="poster">
+        <div class="poster-card" style={`background:${c.bgDeep}`}>
+          <div class="poster-frame" style={`border-color:${c.copper}`}>
+            <div class="garden-bg"></div>
+            <div class="sun" style={`background:${c.copperLight}`}></div>
+            <div class="sun-ring" style={`border-color:${c.copper}`}></div>
+            <svg class="plants" width="100%" height="260" viewBox="0 0 400 260" preserveAspectRatio="none">
+              <g stroke={c.roseDeep} stroke-width="1.2" fill="none">
+                <path d="M 60 260 L 60 180 M 60 195 L 50 185 M 60 195 L 70 185 M 60 210 L 52 200 M 60 210 L 68 200" />
+                <circle cx="60" cy="178" r="6" fill={c.rose} />
+                <path d="M 110 260 L 110 200 M 110 215 L 102 207 M 110 230 L 102 222" />
+                <circle cx="110" cy="198" r="5" fill="#c9c25a" />
+                <path d="M 320 260 L 320 170 M 320 185 L 312 175 M 320 185 L 328 175 M 320 200 L 310 190 M 320 200 L 330 190" />
+                <circle cx="320" cy="168" r="6" fill={c.rose} />
+                <path d="M 360 260 L 360 200" />
+                <circle cx="360" cy="198" r="5" fill="#c9c25a" />
+              </g>
+            </svg>
+            <div class="poster-portrait">
+              <Portrait size={220} palette={{ bg: 'transparent', skin: '#d9a36a', beard: c.ink, robe: c.jade, turban: '#f0e1bf', accent: c.roseDeep }} />
+            </div>
+            <div class="poster-star" style={`color:${c.copper}`}><Star8 size={32} color={c.copper} stroke={1} /></div>
+          </div>
+          <div class="poster-caption">
+            <div>
+              <div class="caption-t" style={`color:${c.ink}`}>
+                <em style={`color:${c.rose}`}>Bog'da shoir.</em>
+              </div>
+              <div class="caption-s" style={`color:${c.ink2}`}>Stilizatsiya · Miniatyura</div>
+            </div>
+            <div class="caption-no" style={`color:${c.copper}`}>
+              Q. №01<br />
+              <span style={`color:${c.ink2}`}>2026</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hayoti-section" style={`border-color:${c.copper}`}>
+      <div class="side-label" style={`color:${c.copper}`}>I — Hayoti</div>
+      <div class="main">
+        <h2 class="big-title">
+          Bekvachcha mahallasidan<br />
+          <em style={`color:${c.rose}`}>Hazrat hujrasigacha.</em>
+        </h2>
+        <div class="two-col">
+          <p>
+            1850-yili Qo'qon shahridagi Bekvachcha mahallasida novvoy
+            Mirzaxo'janing oilasida tug'ildi. Otasi toshkentlik, onasi
+            Oyshabibi xo'jandlik — adabiyot va san'atni sevgan, so'zga usta
+            ayol edi. U yaqinlariga "Xumorbibi" deb tanildi.
+          </p>
+          <p>
+            Nodira tomonidan qurdirilgan Mohlaroyim madrasasida, so'ngra
+            Buxoroda tahsil oldi. 1885-yili otasining vafotidan keyin
+            Hazrat madrasasi hujrasiga ko'chib, butun umri qashshoqlikda
+            kechdi — lekin ijodi shu hujradan butun viloyatni qamradi.
+          </p>
+        </div>
+        <div class="chrono" style={`border-color:${c.copper}`}>
+          {chrono.map((row) => (
+            <div>
+              <div class="chrono-y" style={`color:${c.rose}`}>{row.y}</div>
+              <div class="chrono-t" style={`color:${c.ink}`}>{row.t}</div>
+              <div class="chrono-p" style={`color:${c.ink2}`}>{row.p}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="ijodi-section">
+      <div class="ijodi-medallion" style={`color:${c.copper}`}><Medallion size={400} color={c.copper} stroke={0.8} /></div>
+      <div class="ijodi-inner">
+        <div class="head-grid">
+          <div class="side-label" style={`color:${c.copperLight}`}>II — Ijodi</div>
+          <div>
+            <h2 class="big-title light">
+              10 ming misra<br />
+              <em style={`color:${c.copperLight}`}>uchta tomir.</em>
+            </h2>
+            <p class="ijodi-lede">
+              Lirika, hajviyot, Sayohatnoma — uch janrning bag'rida o'zbek mumtoz
+              an'analari va xalq tilining tirik nafasi birlashadi. Navoiy, Jomiy
+              va Fuzuliydan o'rgangan, Jomiyni o'ziga ustoz bildi.
+            </p>
+          </div>
+        </div>
+        <div class="ijodi-grid" style={`background:${c.copper}`}>
+          {ijodiBlocks.map((b, i) => (
+            <div class="ijodi-block">
+              <div class="block-n" style={`color:${c.copperLight}`}>0{i + 1}</div>
+              <h3 class="block-t">{b.t}<span style={`color:${c.rose}`}>.</span></h3>
+              <p class="block-d">{b.d}</p>
+              <div class="block-w" style={`color:${c.copperLight}`}>{b.w}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="poems-section">
+      <div class="side-label" style={`color:${c.copper}`}>III — Asarlar</div>
+      <div class="main">
+        <div class="poems-head">
+          <h2 class="big-title">
+            Asarlardan<br />
+            <em style={`color:${c.rose}`}>namunalar.</em>
+          </h2>
+          <a class="see-all" style={`color:${c.ink};border-color:${c.ink}`}>Devon ↗</a>
+        </div>
+        <div class="poems-grid">
+          {poems.map((p) => (
+            <article
+              class:list={['poem', { accent: p.accent }]}
+              style={p.accent ? `background:${c.bgDeep};border-color:${c.rose}` : `background:transparent;border-color:${c.ink}`}
+            >
+              <div class="poem-head">
+                <div class="poem-n" style={p.accent ? `color:${c.rose}` : `color:${c.copper}`}>{p.n}</div>
+                <div class="poem-kind" style={`color:${c.ink2}`}>{p.kind}</div>
+              </div>
+              <h3 class="poem-t">
+                {p.title}{p.accent && <span style={`color:${c.rose}`}>.</span>}
+              </h3>
+              <div class="poem-lines">
+                {p.lines.map((l) => <div class="poem-line">{l}</div>)}
+              </div>
+              <div class="poem-actions">
+                <button class="poem-ghost" style={`color:${c.ink};border-color:${c.ink}`}>PDF ↓</button>
+                <button class="poem-primary" style={`background:${c.ink};color:${c.bg}`}>O'zingizni sinab ko'ring →</button>
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="quote">
+      <div class="quote-divider" style={`color:${c.copper}`}><Divider width={520} color={c.copper} stroke={1} /></div>
+      <blockquote class="quote-text">
+        Hayfkim, ahli tamiz ushbu mahalda xor ekan,<br />
+        <span style={`color:${c.rose}`}>Oldilar har yerda bulbul oshiyonin zog'lar.</span>
+      </blockquote>
+      <div class="quote-attr" style={`color:${c.copper}`}>— Navbahor g'azalidan</div>
+    </section>
+
+    <footer class="footer" style={`border-color:${c.copper}`}>
+      <div class="footer-row">
+        <div>
+          <div class="footer-brand">Muqimiy<span style={`color:${c.rose}`}>.</span></div>
+          <div class="footer-meta" style={`color:${c.ink2}`}>1850 — 1903 · Qo'qon</div>
+        </div>
+        <div class="footer-cols">
+          <div>
+            <div class="footer-h" style={`color:${c.copper}`}>Manbalar</div>
+            <div class="footer-items" style={`color:${c.ink2}`}>tafakkur.net<br />n.ziyouz.com<br />arboblar.uz</div>
+          </div>
+          <div>
+            <div class="footer-h" style={`color:${c.copper}`}>Tadqiqotlar</div>
+            <div class="footer-items" style={`color:${c.ink2}`}>researchgate.net<br />cyberleninka.ru</div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright" style={`border-color:${c.copper};color:${c.ink2}`}>
+        <div>© 2026 — Bayozi Muqimiy. Mehnat va hurmat ila tuzilgan.</div>
+        <div>Tafakkur · Adabiyot · Hayot</div>
+      </div>
+    </footer>
+  </div>
+</Layout>
+
+<style>
+  .mini {
+    width: 1280px;
+    max-width: 100%;
+    min-height: 3300px;
+    margin: 0 auto;
+    font-family: 'Inter', system-ui, sans-serif;
+    position: relative;
+    overflow: hidden;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 80px 24px;
+    border-bottom: 0.5px solid;
+  }
+  .brand {
+    font-family: 'DM Serif Display', 'Cormorant Garamond', serif;
+    font-size: 26px;
+    letter-spacing: -0.01em;
+  }
+  .links {
+    display: flex;
+    gap: 40px;
+    font-size: 12px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .links a { text-decoration: none; cursor: pointer; position: relative; color: inherit; }
+  .links .dot {
+    position: absolute;
+    left: -14px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+  }
+  .lang {
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+  }
+
+  .hero {
+    padding: 80px 80px 100px;
+    display: grid;
+    grid-template-columns: 1fr 460px;
+    gap: 80px;
+    position: relative;
+  }
+  .hero-big {
+    position: absolute;
+    right: -40px;
+    top: 100px;
+    font-family: 'DM Serif Display', 'Cormorant Garamond', serif;
+    font-size: 380px;
+    line-height: 0.85;
+    opacity: 0.16;
+    font-style: italic;
+    pointer-events: none;
+  }
+  .hero-content { position: relative; z-index: 2; padding-top: 30px; }
+  .kicker { display: flex; align-items: center; gap: 14px; margin-bottom: 40px; }
+  .kicker .rule { width: 32px; height: 1px; display: inline-block; }
+  .kicker span:last-child {
+    font-size: 11px;
+    letter-spacing: 0.36em;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .hero-title {
+    font-family: 'DM Serif Display', 'Cormorant Garamond', serif;
+    font-size: 132px;
+    line-height: 0.9;
+    margin: 0 0 36px;
+    letter-spacing: -0.025em;
+    font-weight: 400;
+  }
+  .hero-title em {
+    font-style: italic;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+  }
+  .dates {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 40px;
+  }
+  .dates > span:not(.dash):not(.place) {
+    font-family: 'DM Serif Display', 'Cormorant Garamond', serif;
+    font-size: 26px;
+  }
+  .dates .dash { width: 32px; height: 1px; display: inline-block; }
+  .dates .place {
+    font-size: 12px;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    margin-left: 12px;
+  }
+  .hero-lede {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 26px;
+    line-height: 1.5;
+    max-width: 520px;
+    margin: 0;
+    font-style: italic;
+  }
+  .hero-cta { display: flex; gap: 18px; margin-top: 56px; }
+  .primary, .ghost {
+    padding: 17px 32px;
+    font-size: 12px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  .primary { border: none; }
+  .ghost { background: transparent; border: none; padding: 17px 8px; border-bottom: 1.5px solid; }
+
+  .poster { position: relative; z-index: 2; }
+  .poster-card {
+    padding: 24px;
+    position: relative;
+    box-shadow: 0 20px 60px rgba(26, 20, 16, 0.12);
+  }
+  .poster-frame {
+    background: #e8d5a0;
+    height: 480px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid;
+  }
+  .garden-bg {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, #d8c389 0%, #c4a96d 45%, #4a6850 45%, #6b8a5e 100%);
+  }
+  .sun {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    opacity: 0.9;
+  }
+  .sun-ring {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    width: 92px;
+    height: 92px;
+    border: 1px solid;
+    border-radius: 50%;
+    opacity: 0.4;
+  }
+  .plants { position: absolute; bottom: 0; left: 0; right: 0; }
+  .poster-portrait {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .poster-star { position: absolute; top: 10px; right: 10px; }
+  .poster-caption {
+    margin-top: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .caption-t {
+    font-family: 'DM Serif Display', 'Cormorant Garamond', serif;
+    font-size: 24px;
+    line-height: 1.1;
+  }
+  .caption-t em { font-style: italic; }
+  .caption-s {
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    margin-top: 6px;
+  }
+  .caption-no {
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-align: right;
+  }
+
+  .hayoti-section {
+    padding: 100px 80px 60px;
+    border-top: 0.5px solid;
+    position: relative;
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 60px;
+  }
+  .side-label {
+    font-family: 'DM Serif Display', 'Cormorant Garamond', serif;
+    font-size: 13px;
+    letter-spacing: 0.36em;
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-weight: 600;
+    height: max-content;
+  }
+  .big-title {
+    font-family: 'DM Serif Display', 'Cormorant Garamond', serif;
+    font-size: 80px;
+    line-height: 0.96;
+    margin: 0 0 28px;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    max-width: 780px;
+  }
+  .big-title em {
+    font-style: italic;
+    font-family: 'Cormorant Garamond', serif;
+  }
+  .big-title.light { max-width: none; }
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin-top: 50px;
+  }
+  .two-col p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 21px;
+    line-height: 1.65;
+    color: #4a3d30;
+    margin: 0;
+  }
+  .chrono {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    margin-top: 70px;
+    padding-top: 36px;
+    border-top: 0.5px solid;
+  }
+  .chrono-y {
+    font-family: 'DM Serif Display', 'Cormorant Garamond', serif;
+    font-size: 44px;
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+  .chrono-t {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .chrono-p { font-size: 12px; }
+
+  .ijodi-section {
+    padding: 100px 80px;
+    background: #1f3329;
+    color: #f6efe2;
+    position: relative;
+    overflow: hidden;
+  }
+  .ijodi-medallion {
+    position: absolute;
+    top: -80px;
+    right: -80px;
+    opacity: 0.2;
+  }
+  .ijodi-inner { position: relative; z-index: 2; }
+  .head-grid {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 60px;
+    margin-bottom: 60px;
+  }
+  .ijodi-lede {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    line-height: 1.65;
+    color: rgba(246, 239, 226, 0.75);
+    margin: 0;
+    max-width: 700px;
+  }
+  .ijodi-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    margin-left: 240px;
+  }
+  .ijodi-block {
+    background: #1f3329;
+    padding: 40px 32px 36px;
+    position: relative;
+  }
+  .block-n {
+    font-family: 'DM Serif Display', serif;
+    font-size: 11px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    font-weight: 600;
+  }
+  .block-t {
+    font-family: 'DM Serif Display', serif;
+    font-size: 38px;
+    margin: 0 0 16px;
+    font-weight: 400;
+  }
+  .block-d {
+    font-size: 14px;
+    line-height: 1.7;
+    color: rgba(246, 239, 226, 0.7);
+    margin: 0 0 18px;
+  }
+  .block-w {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 14px;
+    padding-top: 14px;
+    border-top: 1px solid rgba(168, 118, 66, 0.3);
+  }
+
+  .poems-section {
+    padding: 100px 80px 50px;
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 60px;
+  }
+  .poems-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 50px;
+  }
+  .see-all {
+    font-size: 12px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-bottom: 1px solid;
+    padding-bottom: 4px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .poems-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+  }
+  .poem {
+    padding: 32px 4px;
+    border-top: 2px solid;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .poem.accent { padding: 32px; }
+  .poem-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 18px;
+  }
+  .poem-n {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 22px;
+  }
+  .poem-kind {
+    font-size: 10px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .poem-t {
+    font-family: 'DM Serif Display', serif;
+    font-size: 40px;
+    margin: 0 0 22px;
+    font-weight: 400;
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+  }
+  .poem-lines { padding-top: 4px; margin-bottom: 28px; }
+  .poem-line {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 19px;
+    line-height: 1.6;
+  }
+  .poem-actions {
+    margin-top: auto;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+  .poem-ghost, .poem-primary {
+    padding: 12px 14px;
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+  }
+  .poem-ghost { flex: 1; background: transparent; border: 1px solid; }
+  .poem-primary { flex: 2; border: none; letter-spacing: 0.18em; }
+
+  .quote {
+    padding: 120px 80px 100px;
+    text-align: center;
+    position: relative;
+  }
+  .quote-divider { display: flex; justify-content: center; margin-bottom: 36px; }
+  .quote-text {
+    font-family: 'DM Serif Display', serif;
+    font-style: italic;
+    font-size: 52px;
+    line-height: 1.3;
+    margin: 0 auto;
+    font-weight: 400;
+    max-width: 980px;
+    letter-spacing: -0.01em;
+  }
+  .quote-attr {
+    margin-top: 40px;
+    font-size: 11px;
+    letter-spacing: 0.36em;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .footer {
+    border-top: 0.5px solid;
+    padding: 50px 80px 36px;
+  }
+  .footer-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 24px;
+  }
+  .footer-brand {
+    font-family: 'DM Serif Display', serif;
+    font-size: 36px;
+    line-height: 1;
+  }
+  .footer-meta {
+    font-size: 11px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    margin-top: 8px;
+  }
+  .footer-cols { display: flex; gap: 60px; }
+  .footer-h {
+    font-size: 10px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  .footer-items { font-size: 13px; line-height: 1.9; }
+  .copyright {
+    padding-top: 24px;
+    border-top: 0.5px solid;
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+  }
+</style>

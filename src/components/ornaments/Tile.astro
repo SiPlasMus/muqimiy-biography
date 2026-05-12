@@ -1,0 +1,14 @@
+---
+interface Props {
+  size?: number;
+  color?: string;
+  opacity?: number;
+  stroke?: number;
+}
+const { size = 80, color = '#d68b1f', opacity = 1, stroke = 1 } = Astro.props;
+---
+<svg width={size} height={size} viewBox="0 0 80 80" fill="none" stroke={color} stroke-width={stroke} opacity={opacity}>
+  <polygon points="40,4 50,30 76,40 50,50 40,76 30,50 4,40 30,30" />
+  <polygon points="40,4 50,30 76,40 50,50 40,76 30,50 4,40 30,30" transform="rotate(22.5 40 40)" />
+  <circle cx="40" cy="40" r="6" />
+</svg>

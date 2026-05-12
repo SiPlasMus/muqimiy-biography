@@ -1,0 +1,119 @@
+:root,
+:root[data-theme='light'] {
+  --teal: #0e3f44;
+  --teal-deep: #072b30;
+  --teal-mid: #155057;
+  --saffron: #d68b1f;
+  --saffron-deep: #a86811;
+  --cream: #f4ead4;
+  --cream-dark: #e6d8b4;
+  --cream-soft: #faf3e0;
+  --pomegranate: #a43a2c;
+  --text: #0a2024;
+  --text-inv: #f4ead4;
+  --bg: #f4ead4;
+  --panel: #ffffff;
+  --card-bg: #ffffff;
+  --muted: #7d8a8c;
+  --border: #e6d8b4;
+  --rule: #e6d8b4;
+  --nav-border: #e6d8b4;
+}
+
+:root[data-theme='dark'] {
+  --teal: #0e3f44;
+  --teal-deep: #03171a;
+  --teal-mid: #1a4f57;
+  --saffron: #e8a23c;
+  --saffron-deep: #d68b1f;
+  --cream: #f4ead4;
+  --cream-dark: #2a3a3e;
+  --cream-soft: #0a2024;
+  --pomegranate: #cc5240;
+  --text: #f4ead4;
+  --text-inv: #f4ead4;
+  --bg: #03171a;
+  --panel: #0a2226;
+  --card-bg: #0a2226;
+  --muted: #7d9498;
+  --border: #1a3438;
+  --rule: #2a3a3e;
+  --nav-border: #1a3438;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Manrope', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+/* ── Reveal-on-scroll utility ─────────────────────────── */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.7s cubic-bezier(0.2, 0.7, 0.2, 1),
+              transform 0.7s cubic-bezier(0.2, 0.7, 0.2, 1);
+  will-change: opacity, transform;
+}
+[data-reveal].in {
+  opacity: 1;
+  transform: none;
+}
+
+/* Hero h1 starts hidden, animations.ts unhides */
+.js [data-anim='hero-h1'] { opacity: 0; }
+.js [data-anim='hero-h1'].revealed { opacity: 1; }
+
+/* Astro View Transitions tuning */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 0.28s;
+  animation-timing-function: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+/* ── Reduced motion ───────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+  [data-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  .js [data-anim='hero-h1'] { opacity: 1 !important; }
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation-duration: 0.001ms !important;
+  }
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+}
+
+.font-disp {
+  font-family: 'Playfair Display', Georgia, serif;
+}

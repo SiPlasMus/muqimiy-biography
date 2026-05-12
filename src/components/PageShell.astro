@@ -1,0 +1,17 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from './Nav.astro';
+import Footer from './Footer.astro';
+
+interface Props {
+  title: string;
+  description?: string;
+  current?: string;
+}
+const { title, description, current } = Astro.props;
+---
+<Layout title={title} description={description}>
+  <Nav current={current} />
+  <slot />
+  <Footer />
+</Layout>
