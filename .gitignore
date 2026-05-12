@@ -13,3 +13,4 @@ yarn-debug.log*
 # editors
 .vscode/
 .DS_Store
+/claude-design/
