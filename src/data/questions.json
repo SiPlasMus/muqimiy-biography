@@ -1,0 +1,5537 @@
+[
+  {
+    "n": 1,
+    "q": "Risola qaysi oliy oʻquv yurtining 90 yilligiga bagʻishlangan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Toshkent davlat universiteti",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Toshkent davlat iqtisodiyot universiteti",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Alisher Navoiy nomidagi universitet",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Samarqand davlat universiteti",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 2,
+    "q": "Risola muharriri kim?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Yaxshiyev H.T.",
+        "correct": true
+      },
+      {
+        "letter": "B",
+        "text": "Matxoʻjayev A.O.",
+        "correct": false
+      },
+      {
+        "letter": "C",
+        "text": "Maxmudov N.M.",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Avazov N.R.",
+        "correct": false
+      }
+    ],
+    "correct": "A"
+  },
+  {
+    "n": 3,
+    "q": "Risola qancha nusxa adadda chop etilgan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "100 nusxa",
+        "correct": true
+      },
+      {
+        "letter": "B",
+        "text": "300 nusxa",
+        "correct": false
+      },
+      {
+        "letter": "C",
+        "text": "1000 nusxa",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "500 nusxa",
+        "correct": false
+      }
+    ],
+    "correct": "A"
+  },
+  {
+    "n": 4,
+    "q": "Risolaning taqrizchisi M.N.Kamalova qaysi soha vakili?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Iqtisodiyot fanlari doktori",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Pedagogika fanlari nomzodi, dotsent (oʻzbek tili va adabiyoti)",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Tarix fanlari doktori",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Texnika fanlari nomzodi",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 5,
+    "q": "Risola asosan kimlarga moʻljallangan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Faqat oʻquvchilarga",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Oliy ta’lim ilmiy xodimlari, talabalar, magistrlar va mustaqil oʻrganuvchilarga",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Faqat olimlarga",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Faqat iqtisodchilarga",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 6,
+    "q": "Muqimiy Qoʻqonning qaysi mahallasida tugʻilgan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Bekvachcha mahallasi",
+        "correct": true
+      },
+      {
+        "letter": "B",
+        "text": "Hazrat mahallasi",
+        "correct": false
+      },
+      {
+        "letter": "C",
+        "text": "Chorsu mahallasi",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Degrez mahallasi",
+        "correct": false
+      }
+    ],
+    "correct": "A"
+  },
+  {
+    "n": 7,
+    "q": "Muqimiyning onasi Oyshabibi qanday inson boʻlgan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Savdogar ayol",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Ogʻzaki ijodni yaxshi bilgan iqtidorli shoira",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Tabib",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Madrasa oʻqituvchisi",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 8,
+    "q": "Onasi Muqimiyni qaysi mumtoz ijodkorlar ijodi bilan tanishtirgan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Faqat xalq dostonlari bilan",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Alisher Navoiy, Hofiz, Jomiy",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Faqat rus shoirlari bilan",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Mahmur va Gulxaniy",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 9,
+    "q": "Mirzaxoʻja oilasida nechta farzand boʻlib, Muhammad Aminxoʻja nechanchisi edi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Uch farzand, birinchisi",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Besh farzand, uchinchisi va yolgʻiz oʻgʻil",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Yetti farzand, oxirgisi",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Ikki farzand, kenjasi",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 10,
+    "q": "Muqimiy dastlab kimning maktabida tahsil olgan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Mulla Abduxalil maktabida",
+        "correct": true
+      },
+      {
+        "letter": "B",
+        "text": "Hazrat madrasasida",
+        "correct": false
+      },
+      {
+        "letter": "C",
+        "text": "Mehtar anbar madrasasida",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Hokim oyim madrasasida",
+        "correct": false
+      }
+    ],
+    "correct": "A"
+  },
+  {
+    "n": 11,
+    "q": "Muqimiy Qoʻqonda qaysi madrasada oʻqigan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "“Mir Arab” madrasasi",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "“Hokim oyim” madrasasi",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "“Koʻkaldosh” madrasasi",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "“Beklarbegi” madrasasi",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 12,
+    "q": "Muqimiy Buxoroda qaysi madrasada tahsil olgan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "“Hokim oyim” madrasasi",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "“Mehtar anbar” madrasasi",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "“Mir Arab” madrasasi",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "“Koʻkaldosh” madrasasi",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 13,
+    "q": "Muqimiy Buxoroda qaysi yillarda oʻqishni davom ettirgan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "1865–1866",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "1872–1873",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "1880–1881",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "1887–1888",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 14,
+    "q": "Muqimiy qaysi yilda oʻqishni tamomlab Qoʻqonga qaytgan va uylangan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "1873",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "1876",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "1885",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "1892",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 15,
+    "q": "Muqimiyning xattotlik ustozi kim boʻlgan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Muhammad Yusuf xattot",
+        "correct": true
+      },
+      {
+        "letter": "B",
+        "text": "Mirzaxoʻja",
+        "correct": false
+      },
+      {
+        "letter": "C",
+        "text": "Gʻafur Gʻulom",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Mulla Abduxalil",
+        "correct": false
+      }
+    ],
+    "correct": "A"
+  },
+  {
+    "n": 16,
+    "q": "Muqimiy Oqjardagi paromda qanday ish bilan shugʻullangan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Mirzalik",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Pattachilik",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Tabiblik",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Mudarrislik",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 17,
+    "q": "Moddiy muhtojlik oqibatida Muqimiy oilasi qanday holatga tushgan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Boyib ketgan",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Xotini oʻgʻlini onasiga tashlab, boshqaga turmushga chiqqan (oila buzilgan)",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Toshkentga koʻchgan",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Oʻzgarishsiz qolgan",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 18,
+    "q": "Otasi vafotidan keyin Muqimiy oilaga yordam berish uchun qayerga koʻchib oʻtgan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Buxoroga",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Toshkentga",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Samarqandga",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Margʻilonga",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 19,
+    "q": "Muqimiyning otasi Mirzaxoʻja taxminan qaysi yillarda vafot etgan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "1865–1866",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "1872–1873",
+        "correct": false
+      },
+      {
+        "letter": "C",
+        "text": "1885–1886",
+        "correct": true
+      },
+      {
+        "letter": "D",
+        "text": "1900–1901",
+        "correct": false
+      }
+    ],
+    "correct": "C"
+  },
+  {
+    "n": 20,
+    "q": "Muqimiyning quyidagi she’rlaridan qaysilari xalq qoʻshigʻiga aylangan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "“Tanobchilar”, “Veksel”",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "“Yakka bu Fargʻonada”, “Muncha ham”, “Koʻzlaring”",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "“Sayohatnoma”, “Hapalak”",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "“Bachchagʻar”, “Avliyo”",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 21,
+    "q": "Quyidagilardan qaysi biri Muqimiyning hajviy asari?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "“Koʻzlaring”",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "“Bachchagʻar”",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "“Ayrilmasun”",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "“Biri”",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 22,
+    "q": "Quyidagilardan qaysi biri Muqimiyning yumoristik she’ri?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "“Tanobchilar”",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "“Pashshalar”",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "“Sayohatnoma”",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "“Veksel”",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 23,
+    "q": "Gʻulom Karimov Muqimiyning ikki tomlik asarlar toʻplamini qaysi yilda nashr ettirgan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "1938",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "1960",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "1970",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "1974",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 24,
+    "q": "Gʻulom Karimov Muqimiyning bir tomlik asarlar toʻplamini (lugʻat, izoh bilan) qaysi yilda nashr ettirgan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "1960",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "1970",
+        "correct": false
+      },
+      {
+        "letter": "C",
+        "text": "1974",
+        "correct": true
+      },
+      {
+        "letter": "D",
+        "text": "1907",
+        "correct": false
+      }
+    ],
+    "correct": "C"
+  },
+  {
+    "n": 25,
+    "q": "“Muqimiy” musiqali drama va “Mavlono Muqimiy” asari muallifi kim?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Gʻafur Gʻulom",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Sobir Abdulla",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Gʻulom Karimov",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Hamid Olimjon",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 26,
+    "q": "“Tanobchilar” asari janri qanday?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Doston",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Qisqa tanqidiy-hajviy asar",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Ruboiy",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Marsiya",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 27,
+    "q": "Oʻsha davrda soliqlar asosan nimaga koʻra amalga oshirilgan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Aniq qonun-qoidaga",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Bevosita tanobchilar xohishiga koʻra",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Markaziy hukumat tarifiga",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Aholi roziligiga",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 28,
+    "q": "Tabiblar maslahatiga koʻra Muqimiy qaysi joylarga sayohat qilgan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Buxoro, Samarqand",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Isfara, Konibodom, Toshkentning bahavo joylari",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Xiva, Urganch",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Margʻilon, Andijon",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 29,
+    "q": "“Sayohatnoma”da Muqimiy qaysi joyni goʻzal tabiati bilan tasvirlaydi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Chimyon",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Vodil",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Oltiariq",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Hapalak",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 30,
+    "q": "“Sayohatnoma”da Chimyon qanday tasvirlanadi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Bogʻlari koʻp gullik joy",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Yer ostida zindon bor, dushmanlari mehmon boʻladigan joy",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Eng boy qishloq",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Suvi koʻp joy",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 31,
+    "q": "Sayohatnomalar nima sabab tez yodlanadi va oʻqishli?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Uzun boʻlgani uchun",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Kichik toʻrtlik shaklida, ravon qofiya tizimiga ega boʻlgani uchun",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Nasrda yozilgani uchun",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Arab tilida boʻlgani uchun",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 32,
+    "q": "“Moskovchi boy”dagi shakllanayotgan milliy burjuaziya kimga iqtisodiy jihatdan qaram edi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Mahalliy hokimlarga",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Rus kapitali va banklariga",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Buxoro amirligiga",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Xitoy savdogarlariga",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 33,
+    "q": "Asardagi “pajolista” soʻzi va “Net, kelma durrak! Pashoʻl!” iboralari nimani koʻrsatadi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Tabiat tasvirini",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Personajlar tilini individuallashtirishni (xoʻjayin va ishchi nutqini)",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Sayohat manzilini",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Soliq miqdorini",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 34,
+    "q": "Ishchi-mardikorlar Hodixoʻjaga qanday munosabatda boʻladi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Sodiqlik bilan ishlaydi",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Ishga chiqmaydi, zavodni tashlab ketadi, unga yollanmaslikni uqtiradi",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Unga yordam beradi",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Hech qanday munosabat bildirmaydi",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 35,
+    "q": "Veksel qisqa muddatli tijorat-kredit vositasi sifatida odatda necha oylik boʻladi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "3 oy",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "6 oy",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "12 oy",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "1 oy",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 36,
+    "q": "Vekselning qaysi turi davlat tomonidan oʻz xarajatlarini qoplash uchun chiqariladi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Oddiy veksel",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Xazina vekseli",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Moliya vekseli",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Tijorat vekseli",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 37,
+    "q": "Bir bank boshqa bankka qarz puli olish uchun beradigan veksel turi qanday ataladi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Oddiy veksel",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Oʻtkazma veksel",
+        "correct": false
+      },
+      {
+        "letter": "C",
+        "text": "Moliya vekseli",
+        "correct": true
+      },
+      {
+        "letter": "D",
+        "text": "Xazina vekseli",
+        "correct": false
+      }
+    ],
+    "correct": "C"
+  },
+  {
+    "n": 38,
+    "q": "Tovar egasiga garov tarzida beriladigan veksel turi qanday ataladi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Xazina vekseli",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Moliya vekseli",
+        "correct": false
+      },
+      {
+        "letter": "C",
+        "text": "Tijorat vekseli",
+        "correct": true
+      },
+      {
+        "letter": "D",
+        "text": "Oddiy veksel",
+        "correct": false
+      }
+    ],
+    "correct": "C"
+  },
+  {
+    "n": 39,
+    "q": "Qarz beruvchining qarzni vekselni taqdim etuvchiga toʻlash haqidagi buyrugʻi qanday veksel?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Oddiy veksel",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Oʻtkazma veksel",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Xazina vekseli",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Tijorat vekseli",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 40,
+    "q": "Turkistonda veksel muomalasini XIX asr oxiridan kim keng yoʻlga qoʻygan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Davlat gʻaznasi",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Xususiy tijorat banklari",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Madrasalar",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Mahalliy boylar",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 41,
+    "q": "Sobiq Ittifoqda veksel muomalasi qaysi yillardagi kredit islohotida tugatilgan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "1920–1921",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "1930–1932",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "1945–1946",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "1960–1961",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 42,
+    "q": "1930 yilda qaysi shaharda “Veksel toʻgʻrisida”gi konvensiya qabul qilingan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Parij",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Jeneva",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "London",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Moskva",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 43,
+    "q": "“Veksel” muxammasidagi pul islohotiga koʻra Qoʻqonda zarb etilgan kumush tanga qiymati necha foizga kamaytirilgan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "10 foiz",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "25 foiz",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "50 foiz",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "5 foiz",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 44,
+    "q": "“Veksel” asarida qaysi soha bilan bogʻliq krizis tasvirlanadi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Gʻallachilik",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Paxtachilik",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Bogʻdorchilik",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Chorvachilik",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 45,
+    "q": "“Veksel” davridagi yangi paxta navi qanday nomlangan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "“mahalliy paxta”",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "“amirkon paxta”",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "“misr paxta”",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "“buxoro paxta”",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 46,
+    "q": "Risola xulosasiga koʻra, Muqimiy asarlari orqali nimani oʻrganish mumkin?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Faqat sevgi tuygʻularini",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Oʻsha davr iqtisodiy holati, soliq tizimi, hududlarning ijtimoiy-geografik holatini",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Faqat din tarixini",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Faqat harbiy voqealarni",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 47,
+    "q": "Muqimiy asarlarida amaldorlarning qanday illatlari qoralanadi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Saxiyligi",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Mansabni suiiste’mol qilish va korrupsiya",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Mehnatsevarligi",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Halolligi",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 48,
+    "q": "Quyidagilardan qaysi biri Muqimiyning iqtisodiy mavzudagi asari emas?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "“Tanobchilar”",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "“Veksel”",
+        "correct": false
+      },
+      {
+        "letter": "C",
+        "text": "“Koʻzlaring”",
+        "correct": true
+      },
+      {
+        "letter": "D",
+        "text": "“Moskovchi boy ta’rifida”",
+        "correct": false
+      }
+    ],
+    "correct": "C"
+  },
+  {
+    "n": 49,
+    "q": "Muqimiy oʻzbek adabiyotiga ishchilar mavzusi bilan birga qaysi obrazlar galereyasini yaratdi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Shohlar obrazi",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Tiplar galereyasi (“Moskovchi boy”, “Voqeai Viktor” va b.)",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Tabiat obrazlari",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Hayvonlar obrazi",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 50,
+    "q": "Muqimiy “Sayohatnoma”larini asosan qaysi vodiy boʻylab qilgan safarlari asosida yozgan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Zarafshon vodiysi",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Fargʻona vodiysi",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Chirchiq vodiysi",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Surxon vodiysi",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 51,
+    "q": "Muqimiy taxminan necha yoshida Qoʻqon va uning atroflarida taniqli shoir sifatida tanilgan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "15–16 yoshlarida",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "25–26 yoshlarida",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "40 yoshida",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "10 yoshida",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 52,
+    "q": "“Sayohatnoma”da Qoʻqondan Fargʻonaga safar qaysi joydan boshlanadi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "“Qudash”",
+        "correct": true
+      },
+      {
+        "letter": "B",
+        "text": "“Yayfan”",
+        "correct": false
+      },
+      {
+        "letter": "C",
+        "text": "“Beshariq”",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "“Chimyon”",
+        "correct": false
+      }
+    ],
+    "correct": "A"
+  },
+  {
+    "n": 53,
+    "q": "Oilasi buzilgach, Muqimiy qayerdan hujra olib yashagan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Hokim oyim madrasasidan",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Hazrat madrasasidan",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Mehtar anbar madrasasidan",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Mir Arab madrasasidan",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 1,
+    "q": "Bitiruv malakaviy ishining mavzusi qanday?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "“Muqimiy satirasi”",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "“Muqimiy she’riyatida badiiy shakl va mazmun uygʻunligi”",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "“Muqimiy hayoti va ijodi”",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "“Oʻzbek adabiyotida sayohatnoma”",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 2,
+    "q": "Bitiruv malakaviy ishining ilmiy rahbari kim?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "N.Jabborov",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "D.Yusupova",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Gʻulom Karimov",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Q.Pardayev",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 3,
+    "q": "Ish qaysi oliy oʻquv yurtida himoya qilingan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Toshkent davlat universiteti",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Alisher Navoiy nomidagi Toshkent davlat oʻzbek tili va adabiyoti universiteti",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Samarqand davlat universiteti",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Toshkent davlat iqtisodiyot universiteti",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 4,
+    "q": "Ish qaysi kafedrada bajarilgan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Hozirgi oʻzbek tili kafedrasi",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Oʻzbek adabiyoti tarixi va matnshunoslik kafedrasi",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Jurnalistika kafedrasi",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Pedagogika kafedrasi",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 5,
+    "q": "Ishning taqrizchisi kim?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "N.Jabborov",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "O.Joʻraboyev",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "D.Yusupova",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Gʻulom Karimov",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 6,
+    "q": "Ishning birinchi bobi nimaga bagʻishlangan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Muqimiy lirikasida badiiy shakl",
+        "correct": true
+      },
+      {
+        "letter": "B",
+        "text": "Muqimiy hayotiga",
+        "correct": false
+      },
+      {
+        "letter": "C",
+        "text": "Iqtisodiy qarashlarga",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Matnshunoslikka",
+        "correct": false
+      }
+    ],
+    "correct": "A"
+  },
+  {
+    "n": 7,
+    "q": "Ishning ikkinchi bobi nimaga bagʻishlangan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Muqimiy she’riyatining mavzuiy tasnifi",
+        "correct": true
+      },
+      {
+        "letter": "B",
+        "text": "Matn tarixi",
+        "correct": false
+      },
+      {
+        "letter": "C",
+        "text": "Sayohatnoma",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Hayoti",
+        "correct": false
+      }
+    ],
+    "correct": "A"
+  },
+  {
+    "n": 8,
+    "q": "Muqimiy adabiy merosining salmoqli (eng katta) qismini qaysi janr tashkil etadi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Muxammas",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Gʻazal",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Sayohatnoma",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Ruboiy",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 9,
+    "q": "Muqimiy ijodida gʻazalning qaysi turi eng koʻp uchraydi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Muvashshah-gʻazal",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Oddiy gʻazal",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Musajja’ gʻazal",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Ta’rix gʻazal",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 10,
+    "q": "Oddiy gʻazal odatda necha bayt hajmida boʻladi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "1 baytdan 5 baytgacha",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "3 baytdan 21 baytgacha",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "10 baytdan 50 baytgacha",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Cheklov yoʻq",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 11,
+    "q": "Gʻazalda shoir taxallusi qaysi baytda qoʻllanadi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Matla’da",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Maqta’da",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Oʻrtada",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Hamma baytda",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 12,
+    "q": "Gʻazalning matla’ misralari haqida toʻgʻri fikr qaysi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Oʻzaro qofiyalanmaydi",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Oʻzaro qofiyalanadi va juft misralar unga qofiyadosh boʻladi",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Faqat oxirgi misra qofiyalanadi",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Qofiya umuman boʻlmaydi",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 13,
+    "q": "“Muvashshah” soʻzi qaysi tildan olingan va qanday ma’noni anglatadi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Forscha; “qofiya”",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Arabcha; “bogʻlamoq, ziynatlamoq”",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Turkcha; “yozmoq”",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Nemischa; “ayirboshlash”",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 14,
+    "q": "Muvashshah nima?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Har bandi toʻrt misradan iborat she’r",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Kishi ismining harflari misralarning bosh harflari boʻlib keladigan she’riy shakl",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Ichki qofiyali gʻazal",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Ikki tilda yozilgan she’r",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 15,
+    "q": "Muvashshah-gʻazalda kishi ismi koʻpincha qaysi usulda hosil boʻladi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Oxirgi harflardan",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Toq misralarning birinchi harflaridan",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Oʻrtadagi harflardan",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Qofiyadan",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 16,
+    "q": "Muvashshahchilik, ayniqsa, qaysi davrda avj olgan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "XV asr",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "XVII asr",
+        "correct": false
+      },
+      {
+        "letter": "C",
+        "text": "XIX asrning II yarmi",
+        "correct": true
+      },
+      {
+        "letter": "D",
+        "text": "XX asr boshi",
+        "correct": false
+      }
+    ],
+    "correct": "C"
+  },
+  {
+    "n": 17,
+    "q": "“Shoirlik hunari muvashshahchilikdagi mahorat bilan oʻlchanardi” degan fikr kimga tegishli?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Gʻulom Karimov",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Maqsud Shayxzoda",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Bobur",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Navoiy",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 18,
+    "q": "Muqimiy she’rlarida muvashshah sifatida keltirilgan ismlardan biri qaysi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Alisher",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Nizomxon (Mamajon makay, Farzinxon, Ismoil naychi)",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Bobur",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Lutfiy",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 19,
+    "q": "Muhsinxon ismiga qilingan muvashshah-gʻazal kimning gʻazaliga nazira qilingan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Bobur",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Alisher Navoiyning “Kimsa mendek...” gʻazaliga",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Fuzuliy",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Furqat",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 20,
+    "q": "“Musajja’” soʻzi qanday ma’noni bildiradi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Saj’li, qofiyali",
+        "correct": true
+      },
+      {
+        "letter": "B",
+        "text": "Ziynatli",
+        "correct": false
+      },
+      {
+        "letter": "C",
+        "text": "Takrorlangan",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Boʻlingan",
+        "correct": false
+      }
+    ],
+    "correct": "A"
+  },
+  {
+    "n": 21,
+    "q": "Musajja’ gʻazalda misralar nechta boʻlakka boʻlinadi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Ikki boʻlakka",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Toʻrt boʻlakka (oldingi uchtasi mustaqil qofiyalanadi)",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Besh boʻlakka",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Boʻlinmaydi",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 22,
+    "q": "Musajja’ gʻazallar haqida “Muxtasar” asarida fikr bildirgan kim?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Navoiy",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Bobur",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Jomiy",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Fuzuliy",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 23,
+    "q": "Muqimiy gʻazaliyotida musajja’ usulida yozilgan nechta gʻazal mavjud?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "1 ta",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "2 ta",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "5 ta",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "10 ta",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 24,
+    "q": "Muqimiyning qoʻshiqqa aylangan she’rlarining aksariyati qanday gʻazallar boʻlgan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Muvashshah gʻazallar",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Musajja’ gʻazallar",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Ta’rix gʻazallar",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Orifona gʻazallar",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 25,
+    "q": "Muqimiy lirikasining asosini qaysi mavzu tashkil etadi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Tabiat",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Ishq (muhabbat)",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Vatan",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Tarix",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 26,
+    "q": "Alisher Navoiy fikricha, ishq necha turli boʻladi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "2 turli",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "3 turli (avom, xavos, siddiqlar ishqi)",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "4 turli",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "5 turli",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 27,
+    "q": "Navoiy ta’limotiga koʻra, eng yuqori darajasi shar’iy nikoh boʻlgan ishq qaysi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Avom ishqi",
+        "correct": true
+      },
+      {
+        "letter": "B",
+        "text": "Xavos ishqi",
+        "correct": false
+      },
+      {
+        "letter": "C",
+        "text": "Siddiqlar ishqi",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Ilohiy ishq",
+        "correct": false
+      }
+    ],
+    "correct": "A"
+  },
+  {
+    "n": 28,
+    "q": "Muqimiyning qoʻshiqqa aylangan gʻazallari koʻproq qaysi mavzuda?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Vatan",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "An’anaviy yor husni (qosh, koʻz, yuz tasviri)",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Tabiat",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Tarix",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 29,
+    "q": "“Musammat” soʻzi qaysi tildan olingan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Forscha",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Arabcha (“tasmit”dan)",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Turkcha",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Nemischa",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 30,
+    "q": "“Musammat” soʻzining lugʻaviy ma’nosi nima?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Qofiyalamoq",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Marvarid donalarini ipga tizmoq",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Bogʻlamoq",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Takrorlamoq",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 31,
+    "q": "Musammatda banddagi misralar soni 6 ta boʻlsa, u qanday ataladi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Muxammas",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Musaddas",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Musamman",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Muashshar",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 32,
+    "q": "Musammatda banddagi misralar soni 7 ta boʻlsa, u qanday ataladi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Musabba’",
+        "correct": true
+      },
+      {
+        "letter": "B",
+        "text": "Musamman",
+        "correct": false
+      },
+      {
+        "letter": "C",
+        "text": "Mutassa’",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Muashshar",
+        "correct": false
+      }
+    ],
+    "correct": "A"
+  },
+  {
+    "n": 33,
+    "q": "Musammatda banddagi misralar soni 8 ta boʻlsa, u qanday ataladi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Musabba’",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Musamman",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Mutassa’",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Muashshar",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 34,
+    "q": "Musammatda banddagi misralar soni 9 ta boʻlsa, u qanday ataladi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Musabba’",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Musamman",
+        "correct": false
+      },
+      {
+        "letter": "C",
+        "text": "Mutassa’",
+        "correct": true
+      },
+      {
+        "letter": "D",
+        "text": "Muashshar",
+        "correct": false
+      }
+    ],
+    "correct": "C"
+  },
+  {
+    "n": 35,
+    "q": "Musammatda banddagi misralar soni 10 ta boʻlsa, u qanday ataladi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Musabba’",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Musamman",
+        "correct": false
+      },
+      {
+        "letter": "C",
+        "text": "Mutassa’",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Muashshar",
+        "correct": true
+      }
+    ],
+    "correct": "D"
+  },
+  {
+    "n": 36,
+    "q": "Murabba’ bandlari qanday qofiyalanadi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "a-b-a-b",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "a a a a, b b b a, v v v a...",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "a-a-b-b",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Qofiyasiz",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 37,
+    "q": "Muqimiy ijodida (“Tanlangan asarlar” ikki jildligida) nechta murabba’ oʻrin olgan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "10 dan ortiq",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "20 dan ortiq",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "50 dan ortiq",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "5 ta",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 38,
+    "q": "Muqimiy murabba’larining deyarli hammasi qaysi mavzuda yozilgan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Vatan mavzusida",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Ishqiy mavzuda",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Tabiat mavzusida",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Tarixiy mavzuda",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 39,
+    "q": "Muqimiy yaratgan muxammaslardan nechtasi oʻz qalamiga mansub?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "20 ga yaqini",
+        "correct": true
+      },
+      {
+        "letter": "B",
+        "text": "Barchasi",
+        "correct": false
+      },
+      {
+        "letter": "C",
+        "text": "5 tasi",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Hech qaysi",
+        "correct": false
+      }
+    ],
+    "correct": "A"
+  },
+  {
+    "n": 40,
+    "q": "Muqimiy qaysi shoir gʻazallariga eng koʻp (6 ta) muxammas bogʻlagan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Navoiy",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Furqat",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Fuzuliy",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Amiriy",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 41,
+    "q": "Muqimiy Fuzuliy gʻazallariga nechta muxammas bogʻlagan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "3 ta",
+        "correct": true
+      },
+      {
+        "letter": "B",
+        "text": "5 ta",
+        "correct": false
+      },
+      {
+        "letter": "C",
+        "text": "6 ta",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "2 ta",
+        "correct": false
+      }
+    ],
+    "correct": "A"
+  },
+  {
+    "n": 42,
+    "q": "Muqimiyning yagona ruboiysi mazmunan nima haqida?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Vatan haqida",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Ustasi farang hunarmandga pichoq yasattirgani (hazil ohangida)",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Sevgi haqida",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Sayohat haqida",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 43,
+    "q": "Muqimiyning yagona tuyugʻi qaysi omonim asosida yaratilgan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "“sogʻinch”",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "“kechaman”",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "“yonaman”",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "“koʻraman”",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 44,
+    "q": "Muqimiydan bizgacha nechta fard yetib kelgan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "1 ta",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "2 ta",
+        "correct": false
+      },
+      {
+        "letter": "C",
+        "text": "9 ta",
+        "correct": true
+      },
+      {
+        "letter": "D",
+        "text": "20 ta",
+        "correct": false
+      }
+    ],
+    "correct": "C"
+  },
+  {
+    "n": 45,
+    "q": "Muqimiyning ayrim fardlari fors-tojik tilida boʻlishi nimani koʻrsatadi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Sayohatnoma janrini",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Zullisonaynlikni (ikki tilda ijod qilishni)",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Muvashshahchilikni",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Musajja’likni",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 46,
+    "q": "Takrir san’ati nima?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Ismni yashirish san’ati",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Mazmunni kuchaytirish maqsadida soʻz/ibora takrorlash san’ati",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Ikki ma’noli soʻz qoʻllash",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Tashbeh san’ati",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 47,
+    "q": "Muqimiy she’rlari koʻpincha qanday tarzda keng tarqalgan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Kitob shaklida",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Xonandalar orqali qoʻshiq qilib kuylanib",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Gazetalarda",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Madrasalarda",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 48,
+    "q": "Quyidagilardan qaysi biri Muqimiy ijod qilgan janr emas?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Gʻazal",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Muxammas",
+        "correct": false
+      },
+      {
+        "letter": "C",
+        "text": "Doston",
+        "correct": true
+      },
+      {
+        "letter": "D",
+        "text": "Tuyuq",
+        "correct": false
+      }
+    ],
+    "correct": "C"
+  },
+  {
+    "n": 49,
+    "q": "Muqimiy ijodida musammatning qaysi shakllarini uchratish mumkin?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Faqat musaddas",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Murabba’ va muxammas",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Faqat musamman",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Musabba’ va muashshar",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 50,
+    "q": "Murabba’ ruboiy va tuyuqdan nimasi bilan farq qiladi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Faqat hazaj bahrida yozilishi bilan",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Bir necha toʻrtlik qoʻshilishidan yaxlit asar boʻlishi bilan",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Mustaqil toʻrtlik boʻlishi bilan",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Hech qanday farqi yoʻq",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 51,
+    "q": "Muqimiy quyidagi janrlarning qaysi birida ijod qilmagan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Masnaviy",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Maktubot",
+        "correct": false
+      },
+      {
+        "letter": "C",
+        "text": "Roman",
+        "correct": true
+      },
+      {
+        "letter": "D",
+        "text": "Sayohatnoma",
+        "correct": false
+      }
+    ],
+    "correct": "C"
+  },
+  {
+    "n": 52,
+    "q": "Muqimiyning yagona ruboiysi ruboiyning qaysi turiga mansub?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Ruboiyi xosa",
+        "correct": true
+      },
+      {
+        "letter": "B",
+        "text": "Ruboiyi muxtara",
+        "correct": false
+      },
+      {
+        "letter": "C",
+        "text": "Ruboiyi taronai",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Ruboiyi mardud",
+        "correct": false
+      }
+    ],
+    "correct": "A"
+  },
+  {
+    "n": 1,
+    "q": "Monografiyaning I bobi nimaga bagʻishlangan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Milliy uygʻonish davri Qoʻqon adabiy muhitini oʻrganishning nazariy-metodologik muammolari",
+        "correct": true
+      },
+      {
+        "letter": "B",
+        "text": "Matn tahriri",
+        "correct": false
+      },
+      {
+        "letter": "C",
+        "text": "Matn talqini",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Manbalar tahlili",
+        "correct": false
+      }
+    ],
+    "correct": "A"
+  },
+  {
+    "n": 2,
+    "q": "Monografiyaning II bobi nimaga bagʻishlangan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Matn tahriri",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Muqimiy she’riyati manbalari va matn tarixi muammosi",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Matn talqini",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Hayoti",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 3,
+    "q": "Monografiyaning III bobi nimaga bagʻishlangan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Manbalarga",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Shoir asarlarida matn tahriri",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Matn talqiniga",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Sayohatnomaga",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 4,
+    "q": "Monografiyaning IV bobi nimaga bagʻishlangan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Matn tahririga",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Muqimiy nazmiy merosi va matn talqini muammosi",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Manbalarga",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Hayotiga",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 5,
+    "q": "Matn tarixi va tahririning nazariy masalalarini yoritgan rus matnshunoslari kim?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Pushkin va Lermontov",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "D.S.Lihachev va B.V.Tomashevskiy",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Belinskiy va Chernishevskiy",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Lomonosov va Karamzin",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 6,
+    "q": "Matn tarixiga doir qarashlarning ildizi (genezisi) avvalo nimaga borib taqaladi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Rus matnshunosligiga",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Qur’oni karim va hadisi shariflarga",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Yevropa adabiyotiga",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Sovet adabiyotshunosligiga",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 7,
+    "q": "Hadis matnlarini oʻrganishdagi “muqobala” usuli nimani anglatadi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Matnni qisqartirish",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Har bir soʻz va harfni asl nusxa bilan soʻzma-soʻz qiyoslab tekshirish",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Matnni tarjima qilish",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Yangi gʻoya qoʻshish",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 8,
+    "q": "Muqaddimasida matn tarixi gʻoyalari aks etgan mumtoz asarlar qaysilar?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "“Boburnoma” va “Shajarayi turk”",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "“Devonu lugʻoti-t-turk”, “Qutadgʻu bilig”, “Xamsa”",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "“Guliston” va “Boˌston”",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "“Mahbubu-l-qulub”",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 9,
+    "q": "Adabiy manba yaxlit imoratga qiyoslansa, matnshunoslik nimaga oʻxshatiladi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Tomiga",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Poydevoriga",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Devoriga",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Bezagiga",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 10,
+    "q": "Matn tarixi nima?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Asar nashr etilgan yillar roʻyxati",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Matn bilan bogʻliq barcha harakatlar tarixi (ijodkorning soʻz ustida ishlash jarayonini ham qamrab oladi)",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Faqat qoʻlyozma sanasi",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Tarjima jarayoni",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 11,
+    "q": "Muqimiyning lirik va hajviy she’rlari qaysi gazetada (1891, 1903, 1907) chop etilgan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "“Taraqqiy”",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "“Turkiston viloyatining gazeti”",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "“Sado”",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "“Oyna”",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 12,
+    "q": "Muqimiy hajviy asarlaridan namunalar 1894 yilda qaysi toʻplamda (IX tom) berilgan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "“Tazkirai Qayyumiy”",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "“Записки Восточного отделения... Русского Археологического общества”",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "“Devoni Muqimiy”",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "“Muqimiy bayozi”",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 13,
+    "q": "1907 yilda “Devoni Muqimiy”ni toshbosma usulida kim chop ettirgan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "N.Ostroumov",
+        "correct": true
+      },
+      {
+        "letter": "B",
+        "text": "Gʻafur Gʻulom",
+        "correct": false
+      },
+      {
+        "letter": "C",
+        "text": "Abdulqodir Xoʻqandiy",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Sobir Abdulla",
+        "correct": false
+      }
+    ],
+    "correct": "A"
+  },
+  {
+    "n": 14,
+    "q": "Muqimiy asarlarini jiddiy oʻrganish ishi qaysi davrda boshlangan va boshida kim turgan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "XIX asr; Ostroumov",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "XX asr 30-yillari; Gʻafur Gʻulom",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "XX asr 60-yillari; Gʻulom Karimov",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "XX asr 20-yillari; Hodi Zarifov",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 15,
+    "q": "Professor Gʻulom Karimovning 1962 yilda yoqlagan doktorlik dissertatsiyasi mavzusi qanday?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "“Muqimiy satirasi”",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "“Oʻzbek demokrat shoiri Muqimiy va uning davri adabiyoti”",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "“Muqimiy she’rlarining matn tarixi”",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "“Oʻzbek adabiyotida sayohatnoma”",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 16,
+    "q": "Shoir asarlari qoʻlyozma manbalari ustida tadqiqot olib borgan olimlar qaysilar?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A.Shokirov, O.Joʻraboyev",
+        "correct": true
+      },
+      {
+        "letter": "B",
+        "text": "Pushkin, Lermontov",
+        "correct": false
+      },
+      {
+        "letter": "C",
+        "text": "Lutfiy, Atoiy",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Bobur, Navoiy",
+        "correct": false
+      }
+    ],
+    "correct": "A"
+  },
+  {
+    "n": 17,
+    "q": "Monografiya muallifining fikricha, Muqimiy 1850 yildan tashqari yana qaysi yilda tugʻilgan boʻlishi mumkin?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "1840",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "1845",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "1855",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "1860",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 18,
+    "q": "Poʻlatjon Qayumov Muqimiyning yoshi haqidagi ma’lumotni qaysi asarida keltirgan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "“Muqimiy bayozi”",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "“Tazkirai Qayyumiy”",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "“Devoni Muqimiy”",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "“Muqimiy satirasi”",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 19,
+    "q": "XX asr boshida (1907, 1910, 1912, 1913) “Devon” deb nashr qilingan toʻplamlarni toʻgʻri qanday baholash mumkin?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Asl devon sifatida",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Devon emas, balki she’rlar majmuasi sifatida",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Tazkira sifatida",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Tanqidiy matn sifatida",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 20,
+    "q": "Muqimiyning oʻz dastxati bilan koʻchirilgan qoʻlyozma bayozlarning raqamlari qaysilar?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "100, 200, 300",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "7521, 1325, 7688, 9309, 49.4100",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "1, 2, 3, 4, 5",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "1907, 1910, 1912",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 21,
+    "q": "Muqimiy lirikasi manbalari toifalaridan biri – Poʻlatjon Qayumov asarlari qaysilar?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "“Tazkirai Qayyumiy”, “Xoʻqand tarixi va uning adabiyoti”",
+        "correct": true
+      },
+      {
+        "letter": "B",
+        "text": "“Muqimiy bayozi”",
+        "correct": false
+      },
+      {
+        "letter": "C",
+        "text": "“Devoni Muqimiy”",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "“Muqimiy satirasi”",
+        "correct": false
+      }
+    ],
+    "correct": "A"
+  },
+  {
+    "n": 22,
+    "q": "Matn tarixi misolida oʻrganilgan “Dar mazammati zamona” necha baytli?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "7 baytli",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "11 baytli",
+        "correct": false
+      },
+      {
+        "letter": "C",
+        "text": "17 baytli",
+        "correct": true
+      },
+      {
+        "letter": "D",
+        "text": "77 bandli",
+        "correct": false
+      }
+    ],
+    "correct": "C"
+  },
+  {
+    "n": 23,
+    "q": "Matn tarixi misolida oʻrganilgan “Sayohatnoma” necha bandli?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "7 bandli",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "17 bandli",
+        "correct": false
+      },
+      {
+        "letter": "C",
+        "text": "44 bandli",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "77 bandli",
+        "correct": true
+      }
+    ],
+    "correct": "D"
+  },
+  {
+    "n": 24,
+    "q": "Tadqiqotga koʻra, Muqimiy oʻz gʻazallariga nechta muxammas (tahmis) bogʻlagan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "3 ta",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "5 ta",
+        "correct": false
+      },
+      {
+        "letter": "C",
+        "text": "7 ta",
+        "correct": true
+      },
+      {
+        "letter": "D",
+        "text": "12 ta",
+        "correct": false
+      }
+    ],
+    "correct": "C"
+  },
+  {
+    "n": 25,
+    "q": "Muqimiyning oʻz gʻazaliga muxammas bogʻlashi, ayniqsa, qaysi radifli she’rlarda kuzatiladi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "“Koʻzlaring”, “Bor”",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "“Kim desun”, “Saylov”",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "“Ot”, “Pashshalar”",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "“Fonus”, “Nest”",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 26,
+    "q": "Muqimiy ijodidagi “Fonus”, “Nest” radifli she’rlar nimani koʻrsatadi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Muvashshahchilikni",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Salaflari/zamondoshlari (Zavqiy, Furqat, Tajalliy) ijodiga nazira yozganini",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Sayohatnoma janrini",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Musajja’likni",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 27,
+    "q": "Shoʻro davri nashrlaridan gʻazallardan necha bayt tushirib qoldirilgan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "12 bayt",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "69 bayt (138 misra)",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "11 bayt",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "16 bayt",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 28,
+    "q": "Tadqiqot natijasida jami necha misra qayta tiklangan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "138 misra",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "194 misra",
+        "correct": false
+      },
+      {
+        "letter": "C",
+        "text": "285 misra",
+        "correct": true
+      },
+      {
+        "letter": "D",
+        "text": "60 misra",
+        "correct": false
+      }
+    ],
+    "correct": "C"
+  },
+  {
+    "n": 29,
+    "q": "Shoʻro nashrlaridan muxammaslardan necha band tushirib qoldirilgan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "12 band (60 misra)",
+        "correct": true
+      },
+      {
+        "letter": "B",
+        "text": "16 band",
+        "correct": false
+      },
+      {
+        "letter": "C",
+        "text": "11 band",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "1 band",
+        "correct": false
+      }
+    ],
+    "correct": "A"
+  },
+  {
+    "n": 30,
+    "q": "“Sayohatnoma”dan necha band (64 misra) qayta tiklangan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "12 band",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "16 band",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "11 band",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "1 band",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 31,
+    "q": "Ilmiy jamoatchilikka ma’lum boʻlmagan qancha asar aniqlangan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "13 gʻazal, 3 muxammas (194 misra)",
+        "correct": true
+      },
+      {
+        "letter": "B",
+        "text": "7 gʻazal, 2 muxammas",
+        "correct": false
+      },
+      {
+        "letter": "C",
+        "text": "20 gʻazal, 5 muxammas",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "1 gʻazal, 1 muxammas",
+        "correct": false
+      }
+    ],
+    "correct": "A"
+  },
+  {
+    "n": 32,
+    "q": "Tadqiqot natijasida toʻliq matni tiklangan asarlar qaysilar?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "“Tanobchilar”, “Otim”",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "“Sayohatnoma”, “Dar mazammat zamona”, “Hajvi Bektur”, “Veksil”, “Dar mazammati qurbaqa”",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Faqat gʻazallar",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "“Hapalak”, “Bu otingiz”",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 33,
+    "q": "“Gʻoyaviy tahrir” hajm va koʻlamiga koʻra qanday tasniflanadi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Soʻz va misralar tahriri",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Butun matn tarkibiga oid va matnning alohida qismiga aloqador tahrir",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Yangi bayt qoʻshilishi",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Faqat qisqartirish",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 34,
+    "q": "“Gʻoyaviy tahrir” mohiyatiga koʻra qanday tasniflanadi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Soʻz va misralar tahriri",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Matnga unda boʻlmagan gʻoyaning qoʻshilishi va mavjud gʻoyaning qisqartirilishi",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Bayt va bandlar tahriri",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Faqat qisqartirish",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 35,
+    "q": "Quyidagilardan qaysi biri kotib tahririning turi emas?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Soʻz va jumlalar tahriri",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Misralar tahriri",
+        "correct": false
+      },
+      {
+        "letter": "C",
+        "text": "Diniy mavzu qoʻshish",
+        "correct": true
+      },
+      {
+        "letter": "D",
+        "text": "Yangi bayt qoʻshilishi",
+        "correct": false
+      }
+    ],
+    "correct": "C"
+  },
+  {
+    "n": 36,
+    "q": "Muqimiyning “Bachchagʻar” satirasi notoʻgʻri ravishda qaysi voqeaga bogʻlangan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Pul islohotiga",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Dukchi eshon voqeasiga",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Saylov voqeasiga",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Veksel muomalasiga",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 37,
+    "q": "Qoʻlyozma manbalarga koʻra, “Bachchagʻar” aslida kimga bagʻishlab yozilgan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Hodixoʻja Eshonga",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Hazrat madrasasi mutavallisi Muhammad Musoboyga",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Shayx Sulaymon Afgʻoniyga",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Dukchi eshonga",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 38,
+    "q": "“Bachchagʻar” Dukchi eshon voqeasidan taxminan necha yil oldin yozilgan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "1 yil",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "5 yil",
+        "correct": false
+      },
+      {
+        "letter": "C",
+        "text": "10 yil",
+        "correct": true
+      },
+      {
+        "letter": "D",
+        "text": "20 yil",
+        "correct": false
+      }
+    ],
+    "correct": "C"
+  },
+  {
+    "n": 39,
+    "q": "Muqimiy ijodiga ta’sir koʻrsatgan salaflari qatorida kimlar tilga olinadi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Lutfiy, Atoiy, Sakkokiy",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Alisher Navoiy, Abdurahmon Jomiy, Saqqoi Buxoriy, Amiriy, Azimxoʻja eshon",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Ogahiy, Munis, Komil",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Furqat, Zavqiy, Nisbatiy",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 40,
+    "q": "Muqimiy ijodidagi muvashshah-gʻazallarni oʻrganish nimaga xizmat qiladi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Soliq tizimini bilishga",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Shoirning adabiy davrasi (doʻstlari) haqidagi ma’lumotlarni boyitishga",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Iqtisodiy holatni oʻrganishga",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Geografiyani bilishga",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 41,
+    "q": "Shoʻrolar davrida Muqimiyning zamondoshi Muhyi qanday baholangan edi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "“Xalq shoiri”",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "“Boylarning, savdogarlarning, mulkdorlarning shoiri”",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "“Demokrat shoir”",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "“Satirik shoir”",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 42,
+    "q": "Monografiyaga koʻra, ishonchli ilmiy xulosa qachon chiqarish mumkin?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Faqat joriy nashrlarga tayanib",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Asl manba (asliyat) bilan qiyoslab oʻrganilsagina",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Faqat tarjimalarga tayanib",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Talqinlarga tayanib",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 43,
+    "q": "Shoʻro davri tadqiqotlarida Muqimiy asarlari talqini qanday xususiyat kasb etgan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Holis va toʻlaqonli",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Biryoqlama va tendensioz (mafkuraga moslab)",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Hech qanday talqin boʻlmagan",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Faqat diniy",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 44,
+    "q": "Muqimiy tugʻilgan yili haqidagi munozara qaysi hujjat asosida koʻrib chiqiladi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Pasporti",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Hovli-joyi sotilishiga doir vasiqa hujjati",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Madrasa diplomi",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Gazeta maqolasi",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 45,
+    "q": "Muqimiy 1910–1912 yillardagi “Devoni Muqimiy maa hajviyot” toʻplamini kim chop ettirgan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "N.Ostroumov",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Muhammad Qosim Doda Muhammad oʻgʻli",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Gʻafur Gʻulom",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Abdulqodir Xoʻqandiy",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 46,
+    "q": "“Bayoz maa hajviyot mavlono Muqimiy maa mavlono Furqat” toʻplamini kim chop ettirgan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "N.Ostroumov",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Abdulqodir Xoʻqandiy",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Gʻafur Gʻulom",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Hodi Zarifov",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 47,
+    "q": "Muqimiy Moskvada yashagan jiyani kimga maktub yozgan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Ibrohimxoʻjaga",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Roʻzimuhammad Doʻstmatovga",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Hodixoʻjaga",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Burhonga",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 48,
+    "q": "Muqimiy doʻsti Ibrohimxoʻja bilan asosan nima bilan shugʻullangan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Savdo bilan",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Bedilxonlik bilan (Bedil asarlarini oʻqish)",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Xattotlik bilan",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Dehqonchilik bilan",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 1,
+    "q": "Toʻplamni nashrga tayyorlovchi va izohlar muallifi kim?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Gʻulom Karimov",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Qoʻldosh Pardaev",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Nurboy Jabborov",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Azim Qayumov",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 2,
+    "q": "Toʻplam qaysi nashriyotda chop etilgan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "“IQTISODIYOT”",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "“Muharrir”",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "“Gʻafur Gʻulom”",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "“Fan”",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 3,
+    "q": "Toʻplam qaysi yilda nashr etilgan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "2021",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "2019",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "2009",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "1970",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 4,
+    "q": "Toʻplam necha betdan iborat?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "56 bet",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "160 bet",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "100 bet",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "300 bet",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 5,
+    "q": "Toʻplam necha nusxa adadda chop etilgan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "100 nusxa",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "300 nusxa",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "1000 nusxa",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "50 nusxa",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 6,
+    "q": "Toʻplamning soʻzboshi muallifi (mas’ul muharrir) kim?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Bokijon Toʻxliyev",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Nurboy Jabborov",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Dilnavoz Yusupova",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Akrom Dehqonov",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 7,
+    "q": "Toʻplamdagi kirish maqola qanday nomlanadi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "“Muqimiy satirasi”",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "“Muqimiyning yonmagan qoʻlyozmalari”",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "“Xalqning rostgoʻy shoiri”",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "“Mavlono Muqimiy”",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 8,
+    "q": "Quyidagilardan qaysi biri toʻplam taqrizchisi emas?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Bokijon Toʻxliyev",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Dilnavoz Yusupova",
+        "correct": false
+      },
+      {
+        "letter": "C",
+        "text": "Akrom Dehqonov",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Gʻulom Karimov",
+        "correct": true
+      }
+    ],
+    "correct": "D"
+  },
+  {
+    "n": 9,
+    "q": "Toʻplam necha qismdan iborat?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "1 qism",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "2 qism (yangi topilgan she’rlar; matni qayta tiklangan she’rlar)",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "3 qism",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "4 qism",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 10,
+    "q": "Kitobdagi “gʻoyaviy tahrir” nimani anglatadi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Imloviy xatolarni tuzatish",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Shoʻrolar davrida matnni kommunistik mafkuraga moslab oʻzgartirish",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "She’rni qoʻshiqqa solish",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Boshqa tilga oʻgirish",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 11,
+    "q": "“Gʻoyaviy tahrir” haqida fikr bildirgan rus matnshunosi kim?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "B.Tomashevskiy",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "D.S.Lihachev",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "A.Shahmatov",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Belinskiy",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 12,
+    "q": "“Qoʻlyozmalar yonmaydi” naqli nimani anglatadi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Qoʻlyozmalar saqlanmaydi",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Asl matn va haqiqat vaqti kelib baribir yuzaga chiqishini",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Yangi she’r yozish mumkinligini",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Kitoblar nodir ekanligini",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 13,
+    "q": "Pardaev jami qancha misra she’rni qayta tiklagan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "138 misra",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "194 misra",
+        "correct": false
+      },
+      {
+        "letter": "C",
+        "text": "285 misra",
+        "correct": true
+      },
+      {
+        "letter": "D",
+        "text": "60 misra",
+        "correct": false
+      }
+    ],
+    "correct": "C"
+  },
+  {
+    "n": 14,
+    "q": "Qayta tiklangan misralar tarkibida gʻazallardan necha bayt bor?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "12 bayt",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "69 bayt (138 misra)",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "11 bayt",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "16 bayt",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 15,
+    "q": "Qayta tiklangan misralar tarkibida muxammaslardan necha band bor?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "12 band (60 misra)",
+        "correct": true
+      },
+      {
+        "letter": "B",
+        "text": "16 band",
+        "correct": false
+      },
+      {
+        "letter": "C",
+        "text": "69 band",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "1 band",
+        "correct": false
+      }
+    ],
+    "correct": "A"
+  },
+  {
+    "n": 16,
+    "q": "Masnaviylardan necha bayt (22 misra) qayta tiklangan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "12 bayt",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "11 bayt",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "16 bayt",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "1 bayt",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 17,
+    "q": "Pardaev ilmiy jamoatchilikka ma’lum boʻlmagan nechta asar aniqlagan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "13 gʻazal, 3 muxammas (194 misra)",
+        "correct": true
+      },
+      {
+        "letter": "B",
+        "text": "7 gʻazal, 2 muxammas",
+        "correct": false
+      },
+      {
+        "letter": "C",
+        "text": "20 gʻazal",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "1 gʻazal, 1 muxammas",
+        "correct": false
+      }
+    ],
+    "correct": "A"
+  },
+  {
+    "n": 18,
+    "q": "Muqimiy asarlarining qoʻlyozmalari asosan qayerda saqlanadi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "OʻzR FA Til va adabiyot instituti",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "OʻzR FA Abu Rayhon Beruniy nomidagi Sharqshunoslik instituti",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Milliy kutubxona",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Qoʻqon adabiyot muzeyi",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 19,
+    "q": "Muqimiyning eng koʻp she’ri aniqlangan asosiy dastxat bayozi qaysi raqamda?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "6352",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "7521",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "1325",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "9836",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 20,
+    "q": "Sharqshunoslik institutidagi qaysi fond Muqimiy qoʻlyozmalari saqlanadigan joylardan biri?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Hamid Sulaymonov fondi",
+        "correct": true
+      },
+      {
+        "letter": "B",
+        "text": "Ostroumov fondi",
+        "correct": false
+      },
+      {
+        "letter": "C",
+        "text": "Navoiy fondi",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Bobur fondi",
+        "correct": false
+      }
+    ],
+    "correct": "A"
+  },
+  {
+    "n": 21,
+    "q": "Muqimiyning “Chuntak bayozi” (49.4100) qaysi muzeyda saqlanadi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Milliy muzey",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Gʻafur Gʻulom nomidagi Fargʻona adabiyot muzeyi",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Navoiy muzeyi",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Qoʻqon oʻlkashunoslik muzeyi",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 22,
+    "q": "Qoʻldosh Pardaevning doktorlik dissertatsiyasi mavzusi qanday?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "“Muqimiy satirasi”",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "“Muqimiy she’rlarining matn tarixi, tahriri va talqini”",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "“Muqimiy hayoti va ijodi”",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "“Oʻzbek adabiyotida sayohatnoma”",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 23,
+    "q": "Akademik Azim Qayumov nima maslahat bergan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Furqatni oʻrganishni",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Shogirdlariga Muqimiy qoʻlyozmalari boʻyicha dissertatsiya mavzusi berishni",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Devon tuzishni",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Drama yozishni",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 24,
+    "q": "Sayohatnoma misolida: “Yurt barcha norozi dedi, Qilgʻon ishi ozor ekan” bandi qoʻlyozmada qanday boʻlgan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Aynan shunday",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "“Yurti hama rozi dedi, Bechora beozor ekan” (mazmunan teskari)",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Umuman boʻlmagan",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Boshqa tilda",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 25,
+    "q": "Sayohatnomadagi tahrir oqibatida muallifning muftiy, hoji va qozilar haqidagi qanday gaplari oʻzgartirilgan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Yolgʻon gaplari rostga",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Rost gaplari yolgʻonga aylantirilgan",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Hech narsa oʻzgarmagan",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Qisqartirilgan",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 26,
+    "q": "“Sayohatnoma”ning “Isfara sayohatidan” qismi (11 band) faqat qaysi olim risolasida uchraydi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Gʻulom Karimov",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "H.Zarifovning 1955 yilgi “Muqimiy hayoti va ijodiga oid materiallar” risolasida",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "A.Shokirov",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Ostroumov",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 27,
+    "q": "“Isfara sayohatidan” matni 1953 yilda kim tomonidan (Golib Yakubzoda ogʻzidan) yozib olingan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Gʻulom Karimov",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Askarali Damroaliyev (Charxiy)",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Hodi Zarifov",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "A.Shokirov",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 28,
+    "q": "Kitobga kiritilgan “Veksil” muxammasi kimning gʻazaliga bogʻlangan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Furqat",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Zavqiy",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Navoiy",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Amiriy",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 29,
+    "q": "“Veksil” muxammasining yozilishiga sabab nima boʻlgan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Soliq tizimi",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Chor mustamlakachilarining pul islohoti",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Saylov",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Yer islohoti",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 30,
+    "q": "“Veksil” muxammasining toʻliq matni qaysi nashrda berilgan edi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Ostroumov 1907",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Gʻafur Gʻulomning 1942 yilgi “Tanlangan asarlar” nashrida",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Karimov 1974",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "1910 yilgi nashr",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 31,
+    "q": "“Hajvi Bektur” muxammasi qaysi manba (1894, IX tom) asosida tiklangan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "“Tazkirai Qayyumiy”",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "“Записки Восточного отделения... Русского Археологического общества”",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "“Devoni Muqimiy”",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "“Guliston” jurnali",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 32,
+    "q": "“Hajvi Bektur”dagi “Shikva qilsam joizdir, zamonalar na boʻldi?” misrasi nimani aks ettiradi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Tabiat goʻzalligini",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Davr ijtimoiy muhiti va chor oʻrnatgan adolatsizliklardan nolishni",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Sevgi tuygʻularini",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Sayohat taassurotlarini",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 33,
+    "q": "Izohlarga koʻra, Shayx Sulaymon Afgʻoniy kim boʻlgan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Qoʻqon hokimi",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Qoʻqonning katta choyfurush boyi, adabiyot havaskori",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Madrasa mudarrisi",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Tilmoch",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 34,
+    "q": "Izohlarga koʻra, “Hazrat” madrasasi (Muqimiy yashagan) kim nomiga qurilgan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Hodixoʻja Eshon",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Sohibzoda Hazrat afandi",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Shayx Sulaymon",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Muhammad Musoboy",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 35,
+    "q": "Kitobdagi koʻplab yangi she’rlarni ilk bor matbuotda e’lon qilgan adabiyotshunoslardan biri kim?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Gʻulom Karimov",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "A.Shokirov",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Sobir Abdulla",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Hodi Zarifov",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 36,
+    "q": "Muqimiyning ayrim muxammaslarini ilk bor “Guliston” jurnalida (1978) e’lon qilgan professor kim?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Sh.Yusupov",
+        "correct": true
+      },
+      {
+        "letter": "B",
+        "text": "Gʻulom Karimov",
+        "correct": false
+      },
+      {
+        "letter": "C",
+        "text": "N.Jabborov",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "B.Toʻxliyev",
+        "correct": false
+      }
+    ],
+    "correct": "A"
+  },
+  {
+    "n": 37,
+    "q": "2011 yilda “Oʻzbekiston adabiyoti va san’ati” gazetasida Muqimiy she’rlarini e’lon qilgan adabiyotshunoslar kim?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A.Turdialiev va S.Eshonova",
+        "correct": true
+      },
+      {
+        "letter": "B",
+        "text": "Gʻulom Karimov va Hodi Zarifov",
+        "correct": false
+      },
+      {
+        "letter": "C",
+        "text": "Bobur va Navoiy",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Ostroumov va Qayumov",
+        "correct": false
+      }
+    ],
+    "correct": "A"
+  },
+  {
+    "n": 38,
+    "q": "Gʻoyaviy tahrir misoli: nashrlardagi “omon boʻlaylik” iborasi qoʻlyozmada aslida qanday boʻlgan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "“omon boʻlaylik”",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "“shukr qilaylik”",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "“nola qilaylik”",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "“dod qilaylik”",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 39,
+    "q": "Tahrir misoli: gʻazaldagi “rastadin” soʻzi nashrlarda qanday soʻzga oʻzgartirilgan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "“bozordin”",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "“quyidin”",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "“koʻchadin”",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "“uydin”",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 40,
+    "q": "Tahrir misoli: “dukondor” soʻzi nashrlarda qanday soʻzga oʻzgartirilgan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "“savdogar”",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "“talabkor”",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "“xaridor”",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "“boy”",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 41,
+    "q": "Muqimiyning fors-tojik tilidagi maktubida tilga olingan doʻstlaridan biri kim?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Hodixoʻja Eshon",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Burhon tilmoch (Zuhur hoji, Sayyid Usmon qozi va b.)",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Dukchi eshon",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Ostroumov",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 42,
+    "q": "Kitob lugʻatiga koʻra, “abru” soʻzi qanday ma’noni anglatadi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Koʻz",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Qosh",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Soch",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Yuz",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 43,
+    "q": "Kitob lugʻatiga koʻra, “andalib” soʻzi qanday ma’noni anglatadi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Bulbul",
+        "correct": true
+      },
+      {
+        "letter": "B",
+        "text": "Tovus",
+        "correct": false
+      },
+      {
+        "letter": "C",
+        "text": "Burgut",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Qaldirgʻoch",
+        "correct": false
+      }
+    ],
+    "correct": "A"
+  },
+  {
+    "n": 44,
+    "q": "Kitob lugʻatiga koʻra, “barf” soʻzi qanday ma’noni anglatadi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Yomgʻir",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Qor",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Bulut",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Shamol",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 45,
+    "q": "Kitob lugʻatiga koʻra, “avrang” soʻzi qanday ma’noni anglatadi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Taxt",
+        "correct": true
+      },
+      {
+        "letter": "B",
+        "text": "Toj",
+        "correct": false
+      },
+      {
+        "letter": "C",
+        "text": "Saroy",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Bogʻ",
+        "correct": false
+      }
+    ],
+    "correct": "A"
+  },
+  {
+    "n": 46,
+    "q": "Kitob lugʻatiga koʻra, “asas” soʻzi qanday ma’noni anglatadi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Asos",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Tungi soqchi (kecha qorovuli)",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Sir",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Yulduz",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 47,
+    "q": "Kitob lugʻatiga koʻra, “afgor” soʻzi qanday ma’noni anglatadi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Yarali, jarohatli",
+        "correct": true
+      },
+      {
+        "letter": "B",
+        "text": "Quvonchli",
+        "correct": false
+      },
+      {
+        "letter": "C",
+        "text": "Boy",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Sogʻlom",
+        "correct": false
+      }
+    ],
+    "correct": "A"
+  },
+  {
+    "n": 48,
+    "q": "Kitob lugʻatiga koʻra, “barno” soʻzi qanday ma’noni anglatadi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Keksa",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Yosh, goʻzal, chiroyli",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Kasal",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Kambagʻal",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "n": 49,
+    "q": "Pardaevdan oldin ham Muqimiy she’rlari matni ustida ishlagan, izlanish olib borgan ustozlar qatorida kim bor?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Gʻulom Karimov va Aziz Qayumov",
+        "correct": true
+      },
+      {
+        "letter": "B",
+        "text": "Pushkin va Tomashevskiy",
+        "correct": false
+      },
+      {
+        "letter": "C",
+        "text": "Bobur va Navoiy",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Ostroumov va Furqat",
+        "correct": false
+      }
+    ],
+    "correct": "A"
+  },
+  {
+    "n": 50,
+    "q": "Qayta tiklangan misralar tarkibida murabba’dan necha misra bor?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "1 misra",
+        "correct": true
+      },
+      {
+        "letter": "B",
+        "text": "12 misra",
+        "correct": false
+      },
+      {
+        "letter": "C",
+        "text": "60 misra",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "64 misra",
+        "correct": false
+      }
+    ],
+    "correct": "A"
+  },
+  {
+    "n": 51,
+    "q": "Kitob lugʻatiga koʻra, “afsun” soʻzi qanday ma’noni anglatadi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Sehr, avrash, makr, firib",
+        "correct": true
+      },
+      {
+        "letter": "B",
+        "text": "Quvonch",
+        "correct": false
+      },
+      {
+        "letter": "C",
+        "text": "Saxovat",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Halollik",
+        "correct": false
+      }
+    ],
+    "correct": "A"
+  },
+  {
+    "n": 52,
+    "q": "Kitob lugʻatiga koʻra, “ashk” soʻzi qanday ma’noni anglatadi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Quvonch",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Koʻz yosh",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Qaygʻu",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Sevgi",
+        "correct": false
+      }
+    ],
+    "correct": "B"
+  }
+]

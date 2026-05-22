@@ -14,7 +14,11 @@
       "Bash(curl -s -o /dev/null -w \"/galereya: %{http_code}\\\\n\" http://localhost:4321/galereya)",
       "Bash(taskkill /IM node.exe /F)",
       "PowerShell(Get-Process *)",
-      "Bash(npm run *)"
+      "Bash(npm run *)",
+      "Bash(python -c \"import zipfile,re,sys; d=zipfile.ZipFile\\('uploads/Muqimiy_test_toplami_2.docx'\\).read\\('word/document.xml'\\).decode\\('utf-8','ignore'\\); t=re.sub\\('<[^>]+>','\\\\n',d\\); lines=[l for l in t.split\\(chr\\(10\\)\\) if l.strip\\(\\)]; print\\(chr\\(10\\).join\\(lines[:60]\\)\\)\")",
+      "PowerShell(New-Item *)",
+      "PowerShell(npm run *)",
+      "Bash(node *)"
     ]
   }
 }

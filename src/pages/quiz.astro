@@ -1,0 +1,725 @@
+---
+import PageShell from '../components/PageShell.astro';
+import rawQuestions from '../data/questions.json';
+
+// Trim the bank to only what the client needs (drops the per-option `correct`
+// flag and the `n` index) — keeps the embedded payload lean.
+const questions = rawQuestions.map((q) => ({
+  q: q.q,
+  correct: q.correct,
+  options: q.options.map((o) => ({ letter: o.letter, text: o.text })),
+}));
+
+// Embedded as an inert JSON island; the quiz script reads it and shuffles
+// client-side, so the whole page stays static (Netlify-friendly).
+const quizData = JSON.stringify(questions).replace(/</g, '\\u003c');
+---
+<PageShell title="Muqimiy — Test" current="quiz">
+  <div id="quiz-root" class="quiz-root">
+    <div class="quiz-loading">Test yuklanmoqda…</div>
+  </div>
+  <noscript>
+    <div class="quiz-loading">
+      Testni ishlash uchun brauzeringizda JavaScript yoqilgan bo'lishi kerak.
+    </div>
+  </noscript>
+  <script id="quiz-data" type="application/json" is:inline set:html={quizData}></script>
+</PageShell>
+
+<style is:global>
+  /* ── Quiz — all selectors prefixed .quiz- so the global block is inert
+        everywhere else. Markup is built client-side, so inline styles can't
+        be component-scoped — these rules cover the injected DOM. ───────── */
+  .quiz-loading {
+    padding: 90px 80px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 15px;
+    background: var(--bg);
+  }
+
+  /* Header */
+  .quiz-head {
+    padding: 60px 80px 40px;
+    background: var(--bg);
+  }
+  .quiz-head-row {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  .quiz-tag {
+    font-size: 11px;
+    letter-spacing: 0.32em;
+    color: var(--saffron-deep);
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+  .quiz-h2 {
+    font-size: 64px;
+    margin: 0;
+    font-weight: 900;
+    line-height: 1;
+    color: var(--teal);
+    letter-spacing: -0.02em;
+  }
+  .quiz-ital {
+    font-style: italic;
+    font-weight: 400;
+    color: var(--pomegranate);
+  }
+  .quiz-counter {
+    text-align: right;
+  }
+  .quiz-counter-l {
+    font-size: 11px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  .quiz-counter-n {
+    font-size: 56px;
+    font-weight: 700;
+    color: var(--saffron);
+    line-height: 1;
+  }
+  .quiz-counter-n span {
+    color: var(--muted);
+    font-size: 32px;
+  }
+  .quiz-progress {
+    height: 4px;
+    background: var(--rule);
+    position: relative;
+    margin-bottom: 8px;
+  }
+  .quiz-progress-fill {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: var(--saffron);
+    transition: width 0.3s cubic-bezier(0.2, 0.7, 0.2, 1);
+  }
+  .quiz-progress-text {
+    font-size: 12px;
+    color: var(--muted);
+    letter-spacing: 0.08em;
+  }
+
+  /* Question card */
+  .quiz-body {
+    padding: 40px 80px 80px;
+    background: var(--bg);
+  }
+  .quiz-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    padding: 48px 56px;
+    max-width: 900px;
+    margin: 0 auto;
+    animation: quiz-fade 0.35s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  }
+  @keyframes quiz-fade {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: none; }
+  }
+  .quiz-card-meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+  .quiz-card-n {
+    font-size: 14px;
+    color: var(--saffron-deep);
+    font-weight: 700;
+    letter-spacing: 0.32em;
+  }
+  .quiz-tile { opacity: 0.6; }
+  .quiz-question {
+    font-size: 30px;
+    line-height: 1.3;
+    margin: 0 0 32px;
+    font-weight: 700;
+    color: var(--text);
+  }
+  .quiz-options {
+    display: grid;
+    gap: 10px;
+  }
+  .quiz-opt {
+    background: var(--cream-soft);
+    color: var(--text);
+    border: 1.5px solid var(--border);
+    padding: 18px 22px;
+    text-align: left;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.5;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    width: 100%;
+    transition: background-color 0.15s, border-color 0.15s, transform 0.15s;
+  }
+  .quiz-opt:not(.is-done):hover {
+    border-color: var(--saffron);
+    transform: translateY(-2px);
+  }
+  .quiz-opt.is-done { cursor: default; }
+  .quiz-opt.is-correct {
+    background: #1f5c3a;
+    border-color: #1f5c3a;
+    color: #f4ead4;
+  }
+  .quiz-opt.is-wrong {
+    background: #a43a2c;
+    border-color: #a43a2c;
+    color: #f4ead4;
+  }
+  .quiz-opt-letter {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 18px;
+    font-weight: 700;
+    width: 32px;
+    height: 32px;
+    display: grid;
+    place-items: center;
+    border: 1.5px solid var(--saffron-deep);
+    color: var(--saffron-deep);
+    flex-shrink: 0;
+  }
+  .quiz-opt.is-correct .quiz-opt-letter,
+  .quiz-opt.is-wrong .quiz-opt-letter {
+    border-color: #f4ead4;
+    color: #f4ead4;
+  }
+  .quiz-opt-text { flex: 1; }
+  .quiz-opt-badge {
+    font-size: 22px;
+    font-weight: 700;
+  }
+  .quiz-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 36px;
+    padding-top: 28px;
+    border-top: 1px solid var(--border);
+  }
+  .quiz-prev {
+    background: transparent;
+    border: none;
+    color: var(--text);
+    cursor: pointer;
+    font-size: 12px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 12px 0;
+  }
+  .quiz-prev:disabled {
+    color: var(--muted);
+    cursor: default;
+  }
+  .quiz-hint {
+    font-size: 13px;
+    color: var(--muted);
+    font-style: italic;
+  }
+  .quiz-next {
+    background: var(--teal);
+    color: var(--cream);
+    border: none;
+    padding: 14px 28px;
+    font-size: 12px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.18s ease;
+  }
+  .quiz-next:hover:not(:disabled) { transform: translateY(-2px); }
+  .quiz-next:disabled {
+    background: transparent;
+    color: var(--muted);
+    border: 1px solid var(--muted);
+    cursor: default;
+  }
+
+  /* Result */
+  .quiz-result {
+    padding: 60px 80px 50px;
+    background: var(--bg);
+  }
+  .quiz-result-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .quiz-result .quiz-h2 { font-size: 72px; }
+  .quiz-result-msg {
+    font-size: 17px;
+    line-height: 1.7;
+    color: var(--muted);
+    margin: 20px 0 32px;
+    max-width: 480px;
+  }
+  .quiz-result-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .quiz-restart {
+    background: var(--saffron);
+    color: var(--teal-deep);
+    border: none;
+    padding: 16px 28px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform 0.18s ease;
+  }
+  .quiz-restart:hover { transform: translateY(-2px); }
+  .quiz-result-link {
+    background: transparent;
+    color: var(--text);
+    border: 1px solid var(--text);
+    padding: 16px 28px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: background-color 0.18s, color 0.18s;
+  }
+  .quiz-result-link:hover {
+    background: var(--text);
+    color: var(--bg);
+  }
+  .quiz-score {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    padding: 40px 48px;
+    text-align: center;
+  }
+  .quiz-score-grade {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+  .quiz-score-n {
+    font-size: 140px;
+    font-weight: 900;
+    line-height: 1;
+  }
+  .quiz-score-n span {
+    color: var(--muted);
+    font-size: 56px;
+  }
+  .quiz-score-pct {
+    font-size: 24px;
+    color: var(--muted);
+    margin-top: 8px;
+    font-weight: 500;
+  }
+  .quiz-score.is-great .quiz-score-grade,
+  .quiz-score.is-great .quiz-score-n { color: #1f5c3a; }
+  .quiz-score.is-good .quiz-score-grade,
+  .quiz-score.is-good .quiz-score-n { color: var(--saffron-deep); }
+  .quiz-score.is-mid .quiz-score-grade,
+  .quiz-score.is-mid .quiz-score-n { color: var(--saffron); }
+  .quiz-score.is-low .quiz-score-grade,
+  .quiz-score.is-low .quiz-score-n { color: var(--pomegranate); }
+
+  /* Per-question report */
+  .quiz-report {
+    padding: 40px 80px 80px;
+    background: var(--bg);
+  }
+  .quiz-report-label {
+    font-size: 11px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--saffron-deep);
+    font-weight: 700;
+    margin-bottom: 24px;
+  }
+  .quiz-report-list {
+    display: grid;
+    gap: 12px;
+  }
+  .quiz-report-item {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    padding: 18px 24px;
+  }
+  .quiz-report-item.is-correct { border-color: #1f5c3a; border-left: 4px solid #1f5c3a; }
+  .quiz-report-item.is-wrong { border-color: #a43a2c; border-left: 4px solid #a43a2c; }
+  .quiz-report-item summary {
+    cursor: pointer;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    list-style: none;
+  }
+  .quiz-report-item summary::-webkit-details-marker { display: none; }
+  .quiz-report-mark {
+    display: inline-grid;
+    place-items: center;
+    width: 32px;
+    height: 32px;
+    color: #f4ead4;
+    font-weight: 700;
+    font-size: 16px;
+    flex-shrink: 0;
+  }
+  .quiz-report-item.is-correct .quiz-report-mark { background: #1f5c3a; }
+  .quiz-report-item.is-wrong .quiz-report-mark { background: #a43a2c; }
+  .quiz-report-num {
+    font-size: 14px;
+    color: var(--muted);
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    flex-shrink: 0;
+  }
+  .quiz-report-q {
+    font-size: 17px;
+    color: var(--text);
+    font-weight: 500;
+    flex: 1;
+    line-height: 1.4;
+  }
+  .quiz-report-opts {
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+    display: grid;
+    gap: 8px;
+  }
+  .quiz-report-opt {
+    padding: 10px 14px;
+    font-size: 14px;
+    line-height: 1.5;
+    border: 1px solid var(--border);
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    color: var(--text);
+  }
+  .quiz-report-opt.is-correct {
+    border-color: #1f5c3a;
+    background: rgba(31, 92, 58, 0.12);
+  }
+  .quiz-report-opt.is-wrong {
+    border-color: #a43a2c;
+    background: rgba(164, 58, 44, 0.12);
+  }
+  .quiz-report-letter {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 700;
+    color: var(--muted);
+  }
+  .quiz-report-opt.is-correct .quiz-report-letter { color: #1f5c3a; }
+  .quiz-report-opt.is-wrong .quiz-report-letter { color: #a43a2c; }
+  .quiz-report-opt-text { flex: 1; }
+  .quiz-report-tag {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+  }
+  .quiz-report-tag.is-correct { color: #1f5c3a; }
+  .quiz-report-tag.is-wrong { color: #a43a2c; }
+
+  @media (max-width: 1000px) {
+    .quiz-loading,
+    .quiz-head,
+    .quiz-body,
+    .quiz-result,
+    .quiz-report { padding-left: 24px; padding-right: 24px; }
+    .quiz-head { padding-top: 48px; }
+    .quiz-h2 { font-size: 44px; }
+    .quiz-result .quiz-h2 { font-size: 52px; }
+    .quiz-card { padding: 32px 24px; }
+    .quiz-question { font-size: 24px; }
+    .quiz-result-grid { grid-template-columns: 1fr; gap: 32px; }
+    .quiz-score-n { font-size: 104px; }
+    .quiz-counter-n { font-size: 44px; }
+  }
+  @media (max-width: 560px) {
+    .quiz-score-n { font-size: 80px; }
+    .quiz-opt { font-size: 15px; padding: 14px 16px; gap: 12px; }
+  }
+</style>
+
+<script>
+  function initQuiz() {
+    const root = document.getElementById('quiz-root');
+    if (!root) return;
+    const dataEl = document.getElementById('quiz-data');
+    if (!dataEl || !dataEl.textContent) return;
+
+    let ALL;
+    try {
+      ALL = JSON.parse(dataEl.textContent);
+    } catch (err) {
+      return;
+    }
+    if (!Array.isArray(ALL) || ALL.length === 0) return;
+
+    const TOTAL = 20;
+    const pad = (n) => String(n).padStart(2, '0');
+    const esc = (s) =>
+      String(s).replace(/[&<>"]/g, (ch) => (
+        { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[ch]
+      ));
+    const shuffle = (arr) => {
+      const a = arr.slice();
+      for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        const t = a[i];
+        a[i] = a[j];
+        a[j] = t;
+      }
+      return a;
+    };
+
+    const TILE =
+      '<svg class="quiz-tile" width="20" height="20" viewBox="0 0 80 80" fill="none" ' +
+      'stroke="var(--saffron)" stroke-width="1" aria-hidden="true">' +
+      '<polygon points="40,4 50,30 76,40 50,50 40,76 30,50 4,40 30,30"/>' +
+      '<polygon points="40,4 50,30 76,40 50,50 40,76 30,50 4,40 30,30" transform="rotate(22.5 40 40)"/>' +
+      '<circle cx="40" cy="40" r="6"/></svg>';
+
+    let questions = [];
+    let idx = 0;
+    let answers = {};
+    let phase = 'quiz';
+
+    function pickQuestions() {
+      return shuffle(ALL)
+        .slice(0, Math.min(TOTAL, ALL.length))
+        .map((q) => ({ q: q.q, correct: q.correct, options: shuffle(q.options) }));
+    }
+
+    function start() {
+      questions = pickQuestions();
+      idx = 0;
+      answers = {};
+      phase = 'quiz';
+      render();
+    }
+
+    function optionHTML(opt, q) {
+      const answered = answers[idx] !== undefined;
+      const isCorrect = opt.letter === q.correct;
+      const isMine = answers[idx] === opt.letter;
+      let cls = 'quiz-opt';
+      let badge = '';
+      if (answered) {
+        cls += ' is-done';
+        if (isCorrect) { cls += ' is-correct'; badge = '✓'; }
+        else if (isMine) { cls += ' is-wrong'; badge = '✕'; }
+      }
+      return (
+        '<button type="button" class="' + cls + '" data-letter="' + opt.letter + '"' +
+        (answered ? ' disabled' : '') + '>' +
+        '<span class="quiz-opt-letter">' + opt.letter + '</span>' +
+        '<span class="quiz-opt-text">' + esc(opt.text) + '</span>' +
+        (badge ? '<span class="quiz-opt-badge">' + badge + '</span>' : '') +
+        '</button>'
+      );
+    }
+
+    function renderQuiz() {
+      const q = questions[idx];
+      const answered = answers[idx] !== undefined;
+      const answeredCount = Object.keys(answers).length;
+      const progress = (answeredCount / questions.length) * 100;
+      const lastQ = idx === questions.length - 1;
+
+      root.innerHTML =
+        '<section class="quiz-head">' +
+          '<div class="quiz-head-row">' +
+            '<div>' +
+              '<div class="quiz-tag">O\'zingizni sinab ko\'ring</div>' +
+              '<h2 class="quiz-h2 font-disp">Test · <span class="quiz-ital">' +
+                questions.length + ' savol.</span></h2>' +
+            '</div>' +
+            '<div class="quiz-counter">' +
+              '<div class="quiz-counter-l">Savol</div>' +
+              '<div class="quiz-counter-n font-disp">' + (idx + 1) +
+                '<span> / ' + questions.length + '</span></div>' +
+            '</div>' +
+          '</div>' +
+          '<div class="quiz-progress"><div class="quiz-progress-fill" style="width:' +
+            progress + '%"></div></div>' +
+          '<div class="quiz-progress-text">' + answeredCount + ' ta javob berildi · ' +
+            (questions.length - answeredCount) + ' ta qoldi</div>' +
+        '</section>' +
+        '<section class="quiz-body">' +
+          '<article class="quiz-card">' +
+            '<div class="quiz-card-meta">' +
+              '<span class="quiz-card-n font-disp">' + pad(idx + 1) + ' / ' +
+                pad(questions.length) + '</span>' + TILE +
+            '</div>' +
+            '<h3 class="quiz-question font-disp">' + esc(q.q) + '</h3>' +
+            '<div class="quiz-options">' +
+              q.options.map((o) => optionHTML(o, q)).join('') +
+            '</div>' +
+            '<div class="quiz-controls">' +
+              '<button type="button" class="quiz-prev"' +
+                (idx === 0 ? ' disabled' : '') + '>← Oldingi</button>' +
+              (answered ? '' : '<span class="quiz-hint">Javobni tanlang</span>') +
+              '<button type="button" class="quiz-next"' + (answered ? '' : ' disabled') + '>' +
+                (lastQ ? 'Tugatish →' : 'Keyingi →') + '</button>' +
+            '</div>' +
+          '</article>' +
+        '</section>';
+    }
+
+    function renderReview() {
+      const correctCount = questions.reduce(
+        (acc, q, i) => acc + (answers[i] === q.correct ? 1 : 0), 0,
+      );
+      const pct = Math.round((correctCount / questions.length) * 100);
+      let grade, gradeMod, msg;
+      if (pct >= 90) {
+        grade = "A'lo"; gradeMod = 'is-great';
+        msg = 'Ajoyib natija! Muqimiy hayoti va ijodini chuqur bilasiz.';
+      } else if (pct >= 70) {
+        grade = 'Yaxshi'; gradeMod = 'is-good';
+        msg = "Yaxshi natija. Ba'zi savollarni qayta o'qib chiqing.";
+      } else if (pct >= 50) {
+        grade = "O'rta"; gradeMod = 'is-mid';
+        msg = "O'rta natija. Materialni yana bir bor o'rganib, qayta urinib ko'ring.";
+      } else {
+        grade = "Yana o'qish"; gradeMod = 'is-low';
+        msg = "Muqimiy hayoti va ijodi sahifalarini diqqat bilan o'qib, qayta urinib ko'ring.";
+      }
+
+      const report = questions.map((q, i) => {
+        const my = answers[i];
+        const ok = my === q.correct;
+        const opts = q.options.map((opt) => {
+          const isCorrect = opt.letter === q.correct;
+          const isMine = my === opt.letter;
+          let cls = 'quiz-report-opt';
+          let tag = '';
+          if (isCorrect) {
+            cls += ' is-correct';
+            tag = '<span class="quiz-report-tag is-correct">TO\'G\'RI</span>';
+          } else if (isMine) {
+            cls += ' is-wrong';
+            tag = '<span class="quiz-report-tag is-wrong">SIZNING</span>';
+          }
+          return '<div class="' + cls + '">' +
+            '<span class="quiz-report-letter">' + opt.letter + ')</span>' +
+            '<span class="quiz-report-opt-text">' + esc(opt.text) + '</span>' + tag +
+            '</div>';
+        }).join('');
+        return '<details class="quiz-report-item ' + (ok ? 'is-correct' : 'is-wrong') + '">' +
+          '<summary>' +
+            '<span class="quiz-report-mark">' + (ok ? '✓' : '✕') + '</span>' +
+            '<span class="quiz-report-num font-disp">' + pad(i + 1) + '</span>' +
+            '<span class="quiz-report-q font-disp">' + esc(q.q) + '</span>' +
+          '</summary>' +
+          '<div class="quiz-report-opts">' + opts + '</div>' +
+        '</details>';
+      }).join('');
+
+      root.innerHTML =
+        '<section class="quiz-result">' +
+          '<div class="quiz-tag">Natija</div>' +
+          '<div class="quiz-result-grid">' +
+            '<div>' +
+              '<h2 class="quiz-h2 font-disp">Test<br><span class="quiz-ital">tugadi.</span></h2>' +
+              '<p class="quiz-result-msg">' + msg + '</p>' +
+              '<div class="quiz-result-actions">' +
+                '<button type="button" class="quiz-restart">↻ Qayta topshirish</button>' +
+                '<a href="/asarlari" class="quiz-result-link">Asarlari →</a>' +
+              '</div>' +
+            '</div>' +
+            '<div class="quiz-score ' + gradeMod + '">' +
+              '<div class="quiz-score-grade">' + grade + '</div>' +
+              '<div class="quiz-score-n font-disp">' + correctCount +
+                '<span> / ' + questions.length + '</span></div>' +
+              '<div class="quiz-score-pct font-disp">' + pct + '% to\'g\'ri javoblar</div>' +
+            '</div>' +
+          '</div>' +
+        '</section>' +
+        '<section class="quiz-report">' +
+          '<div class="quiz-report-label">Savollar bo\'yicha hisobot</div>' +
+          '<div class="quiz-report-list">' + report + '</div>' +
+        '</section>';
+    }
+
+    function render() {
+      if (phase === 'review') renderReview();
+      else renderQuiz();
+    }
+
+    function onClick(e) {
+      const optBtn = e.target.closest('.quiz-opt');
+      if (optBtn && root.contains(optBtn)) {
+        if (!optBtn.disabled && answers[idx] === undefined) {
+          answers[idx] = optBtn.dataset.letter;
+          render();
+        }
+        return;
+      }
+      const nextBtn = e.target.closest('.quiz-next');
+      if (nextBtn && !nextBtn.disabled) {
+        if (idx < questions.length - 1) {
+          idx += 1;
+          render();
+        } else {
+          phase = 'review';
+          render();
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        return;
+      }
+      const prevBtn = e.target.closest('.quiz-prev');
+      if (prevBtn && !prevBtn.disabled && idx > 0) {
+        idx -= 1;
+        render();
+        return;
+      }
+      if (e.target.closest('.quiz-restart')) {
+        start();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    }
+
+    // initQuiz can fire twice for one page (direct call + astro:page-load).
+    // Bind/start only for a fresh #quiz-root so the live closure that owns
+    // the rendered DOM also owns the click handler.
+    if (root.dataset.quizBound === '1') return;
+    root.dataset.quizBound = '1';
+    root.addEventListener('click', onClick);
+    start();
+  }
+
+  initQuiz();
+  document.addEventListener('astro:page-load', initQuiz);
+</script>

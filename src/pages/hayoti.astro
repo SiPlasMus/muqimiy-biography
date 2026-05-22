@@ -4,15 +4,14 @@ import SectionTag from '../components/SectionTag.astro';
 import H2 from '../components/H2.astro';
 
 const events = [
-  { y: '1850', t: "Qo'qonda tug'ilish", d: "Bekvachcha mahallasida novvoy Mirzaxo'janing oilasida tug'ildi. Onasi Xumorbibi — xo'jandlik, so'zga usta ayol." },
-  { y: '1864', t: 'Mohlaroyim madrasasi', d: "Nodira tomonidan qurdirilgan Qo'qon madrasasida dastlabki ta'lim. Onasi she'riyatga ixlosini uyg'otdi." },
-  { y: '1875', t: 'Buxoroga safar', d: 'Buxoro madrasalaridan birida o\'qishni davom ettiradi. Sharq mumtoz adabiyotini chuqur o\'rganadi.' },
-  { y: '1876', t: "Qo'qonga qaytish", d: 'Yer qurilishi mahkamasiga mirzalik vazifasiga ishga kiradi.' },
-  { y: '1877', t: "“Tanobchilar” satirasi", d: "Yer o'lchovchi amaldorlarning hiyla-nayranglarini ko'rib, mashhur hajviyasini yozadi. Bu uni elga taniqli hajvgo'y qiladi.", highlight: true },
-  { y: '1885', t: 'Otasining vafoti', d: "Moddiy ahvol og'irlashadi. Hazrat madrasasining kichik hujrasiga ko'chib o'tadi — umrining oxirigacha shu yerda yashadi." },
-  { y: '1887', t: 'Toshkent safari', d: "Almaiy, Nodim Namangoniy, Karimbek Kamiy bilan tanishadi. Toshkent madaniy hayoti bilan yaqindan tanishadi." },
-  { y: '1892', t: 'Yana Toshkent', d: "Toshkent bilan adabiy aloqani umrining oxirigacha davom ettiradi. Sayohatlari taassurotlari “Sayohatnoma”ga aylanadi." },
-  { y: '1903', t: 'Vafoti — 25-may', d: 'Qashshoqlik va kasallikdan vafot etadi. 53 yoshida. Qo\'qonda dafn etildi.', highlight: true },
+  { y: '1850', t: "Qo'qonda tug'ilish", d: "Qo'qon shahrining Bekvachcha mahallasida, novvoy Mirzaxo'ja oilasida dunyoga keldi. Oiladagi 5 farzand ichida yolg'iz o'g'il bo'lgan." },
+  { y: '1864–1865', t: "Maktab va «Moxlaroyim» madrasasi", d: "Ilk ta'limni mahalla maktabida olgach, Qo'qondagi Nodirabegim bino qildirgan «Moxlar oyim» («Hokim oyim») madrasasida tahsil oldi." },
+  { y: '1872–1876', t: "Buxoro — «Mehtar oyim» madrasasi", d: "Buxoroga borib, mashhur «Mehtar oyim» («Muxtor oyim») madrasasida o'qishni davom ettirdi. Bu yerda fors tilini mukammal o'rganib, she'r yozish mahoratini oshirdi." },
+  { y: '1876', t: "Qo'qonga qaytish, uylanish, mirzalik", d: "Qo'qonga qaytib uylandi va yer o'lchash (qurilish) mahkamasida mirzalik qila boshladi. Bu ish tufayli qishloqlarni kezib, xalqning og'ir hayotini yaqindan ko'rdi — «Tanobchilar» satirasi shu kuzatuvlardan tug'ildi." },
+  { y: '1885', t: "Otasining vafoti, «Hazrat» hujrasi", d: "Otasining vafotidan keyin moddiy ahvoli og'irlashib, Qo'qondagi «Hazrat» madrasasining kichik bir hujrasiga ko'chib o'tdi va umrining oxirigacha shu yerda qashshoqlikda yashadi.", highlight: true },
+  { y: '1887–1888', t: 'Toshkent safari', d: "Toshkent shahriga sayohat qildi. Madaniy yangiliklar, rus maorif tizimi bilan tanishdi. Almaiy va Nodim kabi ijodkorlar bilan hamkorlik qildi." },
+  { y: '1892', t: 'Ikkinchi Toshkent safari', d: "Toshkent bilan adabiy aloqani davom ettirdi. Bu va keyingi safarlar taassuroti «Sayohatnoma»ga asos bo'ldi." },
+  { y: '1903', t: 'Vafoti — 25-may', d: "53 yoshida Qo'qon shahrida vafot etdi. Qo'qonda dafn etildi." },
 ];
 ---
 <PageShell title="Muqimiy — Hayoti" current="hayoti">
@@ -24,26 +23,7 @@ const events = [
         <span class="italic-accent" data-anim="drift">Hazratgacha.</span>
       </H2>
     </div>
-    <div class="intro">
-      <p>
-        Qo'qonda tug'ilgan, butun umri shu shaharda kechgan, qashshoqlikda yashab,
-        ammo so'zga benihoya boy meros qoldirgan shoirning hayot yo'li.
-      </p>
-      <div class="stats">
-        <div>
-          <div class="stat-n font-disp">53</div>
-          <div class="stat-l">yil umr</div>
-        </div>
-        <div>
-          <div class="stat-n font-disp">3</div>
-          <div class="stat-l">Toshkent safari</div>
-        </div>
-        <div>
-          <div class="stat-n font-disp">10K+</div>
-          <div class="stat-l">misra meros</div>
-        </div>
-      </div>
-    </div>
+    <div class="intro"></div>
   </section>
 
   <section class="timeline">
@@ -98,27 +78,6 @@ const events = [
     color: var(--muted);
     align-self: end;
   }
-  .intro p { margin: 0 0 18px; }
-  .stats {
-    display: flex;
-    gap: 36px;
-    margin-top: 24px;
-    flex-wrap: wrap;
-  }
-  .stat-n {
-    font-size: 44px;
-    color: var(--saffron);
-    font-weight: 700;
-    line-height: 1;
-  }
-  .stat-l {
-    font-size: 11px;
-    letter-spacing: 0.22em;
-    text-transform: uppercase;
-    margin-top: 6px;
-    color: var(--muted);
-  }
-
   .timeline {
     padding: 40px 80px 80px;
     background: var(--bg);
@@ -141,10 +100,11 @@ const events = [
   }
   .year {
     text-align: right;
-    font-size: 40px;
+    font-size: 26px;
     font-weight: 700;
     color: var(--saffron);
     line-height: 1;
+    white-space: nowrap;
   }
   .content {
     position: relative;
@@ -222,7 +182,7 @@ const events = [
     .timeline { padding: 20px 24px 40px; }
     .line { left: 100px; }
     .row { grid-template-columns: 80px 1fr; gap: 28px; }
-    .year { font-size: 28px; }
+    .year { font-size: 17px; }
     .pull-quote { padding: 48px 24px; }
     .pq-grid { grid-template-columns: 1fr; gap: 32px; }
     .pq-title { font-size: 32px; }

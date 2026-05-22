@@ -5,18 +5,18 @@ import H2 from '../components/H2.astro';
 import PoemModal from '../components/PoemModal.astro';
 
 const works = [
-  { t: 'Tanobchilar', k: 'Hajv · 1877', lines: ["Bo'ldi taajjub qiziq hangomalar,", 'Arz etayin emdi yozib nomalar.', "O'n iki oyda keladur bir tanob,", "O'zgalara rohat-u menga azob."], note: 'Muqimiyni elga taniqli qilgan satirik she\'riy hikoya.' },
-  { t: 'Navbahor', k: "G'azal", lines: ['Ochildi gullar, sabza bo\'ldi bog\'lar!', 'Suhbat aylaylik, kelinglar, jo\'ralar, o\'rtog\'lar!', 'Xush bu mahfilda tiriklik ulfatu ahbob ila,', 'O\'ynashib, gohe tabiatni qilaylik chog\'lar!'], note: 'Eng sara lirik she\'rlaridan biri.' },
-  { t: 'Sayohatnoma', k: 'Sayohat · 4 qism', lines: ['Kelganim ushbu makonga qiladur manga alam,', "Loyiqi tab' yo'q odamki, desam hasratu g'am,", "Gaplashurg'a kishi yo'q ertadin oqshomg'acha ham,", "Kun sovuq, qora chiroq, go'rdek uyu, o'tin kam."], note: "Farg'ona vodiysi sayohatlari taassuroti." },
-  { t: "Maskovchi boy ta'rifida", k: 'Hajv', lines: ['Tag\'i bular yaxshiyu bizlar yamon,', 'El tamizidin hazar et, al\'amon.'], note: "Mahalliy boylarning kirdikorlari ustidan o'tkir hajv." },
-  { t: 'Saylov', k: 'Hajv', lines: ['Pul sochish musobaqasiga aylangan', 'saylov tartiblari haqida o\'tkir hajv —', 'bugungi kunda ham o\'z ahamiyatini', 'yo\'qotmagan asar.'], note: 'Saylovlardagi poraxo\'rlikni fosh etgan.' },
-  { t: 'Hajvi Viktor', k: 'Hajv', lines: ['Voqeai Viktor — chor amaldori', 'kirdikorlarini ochib tashlovchi', 'satirik portret. Tiplar', 'galereyasining yorqin namunasi.'], note: 'Voqeai Viktor — bir nechta turkum she\'rlardan.' },
-  { t: 'Loy', k: 'Yumor', lines: ['Hayron qildi loy —', 'Qo\'qon ko\'chalarining loy-balchig\'i', 'ustidan o\'tkir kulgi.', 'Turmushning qoloq tomonlarini fosh etgan.'], note: 'Mashhur yumoristik she\'rlardan biri.' },
-  { t: 'Pashshalar', k: 'Yumor', lines: ['Ot, arava, loy, pashsha, bezgak —', 'mavzulardagi 30 ga yaqin', 'yumoristik asarlaridan', 'eng o\'tkirlaridan biri.'], note: 'Yumor janrining yorqin namunasi.' },
-  { t: 'Ayrilmasun', k: "G'azal", lines: ['Muhabbat va sadoqat haqida', 'samimiy g\'azal.', 'Xalq qo\'shig\'iga aylangan', 'mashhur asarlardan.'], note: 'Hofizlar tomonidan kuylangan g\'azal.' },
-  { t: "Oshiq bo'libman", k: "G'azal", lines: ['Aqlu hush uchdi boshimdin,', 'ko\'rgali ul oy yuzin —', 'Muqimiyning eng nozik', 'muhabbat she\'rlaridan.'], note: 'Muhabbat lirikasining cho\'qqilaridan.' },
-  { t: "Ko'zlaring", k: "G'azal", lines: ['Yakka bu Farg\'onada,', 'Muncha ham, Ko\'zlaring —', 'barchasi xalq qo\'shig\'iga', 'aylanib ketgan asarlardan.'], note: 'Ashulachilar tomonidan kuylangan.' },
-  { t: 'Dar mazammati zamona', k: 'Hajv', lines: ['O\'lkaga kirib kelayotgan', 'kapitalistik munosabatlar va', 'ularning g\'ayriaxloqiy oqibatlari —', 'shoir tanqid uchini shu yerga qaratgan.'], note: 'Davr ziddiyatlari ko\'zguda.' },
+  { t: 'Navbahor', k: "G'azal · 1882", lines: ["Ochildi gullar, sabza bo'ldi bog'lar!", "Suhbat aylaylik, kelinglar, jo'ralar, o'rtog'lar!", "Xush bu mahfilda tiriklik ulfatu ahbob ila,", "O'ynashib, gohe tabiatni qilaylik chog'lar!"], note: "Eng sara lirik she'rlaridan biri." },
+  { t: 'Tanobchilar', k: 'Hajv · 1888', lines: ["Bo'ldi taajjub qiziq hangomalar,", "Arz etayin emdi yozib nomalar.", "O'n iki oyda keladur bir tanob,", "O'zgalara rohat-u menga azob."], note: "Yer qurilishi mahkamasida ko'rgani — amaldorlarning qallobliklarini fosh etgan eng mashhur hajviy asari." },
+  { t: 'Saylov', k: 'Hajv · 1889', lines: ["Pul sochish musobaqasiga aylangan", "saylov tartiblari haqida o'tkir hajv —", "bugungi kunda ham o'z ahamiyatini", "yo'qotmagan asar."], note: "Mansabparastlik va saylovlardagi poraxo'rlikni fosh etgan." },
+  { t: 'Dar mazammati zamona', k: 'Hajv · 1890', lines: ["O'lkaga kirib kelayotgan", "kapitalistik munosabatlar va", "ularning g'ayriaxloqiy oqibatlari —", "shoir tanqid uchini shu yerga qaratgan."], note: "Davr ziddiyatlari va ijtimoiy illatlar ko'zgusi." },
+  { t: 'Voqeai Ashurboy hoji', k: 'Hajv · 1893', lines: ["Voqeai Ashurboy hoji —", "tuban kimsalar va riyokor", "boylar ustidan o'tkir hajv.", "Tiplar galereyasining yorqin namunasi."], note: "Tuban kimsalar va boylar haqida hajviy portret." },
+  { t: "Maskovchi boy ta'rifida", k: 'Hajv · 1894', lines: ["Tag'i bular yaxshiyu bizlar yamon,", "El tamizidin hazar et, al'amon."], note: "Mahalliy savdogar-boylarning kirdikorlari ustidan o'tkir hajv." },
+  { t: 'Loy', k: 'Yumor · 1896', lines: ["Hayron qildi loy —", "Qo'qon ko'chalarining loy-balchig'i", "ustidan o'tkir kulgi.", "Turmushning qoloq tomonlarini fosh etgan."], note: "Mashhur yumoristik she'rlardan biri." },
+  { t: 'Pashshalar', k: 'Yumor · 1896', lines: ["Ot, arava, loy, pashsha, bezgak —", "mavzulardagi 30 ga yaqin", "yumoristik asarlaridan", "eng o'tkirlaridan biri."], note: "Yumor janrining yorqin namunasi." },
+  { t: 'Sayohatnoma', k: 'Sayohat · 1900–1902', lines: ["Kelganim ushbu makonga qiladur manga alam,", "Loyiqi tab' yo'q odamki, desam hasratu g'am,", "Gaplashurg'a kishi yo'q ertadin oqshomg'acha ham,", "Kun sovuq, qora chiroq, go'rdek uyu, o'tin kam."], note: "Qo'qon–Shohimardon, Qo'qon–Farg'ona, Andijon va Toshkent safarlari taassurotidan. To'rtliklardan tarkib topgan." },
+  { t: "Oshiq bo'libman", k: "G'azal", lines: ["Aqlu hush uchdi boshimdin,", "ko'rgali ul oy yuzin —", "Muqimiyning eng nozik", "muhabbat she'rlaridan."], note: "Muhabbat lirikasining cho'qqilaridan." },
+  { t: 'Ayrilmasun', k: "G'azal", lines: ["Muhabbat va sadoqat haqida", "samimiy g'azal.", "Xalq qo'shig'iga aylangan", "mashhur asarlardan."], note: "Hofizlar tomonidan kuylangan g'azal." },
+  { t: "Ko'zlaring", k: "G'azal", lines: ["Yakka bu Farg'onada,", "Muncha ham, Ko'zlaring —", "barchasi xalq qo'shig'iga", "aylanib ketgan asarlardan."], note: "Ashulachilar tomonidan kuylangan." },
 ];
 ---
 <PageShell title="Muqimiy — Asarlari" current="asarlari">
