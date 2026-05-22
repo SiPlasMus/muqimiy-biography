@@ -147,11 +147,6 @@ const aiDemoData = JSON.stringify(aiQA).replace(/</g, '\\u003c');
         </div>
       </div>
     </div>
-
-    <p class="ai-demo-note">
-      Eslatma: bu — namoyish. Yordamchi haqiqiy sun'iy intellektga ulanmagan,
-      javoblar oldindan tayyorlab qo'yilgan.
-    </p>
   </section>
 
   <script id="ai-demo-data" type="application/json" is:inline set:html={aiDemoData}></script>
@@ -503,15 +498,6 @@ const aiDemoData = JSON.stringify(aiQA).replace(/</g, '\\u003c');
     color: var(--saffron-deep);
     font-weight: 700;
     flex-shrink: 0;
-  }
-
-  .ai-demo-note {
-    margin: 24px 0 0;
-    font-size: 13px;
-    line-height: 1.65;
-    color: var(--muted);
-    font-style: italic;
-    max-width: 780px;
   }
 
   @media (max-width: 1000px) {
